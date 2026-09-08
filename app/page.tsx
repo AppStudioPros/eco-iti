@@ -46,20 +46,16 @@ export default function HomePage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 
       {/* ── Hero ── */}
+      {/* NOTE: This image should eventually move to the H2O Recover page — Kelsi 2026-09-08 */}
       <section
         className="relative min-h-screen flex items-center px-6 pt-20"
         style={{
-          background: 'linear-gradient(135deg, #0A1A14 0%, #0D2E1E 50%, #0A1A14 100%)',
+          backgroundImage: 'linear-gradient(rgba(10,26,20,0.72), rgba(10,26,20,0.72)), url("/images/hero-home.jpg")',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundColor: '#0A1A14',
         }}
       >
-        {/* Subtle grid overlay */}
-        <div
-          className="absolute inset-0 opacity-5"
-          style={{
-            backgroundImage: 'linear-gradient(rgba(26,131,90,0.5) 1px, transparent 1px), linear-gradient(90deg, rgba(26,131,90,0.5) 1px, transparent 1px)',
-            backgroundSize: '60px 60px',
-          }}
-        />
         <div className="relative max-w-5xl mx-auto text-center">
           <div
             data-reveal="fade"
