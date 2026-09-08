@@ -50,7 +50,7 @@ export default function HomePage() {
       <section
         className="relative min-h-[75vh] flex items-center px-6 pt-20"
         style={{
-          backgroundImage: 'linear-gradient(rgba(10,26,20,0.72), rgba(10,26,20,0.72)), url("/images/hero-home.jpg")',
+          backgroundImage: 'linear-gradient(rgba(10,26,20,0.52), rgba(10,26,20,0.52)), url("/images/hero-home.jpg")',
           backgroundSize: '140%',
           backgroundPosition: 'center 40%',
           backgroundColor: '#0A1A14',
