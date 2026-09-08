@@ -17,7 +17,7 @@ export default function Navbar() {
   return (
     <nav
       className="fixed top-0 left-0 right-0 z-50"
-      style={{ backgroundColor: '#0A1A14', borderBottom: '1px solid rgba(26,131,90,0.2)' }}
+      style={{ backgroundColor: '#ffffff', borderBottom: '1px solid rgba(26,131,90,0.15)', boxShadow: '0 1px 20px rgba(0,0,0,0.06)' }}
     >
       <div className="max-w-7xl mx-auto px-6 h-16 md:h-20 flex items-center justify-between">
         {/* Logo */}
@@ -42,7 +42,7 @@ export default function Navbar() {
           >
             <button
               className="flex items-center gap-1 text-sm font-semibold uppercase tracking-widest transition-colors"
-              style={{ color: 'rgba(255,255,255,0.8)' }}
+              style={{ color: '#0A1A14' }}
             >
               Technologies <ChevronDown size={14} className={`transition-transform ${techOpen ? 'rotate-180' : ''}`} />
             </button>
@@ -69,8 +69,8 @@ export default function Navbar() {
             )}
           </div>
 
-          <Link href="/about" className="text-sm font-semibold uppercase tracking-widest transition-colors" style={{ color: 'rgba(255,255,255,0.8)' }}>About</Link>
-          <Link href="/contact" className="text-sm font-semibold uppercase tracking-widest transition-colors" style={{ color: 'rgba(255,255,255,0.8)' }}>Contact</Link>
+          <Link href="/about" className="text-sm font-semibold uppercase tracking-widest transition-colors" style={{ color: '#0A1A14' }}>About</Link>
+          <Link href="/contact" className="text-sm font-semibold uppercase tracking-widest transition-colors" style={{ color: '#0A1A14' }}>Contact</Link>
 
           <Link
             href="/contact"
@@ -83,7 +83,8 @@ export default function Navbar() {
 
         {/* Mobile hamburger */}
         <button
-          className="md:hidden text-white"
+          className="md:hidden"
+          style={{ color: '#0A1A14' }}
           onClick={() => setOpen(!open)}
           aria-label="Toggle menu"
         >
@@ -95,17 +96,17 @@ export default function Navbar() {
       {open && (
         <div
           className="md:hidden px-6 pb-6 flex flex-col gap-4"
-          style={{ backgroundColor: '#0A1A14', borderTop: '1px solid rgba(26,131,90,0.2)' }}
+          style={{ backgroundColor: '#ffffff', borderTop: '1px solid rgba(26,131,90,0.15)' }}
         >
-          <p className="text-xs font-bold uppercase tracking-widest mt-4" style={{ color: 'rgba(255,255,255,0.4)' }}>Technologies</p>
+          <p className="text-xs font-bold uppercase tracking-widest mt-4" style={{ color: "rgba(0,0,0,0.4)" }}>Technologies</p>
           {techLinks.map((t) => (
-            <Link key={t.href} href={t.href} className="text-sm text-white font-semibold" onClick={() => setOpen(false)}>
+            <Link key={t.href} href={t.href} className="text-sm font-semibold" style={{ color: "#0A1A14" }} onClick={() => setOpen(false)}>
               {t.label}
             </Link>
           ))}
           <div style={{ borderTop: '1px solid rgba(26,131,90,0.2)' }} className="pt-4 flex flex-col gap-4">
-            <Link href="/about" className="text-sm text-white font-semibold" onClick={() => setOpen(false)}>About</Link>
-            <Link href="/contact" className="text-sm text-white font-semibold" onClick={() => setOpen(false)}>Contact</Link>
+            <Link href="/about" className="text-sm font-semibold" style={{ color: "#0A1A14" }} onClick={() => setOpen(false)}>About</Link>
+            <Link href="/contact" className="text-sm font-semibold" style={{ color: "#0A1A14" }} onClick={() => setOpen(false)}>Contact</Link>
             <Link
               href="/contact"
               className="btn-eco text-sm font-semibold uppercase tracking-widest px-6 py-3 rounded text-center"
