@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import { ArrowRight, ArrowLeft, Check, Droplets, FlaskConical, Recycle, Shield } from 'lucide-react'
+import { ArrowRight, ArrowLeft, Check } from 'lucide-react'
 import FaqAccordion from '@/components/FaqAccordion'
 
 export const metadata: Metadata = {
@@ -18,10 +18,10 @@ const jsonLd = {
 }
 
 const outputs = [
-  { icon: Droplets, title: 'Reusable Water', body: 'Contaminated oilfield produced water is processed into clean, reusable water — returning a critical resource to productive use.' },
-  { icon: FlaskConical, title: 'Critical Mineral Carbonates', body: 'The CLAW process extracts critical mineral carbonates from the water stream — commercially valuable materials with established industrial demand.' },
-  { icon: Recycle, title: 'Industrial By-Products', body: 'Additional commercially valuable industrial products are generated as part of the CLAW recovery process.' },
-  { icon: Shield, title: 'CO₂ Utilization', body: 'Wellhead CO₂ is incorporated into the CLAW process rather than released — transforming an environmental liability into a process input.' },
+  { title: 'Reusable Water', body: 'Contaminated oilfield produced water is processed into clean, reusable water — returning a critical resource to productive use.' },
+  { title: 'Critical Mineral Carbonates', body: 'The CLAW process extracts critical mineral carbonates from the water stream — commercially valuable materials with established industrial demand.' },
+  { title: 'Industrial By-Products', body: 'Additional commercially valuable industrial products are generated as part of the CLAW recovery process.' },
+  { title: 'CO₂ Utilization', body: 'Wellhead CO₂ is incorporated into the CLAW process rather than released — transforming an environmental liability into a process input.' },
 ]
 
 const process = [
@@ -118,12 +118,8 @@ export default function H2ORecoverPage() {
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
             {outputs.map((o, i) => {
-              const Icon = o.icon
               return (
                 <div key={o.title} data-reveal data-delay={i * 80} className="card-hover rounded-xl p-7" style={{ backgroundColor: '#F3F7F5', border: '1px solid rgba(22,99,175,0.15)' }}>
-                  <div className="w-11 h-11 rounded-lg flex items-center justify-center mb-4" style={{ backgroundColor: 'rgba(22,99,175,0.1)' }}>
-                    <Icon size={20} style={{ color: '#1663AF' }} />
-                  </div>
                   <h3 className="font-bold text-lg mb-2" style={{ color: '#0A1A14' }}>{o.title}</h3>
                   <p className="text-sm leading-relaxed" style={{ color: '#5A8070' }}>{o.body}</p>
                 </div>

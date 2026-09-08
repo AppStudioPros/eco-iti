@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import { ArrowRight, Leaf, Droplets, Recycle, FlaskConical } from 'lucide-react'
+import { ArrowRight } from 'lucide-react'
 
 export const metadata: Metadata = {
   title: 'Our Technologies',
@@ -46,15 +46,13 @@ export default function TechnologiesPage() {
           </div>
           <div className="grid grid-cols-2 gap-4">
             {[
-              { icon: Recycle, label: 'Waste-to-Energy', desc: 'Converts landfill waste into commercially viable energy and by-products' },
-              { icon: Leaf, label: 'ESG Compliance', desc: 'Directly supports environmental, social, and governance goals' },
-              { icon: FlaskConical, label: 'Chemical-Free', desc: 'No toxic additives or chemical processes in our operations' },
-              { icon: ArrowRight, label: 'Greater Profitability', desc: 'Improves operational efficiency and creates new revenue streams' },
+              { label: 'Waste-to-Energy', desc: 'Converts landfill waste into commercially viable energy and by-products' },
+              { label: 'ESG Compliance', desc: 'Directly supports environmental, social, and governance goals' },
+              { label: 'Chemical-Free', desc: 'No toxic additives or chemical processes in our operations' },
+              { label: 'Greater Profitability', desc: 'Improves operational efficiency and creates new revenue streams' },
             ].map((item, i) => {
-              const Icon = item.icon
               return (
                 <div key={item.label} data-reveal data-delay={i * 80} className="card-hover rounded-xl p-5" style={{ backgroundColor: '#F3F7F5', border: '1px solid rgba(26,131,90,0.15)' }}>
-                  <Icon size={20} style={{ color: '#1A835A' }} className="mb-3" />
                   <p className="text-sm font-bold mb-1" style={{ color: '#0A1A14' }}>{item.label}</p>
                   <p className="text-xs leading-relaxed" style={{ color: '#5A8070' }}>{item.desc}</p>
                 </div>
@@ -87,15 +85,13 @@ export default function TechnologiesPage() {
           </div>
           <div className="grid grid-cols-2 gap-4 md:order-1">
             {[
-              { icon: Droplets, label: 'Reusable Water', desc: 'Converts contaminated produced water into clean, reusable water' },
-              { icon: FlaskConical, label: 'Mineral Carbonates', desc: 'Extracts critical mineral carbonates as commercially valuable by-products' },
-              { icon: Leaf, label: 'Zero Liquid Discharge', desc: 'Targeting true ZLD performance for maximum environmental protection' },
-              { icon: Recycle, label: 'CO₂ Utilization', desc: 'Processes wellhead CO₂ as part of the water recovery system' },
+              { label: 'Reusable Water', desc: 'Converts contaminated produced water into clean, reusable water' },
+              { label: 'Mineral Carbonates', desc: 'Extracts critical mineral carbonates as commercially valuable by-products' },
+              { label: 'Zero Liquid Discharge', desc: 'Targeting true ZLD performance for maximum environmental protection' },
+              { label: 'CO₂ Utilization', desc: 'Processes wellhead CO₂ as part of the water recovery system' },
             ].map((item, i) => {
-              const Icon = item.icon
               return (
                 <div key={item.label} data-reveal data-delay={i * 80} className="card-hover rounded-xl p-5 bg-white" style={{ border: '1px solid rgba(22,99,175,0.15)' }}>
-                  <Icon size={20} style={{ color: '#1663AF' }} className="mb-3" />
                   <p className="text-sm font-bold mb-1" style={{ color: '#0A1A14' }}>{item.label}</p>
                   <p className="text-xs leading-relaxed" style={{ color: '#5A8070' }}>{item.desc}</p>
                 </div>

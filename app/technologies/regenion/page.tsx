@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import { ArrowRight, ArrowLeft, Check, Recycle, Zap, Leaf, TrendingUp } from 'lucide-react'
+import { ArrowRight, ArrowLeft, Check } from 'lucide-react'
 import FaqAccordion from '@/components/FaqAccordion'
 
 export const metadata: Metadata = {
@@ -25,10 +25,10 @@ const howItWorks = [
 ]
 
 const benefits = [
-  { icon: Recycle, title: 'Landfill Diversion', body: 'Directly reduces waste volume entering landfills — addressing one of the most significant community environmental concerns.' },
-  { icon: Zap, title: 'Energy Generation', body: 'Waste processing generates recoverable energy, reducing net operational costs and improving sustainability metrics.' },
-  { icon: Leaf, title: 'Chemical-Free Process', body: 'All conversion operations are non-toxic and chemical-free — safe for operators, communities, and surrounding ecosystems.' },
-  { icon: TrendingUp, title: 'Commercial Value', body: 'By-products from the Regenion process have commercial market value — transforming a cost center into a profit driver.' },
+  { title: 'Landfill Diversion', body: 'Directly reduces waste volume entering landfills — addressing one of the most significant community environmental concerns.' },
+  { title: 'Energy Generation', body: 'Waste processing generates recoverable energy, reducing net operational costs and improving sustainability metrics.' },
+  { title: 'Chemical-Free Process', body: 'All conversion operations are non-toxic and chemical-free — safe for operators, communities, and surrounding ecosystems.' },
+  { title: 'Commercial Value', body: 'By-products from the Regenion process have commercial market value — transforming a cost center into a profit driver.' },
 ]
 
 const faqs = [
@@ -123,12 +123,8 @@ export default function RegenionPage() {
           <h2 data-reveal="fade" className="text-3xl md:text-5xl font-bold text-center text-white mb-12">Why ECO Regenion™</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
             {benefits.map((b, i) => {
-              const Icon = b.icon
               return (
                 <div key={b.title} data-reveal data-delay={i * 80} className="flex items-start gap-4 card-hover-dark rounded-xl p-6" style={{ backgroundColor: 'rgba(255,255,255,0.05)', border: '1px solid rgba(26,131,90,0.2)' }}>
-                  <div className="shrink-0 w-10 h-10 rounded-lg flex items-center justify-center" style={{ backgroundColor: 'rgba(34,196,122,0.15)' }}>
-                    <Icon size={18} style={{ color: '#22C47A' }} />
-                  </div>
                   <div>
                     <h4 className="font-bold text-white mb-1">{b.title}</h4>
                     <p className="text-sm leading-relaxed" style={{ color: 'rgba(255,255,255,0.6)' }}>{b.body}</p>

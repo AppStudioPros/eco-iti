@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import { MapPin, Phone, Mail, Clock } from 'lucide-react'
+
 import ContactForm from '@/components/ContactForm'
 
 export const metadata: Metadata = {
@@ -25,10 +25,10 @@ const jsonLd = {
 }
 
 const contactCards = [
-  { icon: Phone, label: 'Call Us', value: '1-877-477-0021', sub: 'Toll-free', href: 'tel:18774770021' },
-  { icon: Mail, label: 'Email Us', value: 'info@ecoiti.com', sub: "We'll respond promptly", href: 'mailto:info@ecoiti.com' },
-  { icon: MapPin, label: 'Mailing Address', value: '23986 Aliso Creek Road #312', sub: 'Laguna Niguel, CA 92677', href: null },
-  { icon: Clock, label: 'Business Hours', value: 'Monday – Friday', sub: '9:00 AM – 5:00 PM PT', href: null },
+  { label: 'Call Us', value: '1-877-477-0021', sub: 'Toll-free', href: 'tel:18774770021' },
+  { label: 'Email Us', value: 'info@ecoiti.com', sub: "We'll respond promptly", href: 'mailto:info@ecoiti.com' },
+  { label: 'Mailing Address', value: '23986 Aliso Creek Road #312', sub: 'Laguna Niguel, CA 92677', href: null },
+  { label: 'Business Hours', value: 'Monday – Friday', sub: '9:00 AM – 5:00 PM PT', href: null },
 ]
 
 export default function ContactPage() {
@@ -48,10 +48,8 @@ export default function ContactPage() {
       <section style={{ backgroundColor: '#0D2E1E' }} className="py-12 px-6">
         <div className="max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
           {contactCards.map((card, i) => {
-            const Icon = card.icon
             return (
               <div key={card.label} data-reveal data-delay={i * 80} className="card-hover-dark rounded-xl p-6" style={{ backgroundColor: 'rgba(255,255,255,0.06)', border: '1px solid rgba(26,131,90,0.25)' }}>
-                <Icon size={18} style={{ color: '#22C47A' }} className="mb-3" />
                 <p className="text-xs font-bold uppercase tracking-widest mb-1" style={{ color: 'rgba(255,255,255,0.4)' }}>{card.label}</p>
                 {card.href ? (
                   <a href={card.href} className="text-sm font-semibold text-white block mb-0.5 hover:text-eco-bright transition-colors">{card.value}</a>

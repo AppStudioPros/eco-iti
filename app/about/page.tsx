@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import { ArrowRight, Target, Eye, Heart } from 'lucide-react'
+import { ArrowRight } from 'lucide-react'
 
 export const metadata: Metadata = {
   title: 'About ECO Integrated Technologies',
@@ -26,9 +26,9 @@ const team = [
 ]
 
 const values = [
-  { icon: Target, title: 'Mission-Driven', body: 'Every technology we develop is guided by a single mission: ensure industry and communities can meet environmental stewardship goals without compromise.' },
-  { icon: Eye, title: 'Transparency', body: 'We believe in honest, clear communication with clients, partners, investors, and the communities we serve. Our results speak for themselves.' },
-  { icon: Heart, title: 'Stewardship', body: 'We operate as custodians of the environment — our solutions are designed to protect, recover, and sustain natural resources for this generation and the next.' },
+  { title: 'Mission-Driven', body: 'Every technology we develop is guided by a single mission: ensure industry and communities can meet environmental stewardship goals without compromise.' },
+  { title: 'Transparency', body: 'We believe in honest, clear communication with clients, partners, investors, and the communities we serve. Our results speak for themselves.' },
+  { title: 'Stewardship', body: 'We operate as custodians of the environment — our solutions are designed to protect, recover, and sustain natural resources for this generation and the next.' },
 ]
 
 export default function AboutPage() {
@@ -113,7 +113,6 @@ export default function AboutPage() {
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {values.map((v, i) => {
-              const Icon = v.icon
               return (
                 <div
                   key={v.title}
@@ -122,9 +121,6 @@ export default function AboutPage() {
                   className="card-hover rounded-xl p-8 bg-white"
                   style={{ border: '1px solid rgba(26,131,90,0.15)' }}
                 >
-                  <div className="w-12 h-12 rounded-lg flex items-center justify-center mb-5" style={{ backgroundColor: 'rgba(26,131,90,0.1)' }}>
-                    <Icon size={22} style={{ color: '#1A835A' }} />
-                  </div>
                   <h3 className="font-bold text-lg mb-3" style={{ color: '#0A1A14' }}>{v.title}</h3>
                   <p className="text-sm leading-relaxed" style={{ color: '#5A8070' }}>{v.body}</p>
                 </div>

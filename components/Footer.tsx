@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import Image from 'next/image'
-import { MapPin, Phone, Mail } from 'lucide-react'
+
 
 export default function Footer() {
   return (
@@ -60,19 +60,16 @@ export default function Footer() {
           <h4 className="text-xs font-bold uppercase tracking-widest mb-4" style={{ color: 'rgba(255,255,255,0.4)' }}>Contact</h4>
           <ul className="flex flex-col gap-3">
             <li className="flex items-start gap-2">
-              <MapPin size={14} style={{ color: '#1A835A', marginTop: 2 }} className="shrink-0" />
               <span className="text-xs leading-relaxed" style={{ color: 'rgba(255,255,255,0.6)' }}>
                 23986 Aliso Creek Road #312<br />Laguna Niguel, CA 92677
               </span>
             </li>
             <li className="flex items-center gap-2">
-              <Phone size={14} style={{ color: '#1A835A' }} className="shrink-0" />
               <a href="tel:18774770021" className="text-xs transition-colors hover:text-white" style={{ color: 'rgba(255,255,255,0.6)' }}>
                 1-877-477-0021
               </a>
             </li>
             <li className="flex items-center gap-2">
-              <Mail size={14} style={{ color: '#1A835A' }} className="shrink-0" />
               <a href="mailto:info@ecoiti.com" className="text-xs transition-colors hover:text-white" style={{ color: 'rgba(255,255,255,0.6)' }}>
                 info@ecoiti.com
               </a>
