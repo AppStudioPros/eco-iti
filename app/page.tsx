@@ -56,7 +56,7 @@ export default function HomePage() {
           backgroundColor: '#0A1A14',
         }}
       >
-        <div className="relative max-w-5xl mx-auto text-left">
+        <div className="relative max-w-7xl mx-auto text-left">
           <div
             data-reveal="fade"
             className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-widest mb-8"
