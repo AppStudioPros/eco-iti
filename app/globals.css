@@ -1,26 +1,126 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  --color-eco-dark:    #0A1A14;
+  --color-eco-forest:  #0D2E1E;
+  --color-eco-green:   #1A835A;
+  --color-eco-blue:    #1663AF;
+  --color-eco-teal:    #17718A;
+  --color-eco-bright:  #22C47A;
+  --color-eco-cream:   #F3F7F5;
+  --color-eco-muted:   #5A8070;
+  --font-display: var(--font-sora), system-ui, sans-serif;
+  --font-sans:    var(--font-inter), system-ui, sans-serif;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans);
+  color: #0A1A14;
+  background: #ffffff;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: var(--font-display);
+}
+
+/* ─────────────────────────────────────────
+   Prose
+───────────────────────────────────────── */
+.prose-eco p {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #3a5a4a;
+  margin-bottom: 1.1rem;
+}
+
+/* ─────────────────────────────────────────
+   Scroll Reveal System
+───────────────────────────────────────── */
+[data-reveal] {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.65s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 0.65s cubic-bezier(0.16, 1, 0.3, 1);
+}
+[data-reveal="fade"]  { transform: none; }
+[data-reveal="left"]  { transform: translateX(-28px); }
+[data-reveal="right"] { transform: translateX(28px); }
+[data-reveal="scale"] { transform: scale(0.96); opacity: 0; }
+
+[data-reveal].in-view {
+  opacity: 1 !important;
+  transform: none !important;
+}
+
+/* Allow hover to override in-view lock */
+[data-reveal].in-view.card-hover:hover {
+  transform: translateY(-5px) !important;
+  box-shadow: 0 16px 40px rgba(26, 131, 90, 0.15) !important;
+}
+[data-reveal].in-view.card-hover-dark:hover {
+  transform: translateY(-3px) !important;
+  filter: brightness(1.08) !important;
+}
+[data-reveal].in-view.btn-eco:hover {
+  transform: scale(1.03) !important;
+}
+
+/* ─────────────────────────────────────────
+   Hover Effects
+───────────────────────────────────────── */
+.card-hover {
+  transition: transform 0.25s ease, box-shadow 0.25s ease !important;
+}
+.card-hover:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 16px 40px rgba(26, 131, 90, 0.15);
+}
+
+.card-hover-dark {
+  transition: filter 0.25s ease, transform 0.2s ease !important;
+}
+.card-hover-dark:hover {
+  filter: brightness(1.08);
+  transform: translateY(-3px);
+}
+
+.btn-eco {
+  transition: transform 0.18s ease, box-shadow 0.18s ease, opacity 0.18s ease !important;
+}
+.btn-eco:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 20px rgba(26, 131, 90, 0.3);
+  opacity: 0.93;
+}
+
+/* Image zoom on hover */
+.img-hover-zoom { overflow: hidden; }
+.img-hover-zoom img {
+  transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.img-hover-zoom:hover img { transform: scale(1.05); }
+
+/* ─────────────────────────────────────────
+   Regenion vs H2O accent variants
+   .tech-regenion → green accent
+   .tech-h2o → blue/teal accent
+───────────────────────────────────────── */
+.tech-regenion { --accent: #22C47A; }
+.tech-h2o      { --accent: #1663AF; }
+
+/* ─────────────────────────────────────────
+   Mobile
+───────────────────────────────────────── */
+@media (max-width: 768px) {
+  section h1,
+  section h2,
+  section h3 {
+    text-align: center;
+  }
+  .prose-eco p { text-align: left; }
 }
