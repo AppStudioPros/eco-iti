@@ -48,7 +48,7 @@ export default function HomePage() {
       {/* ── Hero ── */}
       {/* NOTE: This image should eventually move to the H2O Recover page — Kelsi 2026-09-08 */}
       <section
-        className="relative min-h-[75vh] flex items-center px-6 pt-20"
+        className="relative min-h-[75vh] flex items-center px-8 md:px-16 pt-20"
         style={{
           backgroundImage: 'linear-gradient(rgba(10,26,20,0.52), rgba(10,26,20,0.52)), url("/images/hero-home.jpg")',
           backgroundSize: '140%',
@@ -56,7 +56,7 @@ export default function HomePage() {
           backgroundColor: '#0A1A14',
         }}
       >
-        <div className="relative max-w-7xl mx-auto text-left">
+        <div className="relative w-full text-left">
           <div
             data-reveal="fade"
             className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-widest mb-8"
