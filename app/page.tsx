@@ -99,8 +99,7 @@ export default function HomePage() {
           </div>
         </div>
 
-        {/* Bottom fade */}
-        <div className="absolute bottom-0 left-0 right-0 h-24" style={{ background: 'linear-gradient(to bottom, transparent, #ffffff)' }} />
+
       </section>
 
       {/* ── Stats Bar ── */}
