@@ -48,9 +48,10 @@ export default function Navbar() {
             </button>
             {techOpen && (
               <div
-                className="absolute top-full left-1/2 -translate-x-1/2 mt-2 w-64 rounded overflow-hidden shadow-2xl"
+                className="absolute top-full left-1/2 -translate-x-1/2 pt-2 w-64"
                 style={{ backgroundColor: '#0D2E1E', border: '1px solid rgba(26,131,90,0.3)' }}
               >
+                <div className="rounded overflow-hidden shadow-2xl" style={{ backgroundColor: '#0D2E1E', border: '1px solid rgba(26,131,90,0.3)' }}>
                 {techLinks.map((t) => (
                   <Link
                     key={t.href}
@@ -63,6 +64,7 @@ export default function Navbar() {
                     <p className="text-xs" style={{ color: 'rgba(255,255,255,0.5)' }}>{t.desc}</p>
                   </Link>
                 ))}
+              </div>
               </div>
             )}
           </div>
