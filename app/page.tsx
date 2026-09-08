@@ -56,7 +56,7 @@ export default function HomePage() {
           backgroundColor: '#0A1A14',
         }}
       >
-        <div className="relative max-w-5xl mx-auto text-center">
+        <div className="relative max-w-5xl mx-auto text-left">
           <div
             data-reveal="fade"
             className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-widest mb-8"
@@ -76,12 +76,12 @@ export default function HomePage() {
           <p
             data-reveal="fade"
             data-delay="200"
-            className="text-lg md:text-xl max-w-2xl mx-auto mb-10 leading-relaxed"
+            className="text-lg md:text-xl max-w-2xl mb-10 leading-relaxed"
             style={{ color: 'rgba(255,255,255,0.7)' }}
           >
             ECO Integrated Technologies impacts the health and safety of water environments without the use of chemicals — in commercial, industrial, and oil & gas settings.
           </p>
-          <div data-reveal="fade" data-delay="320" className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div data-reveal="fade" data-delay="320" className="flex flex-col sm:flex-row gap-4 justify-start">
             <Link
               href="/technologies"
               className="btn-eco inline-flex items-center justify-center gap-2 uppercase tracking-widest text-sm font-semibold px-10 py-4 rounded"
