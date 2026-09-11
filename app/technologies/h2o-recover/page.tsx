@@ -48,7 +48,7 @@ export default function H2ORecoverPage() {
       <section className="relative w-full">
         <img src="/images/hero-h2o.jpg" alt="" className="w-full h-auto block" />
         <div className="absolute inset-0 flex items-center px-8 md:px-16" style={{ paddingTop: '80px' }}>
-          <div className="w-full">
+          <div className="w-full max-w-[38%]">
             <p data-reveal="fade" className="text-xs font-bold uppercase tracking-widest mb-6" style={{ color: '#3B9FE0' }}>
               CLAW Water Recovery Technology
             </p>
