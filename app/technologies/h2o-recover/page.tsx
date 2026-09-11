@@ -54,9 +54,6 @@ export default function H2ORecoverPage() {
           backgroundColor: '#0B2240',
         }}>
         <div className="max-w-5xl mx-auto">
-          <div className="mb-8">
-            <img src="/images/logos/ECO-H2O-SYSTEMS_logo.png" alt="ECO H2O Recover" className="h-16 w-auto object-contain" />
-          </div>
           <h1 data-reveal="fade" className="text-4xl md:text-6xl font-bold text-white mb-6">
             Converting Contaminated Water<br />
             <span style={{ color: '#3B9FE0' }}>into Valuable Resources</span>

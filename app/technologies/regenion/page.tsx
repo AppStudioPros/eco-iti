@@ -53,9 +53,6 @@ export default function RegenionPage() {
           backgroundColor: '#0A1A10',
         }}>
         <div className="max-w-5xl mx-auto">
-          <div className="mb-8">
-            <img src="/images/logos/ECO_REGENION_logo-1.png" alt="ECO Regenion" className="h-16 w-auto object-contain" />
-          </div>
           <h1 data-reveal="fade" className="text-4xl md:text-6xl font-bold text-white mb-6">
             Converts Waste into<br />
             <span style={{ color: '#22C47A' }}>Commercially Viable By-Products</span>
