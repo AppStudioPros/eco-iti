@@ -47,7 +47,7 @@ export default function H2ORecoverPage() {
 
       <section className="relative w-full">
         <img src="/images/hero-h2o.jpg" alt="" className="w-full h-auto block" />
-        <div className="absolute inset-0 flex items-center px-8 md:px-16" style={{ paddingTop: '80px' }}>
+        <div className="hero-overlay absolute inset-0 flex items-center px-8 md:px-16" style={{ paddingTop: '80px' }}>
           <div className="w-full max-w-[38%]">
             <h1 data-reveal="fade" className="text-3xl md:text-5xl font-bold text-white mb-4 leading-snug">
               Contaminated Water into <span style={{ color: '#3B9FE0' }}>a Valuable Resource.</span>
