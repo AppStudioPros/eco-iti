@@ -69,7 +69,7 @@ export default function AboutPage() {
       {/* ── Company Story ── */}
       <section className="bg-white py-16 md:py-24 px-6">
         <div className="max-w-5xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-start">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
             <div>
               <p data-reveal="fade" className="text-xs font-bold uppercase tracking-widest mb-3" style={{ color: '#1A835A' }}>Who We Are</p>
               <h2 data-reveal="fade" data-delay="80" className="text-3xl md:text-4xl font-bold mb-6" style={{ color: '#0B2240' }}>
