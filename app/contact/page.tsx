@@ -37,17 +37,19 @@ export default function ContactPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 
       {/* ── Hero ── */}
-      <section className="relative min-h-[40vh] flex items-center justify-center px-8 md:px-16 pt-20 pb-16 text-center"
+      <section className="relative min-h-[40vh] flex items-center px-8 md:px-16 pt-20 pb-16"
         style={{
           backgroundImage: 'linear-gradient(rgba(11,27,46,0.65), rgba(11,27,46,0.65)), url("/images/hero-contact.jpg")',
           backgroundSize: 'cover',
           backgroundPosition: 'center 50%',
           backgroundColor: '#0B1A2E',
         }}>
-        <h1 data-reveal="fade" className="text-4xl md:text-6xl font-bold text-white mb-4">Get In Touch</h1>
-        <p data-reveal="fade" data-delay="150" className="text-lg max-w-xl mx-auto leading-relaxed" style={{ color: 'rgba(255,255,255,0.7)' }}>
+        <div className="max-w-7xl w-full">
+          <h1 data-reveal="fade" className="text-4xl md:text-6xl font-bold text-white mb-4">Get In Touch</h1>
+          <p data-reveal="fade" data-delay="150" className="text-lg max-w-xl leading-relaxed" style={{ color: 'rgba(255,255,255,0.7)' }}>
           Ready to learn more about our solutions? Have a project to discuss? Fill out the form below or reach out directly.
-        </p>
+          </p>
+        </div>
       </section>
 
       {/* ── Contact Info Cards ── */}

@@ -36,7 +36,7 @@ export default function AboutPage() {
     <>
       {/* ── Hero ── */}
       <section
-        className="relative min-h-[45vh] flex items-center px-8 md:px-16 pt-20 pb-16 text-center justify-center"
+        className="relative min-h-[45vh] flex items-center px-8 md:px-16 pt-20 pb-16"
         style={{
           backgroundImage: 'linear-gradient(rgba(11,34,64,0.55), rgba(11,34,64,0.55)), url("/images/hero-about.jpg")',
           backgroundSize: 'cover',
@@ -44,6 +44,7 @@ export default function AboutPage() {
           backgroundColor: '#0B2240',
         }}
       >
+        <div className="max-w-7xl w-full">
         <p data-reveal="fade" className="text-xs font-bold uppercase tracking-widest mb-4" style={{ color: '#22C47A' }}>
           Our Story
         </p>
@@ -57,11 +58,12 @@ export default function AboutPage() {
         <p
           data-reveal="fade"
           data-delay="160"
-          className="text-lg max-w-2xl mx-auto leading-relaxed"
+          className="text-lg max-w-2xl leading-relaxed"
           style={{ color: 'rgba(255,255,255,0.7)' }}
         >
           ECO Integrated Technologies exists because environmental stewardship and commercial viability are not opposites, they are the same goal, pursued with the right technology.
-        </p>
+          </p>
+        </div>
       </section>
 
       {/* ── Company Story ── */}
