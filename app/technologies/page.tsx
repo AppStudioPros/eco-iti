@@ -54,9 +54,9 @@ export default function TechnologiesPage() {
               { label: 'Greater Profitability', desc: 'Improves operational efficiency and creates new revenue streams' },
             ].map((item, i) => {
               return (
-                <div key={item.label} data-reveal data-delay={i * 80} className="card-hover rounded-xl p-5" style={{ backgroundColor: '#ffffff', border: '1px solid rgba(26,131,90,0.2)' }}>
-                  <p className="text-sm font-bold mb-1" style={{ color: '#0B2240' }}>{item.label}</p>
-                  <p className="text-xs leading-relaxed" style={{ color: '#4A5E72' }}>{item.desc}</p>
+                <div key={item.label} data-reveal data-delay={i * 80} className="card-hover rounded-xl p-7" style={{ backgroundColor: '#ffffff', border: '1px solid rgba(26,131,90,0.2)' }}>
+                  <p className="text-base font-bold mb-2" style={{ color: '#0B2240' }}>{item.label}</p>
+                  <p className="text-sm leading-relaxed" style={{ color: '#4A5E72' }}>{item.desc}</p>
                 </div>
               )
             })}
@@ -95,9 +95,9 @@ export default function TechnologiesPage() {
               { label: 'CO₂ Utilization', desc: 'Processes wellhead CO₂ as part of the water recovery system' },
             ].map((item, i) => {
               return (
-                <div key={item.label} data-reveal data-delay={i * 80} className="card-hover rounded-xl p-5 bg-white" style={{ backgroundColor: '#ffffff', border: '1px solid rgba(22,99,175,0.2)' }}>
-                  <p className="text-sm font-bold mb-1" style={{ color: '#0B2240' }}>{item.label}</p>
-                  <p className="text-xs leading-relaxed" style={{ color: '#4A5E72' }}>{item.desc}</p>
+                <div key={item.label} data-reveal data-delay={i * 80} className="card-hover rounded-xl p-7 bg-white" style={{ backgroundColor: '#ffffff', border: '1px solid rgba(22,99,175,0.2)' }}>
+                  <p className="text-base font-bold mb-2" style={{ color: '#0B2240' }}>{item.label}</p>
+                  <p className="text-sm leading-relaxed" style={{ color: '#4A5E72' }}>{item.desc}</p>
                 </div>
               )
             })}
