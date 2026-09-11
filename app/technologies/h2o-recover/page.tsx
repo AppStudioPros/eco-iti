@@ -57,7 +57,7 @@ export default function H2ORecoverPage() {
               <span style={{ color: '#3B9FE0' }}>into Valuable Resources</span>
             </h1>
             <p data-reveal="fade" data-delay="160" className="text-lg max-w-2xl leading-relaxed mb-10" style={{ color: 'rgba(255,255,255,0.75)' }}>
-              CLAW Technology transforms oilfield produced water and wellhead CO₂ into reusable water, critical mineral carbonates, and industrial by-products.
+              Oilfield produced water, turned into a resource instead of a liability.
             </p>
             <div data-reveal="fade" data-delay="260" className="flex flex-col sm:flex-row gap-4">
               <Link href="/contact" className="btn-eco inline-flex items-center gap-2 uppercase tracking-widest text-sm font-semibold px-10 py-4 rounded" style={{ backgroundColor: '#1663AF', color: '#fff' }}>
