@@ -166,7 +166,7 @@ export default function H2ORecoverPage() {
       <section style={{ backgroundColor: '#F4F8FC' }} className="py-16 md:py-20 px-6">
         <div className="max-w-3xl mx-auto">
           <h2 data-reveal="fade" className="text-3xl md:text-4xl font-bold text-center mb-10" style={{ color: '#0B2240' }}>Frequently Asked Questions</h2>
-          <FaqAccordion items={faqs} />
+          <FaqAccordion items={faqs} accentColor="#1663AF" />
         </div>
       </section>
 
