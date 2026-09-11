@@ -4,6 +4,7 @@ import './globals.css'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import AnimationProvider from '@/components/AnimationProvider'
+import CookieBanner from '@/components/CookieBanner'
 
 const sora = Sora({
   subsets: ['latin'],
@@ -48,10 +49,19 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en" className={`${sora.variable} ${inter.variable}`}>
       <body>
+        {/* Skip to main content — screen reader / keyboard accessibility */}
+        <a
+          href="#main-content"
+          className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[100] focus:px-4 focus:py-2 focus:rounded focus:text-sm focus:font-semibold focus:text-white"
+          style={{ backgroundColor: '#1A835A' }}
+        >
+          Skip to main content
+        </a>
         <Navbar />
         <AnimationProvider />
-        <main>{children}</main>
+        <main id="main-content" tabIndex={-1}>{children}</main>
         <Footer />
+        <CookieBanner />
       </body>
     </html>
   )

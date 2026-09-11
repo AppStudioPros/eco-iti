@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 export default function Footer() {
   return (
-    <footer style={{ backgroundColor: '#ffffff', borderTop: '1px solid #E0EBF5' }}>
+    <footer role="contentinfo" style={{ backgroundColor: '#ffffff', borderTop: '1px solid #E0EBF5' }}>
       <div className="max-w-7xl mx-auto px-6 py-12 md:py-16 grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-10">
 
         {/* Brand */}

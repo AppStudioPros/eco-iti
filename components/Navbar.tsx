@@ -31,6 +31,8 @@ export default function Navbar() {
 
   return (
     <nav
+      role="navigation"
+      aria-label="Main navigation"
       className="fixed top-0 left-0 right-0 z-50"
       style={{ backgroundColor: '#ffffff', borderBottom: '1px solid rgba(22,99,175,0.12)', boxShadow: '0 1px 20px rgba(0,0,0,0.06)' }}
     >
@@ -74,7 +76,7 @@ export default function Navbar() {
           className="md:hidden"
           style={{ color: '#1A2535' }}
           onClick={() => setOpen(!open)}
-          aria-label="Toggle menu"
+          aria-label={open ? "Close menu" : "Open menu"} aria-expanded={open} aria-controls="mobile-menu"
         >
           {open ? <X size={24} /> : <Menu size={24} />}
         </button>
@@ -83,6 +85,9 @@ export default function Navbar() {
       {/* Mobile menu */}
       {open && (
         <div
+          id="mobile-menu"
+          role="navigation"
+          aria-label="Mobile navigation"
           className="md:hidden px-6 pb-6 flex flex-col gap-4"
           style={{ backgroundColor: '#ffffff', borderTop: '1px solid rgba(22,99,175,0.12)' }}
         >
