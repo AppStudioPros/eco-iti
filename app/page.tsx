@@ -123,7 +123,7 @@ export default function HomePage() {
 
             {/* Regenion, green accent */}
             <Link href="/technologies/regenion" data-reveal data-delay="0" className="group card-hover block rounded-2xl overflow-hidden bg-white" style={{ boxShadow: '0 2px 16px rgba(11,34,64,0.08)', border: '1px solid #E0EBF5' }}>
-              <div className="h-1.5 w-full rounded-t-2xl" style={{ background: 'linear-gradient(90deg, #1A835A, #22C47A)' }} />
+              <div className="gradient-bar-green h-1.5 w-full rounded-t-2xl" />
               <div className="p-8">
                 <div className="mb-6">
                   <img src="/images/logos/ECO_REGENION_logo-1.png" alt="ECO Regenion" className="h-10 w-auto object-contain" />
@@ -140,7 +140,7 @@ export default function HomePage() {
 
             {/* H2O Recover, blue accent */}
             <Link href="/technologies/h2o-recover" data-reveal data-delay="100" className="group card-hover block rounded-2xl overflow-hidden bg-white" style={{ boxShadow: '0 2px 16px rgba(11,34,64,0.08)', border: '1px solid #E0EBF5' }}>
-              <div className="h-1.5 w-full rounded-t-2xl" style={{ background: 'linear-gradient(90deg, #1663AF, #17718A)' }} />
+              <div className="gradient-bar-blue h-1.5 w-full rounded-t-2xl" />
               <div className="p-8">
                 <div className="mb-6">
                   <img src="/images/logos/ECO-H2O-SYSTEMS_logo.png" alt="ECO H2O Recover" className="h-10 w-auto object-contain" />
