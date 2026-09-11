@@ -49,12 +49,11 @@ export default function HomePage() {
         style={{
           backgroundImage: 'url("/images/hero-home.jpg")',
           backgroundSize: 'cover',
-          backgroundPosition: 'center 40%',
+          backgroundPosition: 'left center',
           paddingTop: 'clamp(80px, 12vw, 160px)',
           paddingBottom: 'clamp(40px, 6vw, 80px)',
         }}
       >
-        <div className="absolute inset-0 md:hidden" style={{ backgroundColor: 'rgba(0,0,0,0.45)' }} />
         <div className="hero-overlay relative z-10">
             <p data-reveal="fade" className="text-xs font-bold uppercase tracking-widest mb-6" style={{ color: '#22C47A' }}>
               Cleantech for the Future

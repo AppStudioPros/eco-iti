@@ -49,11 +49,10 @@ export default function RegenionPage() {
         style={{
           backgroundImage: 'url("/images/hero-regenion.jpg")',
           backgroundSize: 'cover',
-          backgroundPosition: 'center 40%',
+          backgroundPosition: 'left center',
           minHeight: '55vh',
         }}
       >
-        <div className="absolute inset-0" style={{ backgroundColor: 'rgba(10,26,16,0.5)' }} />
         <div className="hero-overlay relative z-10 md:max-w-[42%]">
             <h1 data-reveal="fade" className="text-xl sm:text-3xl md:text-5xl font-bold text-white mb-3 md:mb-4 leading-snug">
               Waste into <span style={{ color: '#22C47A' }}>Commercially Viable By-Products.</span>

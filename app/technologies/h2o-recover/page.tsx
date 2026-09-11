@@ -50,11 +50,10 @@ export default function H2ORecoverPage() {
         style={{
           backgroundImage: 'url("/images/hero-h2o.jpg")',
           backgroundSize: 'cover',
-          backgroundPosition: 'center 40%',
+          backgroundPosition: 'left center',
           minHeight: '55vh',
         }}
       >
-        <div className="absolute inset-0" style={{ backgroundColor: 'rgba(8,20,42,0.55)' }} />
         <div className="hero-overlay relative z-10 md:max-w-[42%]">
             <h1 data-reveal="fade" className="text-xl sm:text-3xl md:text-5xl font-bold text-white mb-3 md:mb-4 leading-snug">
               Contaminated Water into <span style={{ color: '#3B9FE0' }}>a Valuable Resource.</span>

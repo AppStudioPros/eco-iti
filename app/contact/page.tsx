@@ -41,11 +41,10 @@ export default function ContactPage() {
         style={{
           backgroundImage: 'url("/images/hero-contact.jpg")',
           backgroundSize: 'cover',
-          backgroundPosition: 'center 40%',
+          backgroundPosition: 'left center',
           minHeight: '55vh',
         }}
       >
-        <div className="absolute inset-0" style={{ backgroundColor: 'rgba(8,16,32,0.5)' }} />
         <div className="hero-overlay relative z-10 md:max-w-[42%]">
             <h1 data-reveal="fade" className="text-3xl md:text-5xl font-bold text-white mb-4 leading-snug">
               Get <span style={{ color: '#1663AF' }}>In Touch.</span>

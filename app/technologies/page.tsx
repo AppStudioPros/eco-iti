@@ -15,11 +15,10 @@ export default function TechnologiesPage() {
         style={{
           backgroundImage: 'url("/images/hero-technologies.jpg")',
           backgroundSize: 'cover',
-          backgroundPosition: 'center 40%',
+          backgroundPosition: 'left center',
           minHeight: '55vh',
         }}
       >
-        <div className="absolute inset-0" style={{ backgroundColor: 'rgba(8,20,38,0.5)' }} />
         <div className="hero-overlay relative z-10 md:max-w-[42%]">
             <h1 data-reveal="fade" className="text-3xl md:text-5xl font-bold text-white mb-4 leading-snug">
               Two Platforms. <span style={{ color: '#22C47A' }}>One Mission.</span>
