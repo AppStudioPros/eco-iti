@@ -5,6 +5,7 @@ import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import AnimationProvider from '@/components/AnimationProvider'
 import CookieBanner from '@/components/CookieBanner'
+import AccessibilityWidget from '@/components/AccessibilityWidget'
 
 const sora = Sora({
   subsets: ['latin'],
@@ -62,6 +63,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <main id="main-content" tabIndex={-1}>{children}</main>
         <Footer />
         <CookieBanner />
+        <AccessibilityWidget />
       </body>
     </html>
   )
