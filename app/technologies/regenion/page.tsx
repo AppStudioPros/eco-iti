@@ -110,7 +110,7 @@ export default function RegenionPage() {
           <h2 data-reveal="fade" className="text-3xl md:text-5xl font-bold text-center mb-12" style={{ color: '#0D2E1E' }}>How Regenion Works</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
             {howItWorks.map((step, i) => (
-              <div key={step.step} data-reveal data-delay={i * 80} className="card-hover rounded-xl p-7" style={{ backgroundColor: '#F3FAF6', border: '1px solid rgba(26,131,90,0.15)' }}>
+              <div key={step.step} data-reveal data-delay={i * 80} className="card-hover rounded-xl p-7" style={{ backgroundColor: '#ffffff', border: '1px solid rgba(26,131,90,0.25)' }}>
                 <p className="text-4xl font-bold mb-3" style={{ color: 'rgba(26,131,90,0.2)' }}>{step.step}</p>
                 <h3 className="font-bold text-lg mb-2" style={{ color: '#0D2E1E' }}>{step.title}</h3>
                 <p className="text-sm leading-relaxed" style={{ color: '#4A5E72' }}>{step.body}</p>
@@ -130,7 +130,7 @@ export default function RegenionPage() {
                 <div key={b.title} data-reveal data-delay={i * 80} className="flex items-start gap-4 card-hover-dark rounded-xl p-6" style={{ backgroundColor: 'rgba(255,255,255,0.05)', border: '1px solid rgba(26,131,90,0.2)' }}>
                   <div>
                     <h4 className="font-bold text-white mb-1">{b.title}</h4>
-                    <p className="text-sm leading-relaxed" style={{ color: 'rgba(255,255,255,0.6)' }}>{b.body}</p>
+                    <p className="text-sm leading-relaxed" style={{ color: '#4A5E72' }}>{b.body}</p>
                   </div>
                 </div>
               )

@@ -133,13 +133,13 @@ export default function H2ORecoverPage() {
       </section>
 
       {/* ── How It Works ── */}
-      <section style={{ backgroundColor: '#F4F8FC' }} className="py-16 md:py-24 px-6">
+      <section style={{ backgroundColor: '#0B2240' }} className="py-16 md:py-24 px-6">
         <div className="max-w-5xl mx-auto">
-          <h2 data-reveal="fade" className="text-3xl md:text-5xl font-bold text-center text-white mb-12">The CLAW Process</h2>
+          <h2 data-reveal="fade" className="text-3xl md:text-5xl font-bold text-white mb-12">The CLAW Process</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
             {process.map((step, i) => (
-              <div key={step.step} data-reveal data-delay={i * 80} className="card-hover-dark rounded-xl p-7" style={{ backgroundColor: 'rgba(255,255,255,0.05)', border: '1px solid rgba(22,99,175,0.25)' }}>
-                <p className="text-4xl font-bold mb-3" style={{ color: 'rgba(22,99,175,0.35)' }}>{step.step}</p>
+              <div key={step.step} data-reveal data-delay={i * 80} className="card-hover-dark rounded-xl p-7" style={{ backgroundColor: 'rgba(255,255,255,0.06)', border: '1px solid rgba(59,159,224,0.3)' }}>
+                <p className="text-4xl font-bold mb-3" style={{ color: 'rgba(59,159,224,0.6)' }}>{step.step}</p>
                 <h3 className="font-bold text-lg text-white mb-2">{step.title}</h3>
                 <p className="text-sm leading-relaxed" style={{ color: 'rgba(255,255,255,0.6)' }}>{step.body}</p>
               </div>
