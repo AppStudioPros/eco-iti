@@ -57,14 +57,14 @@ export default function ContactPage() {
         <div className="max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
           {contactCards.map((card, i) => {
             return (
-              <div key={card.label} data-reveal data-delay={i * 80} className="card-hover-dark rounded-xl p-6" style={{ backgroundColor: 'rgba(255,255,255,0.06)', border: '1px solid rgba(26,131,90,0.25)' }}>
-                <p className="text-xs font-bold uppercase tracking-widest mb-1" style={{ color: 'rgba(255,255,255,0.4)' }}>{card.label}</p>
+              <div key={card.label} data-reveal data-delay={i * 80} className="card-hover rounded-xl p-6 bg-white" style={{ border: '1px solid #D0E4F4' }}>
+                <p className="text-xs font-bold uppercase tracking-widest mb-1" style={{ color: '#1663AF' }}>{card.label}</p>
                 {card.href ? (
-                  <a href={card.href} className="text-sm font-semibold text-white block mb-0.5 hover:text-eco-bright transition-colors">{card.value}</a>
+                  <a href={card.href} className="text-sm font-semibold block mb-0.5 transition-colors" style={{ color: '#1A2535' }}>{card.value}</a>
                 ) : (
-                  <p className="text-sm font-semibold text-white mb-0.5">{card.value}</p>
+                  <p className="text-sm font-semibold mb-0.5" style={{ color: '#1A2535' }}>{card.value}</p>
                 )}
-                <p className="text-xs" style={{ color: 'rgba(255,255,255,0.5)' }}>{card.sub}</p>
+                <p className="text-xs" style={{ color: '#4A5E72' }}>{card.sub}</p>
               </div>
             )
           })}
