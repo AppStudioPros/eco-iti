@@ -141,8 +141,7 @@ export default function HomePage() {
           <div className="flex flex-col gap-5">
             {whyEco.map((item, i) => (
               <div key={item.title} data-reveal data-delay={i * 100} className="card-hover rounded-xl p-6 bg-white" style={{ border: '1px solid #C8EAD8' }}>
-                <div className="w-2 h-2 rounded-full mb-3" style={{ backgroundColor: '#1A835A' }} />
-                <h4 className="font-bold text-sm mb-2" style={{ color: '#1A2535' }}>{item.title}</h4>
+                <h4 className="font-bold text-sm mb-2" style={{ color: '#0B2240' }}>{item.title}</h4>
                 <p className="text-sm leading-relaxed" style={{ color: '#4A5E72' }}>{item.body}</p>
               </div>
             ))}
