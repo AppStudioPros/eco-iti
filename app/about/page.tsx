@@ -156,7 +156,7 @@ export default function AboutPage() {
                 className="card-hover rounded-xl overflow-hidden"
                 style={{ border: '1px solid rgba(26,131,90,0.15)' }}
               >
-                <div className="img-hover-zoom h-56 overflow-hidden">
+                <div className="img-hover-zoom h-72 overflow-hidden">
                   <img
                     src={member.photo}
                     alt={member.name}
