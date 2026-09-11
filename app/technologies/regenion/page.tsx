@@ -48,12 +48,20 @@ export default function RegenionPage() {
         <img src="/images/hero-regenion.jpg" alt="" className="w-full h-auto block" />
         <div className="absolute inset-0 flex items-center px-8 md:px-16" style={{ paddingTop: '80px' }}>
           <div className="w-full max-w-[38%]">
-            <h1 data-reveal="fade" className="text-3xl md:text-4xl font-bold text-white mb-4 leading-snug">
-              Waste into Commercially Viable By-Products.
+            <h1 data-reveal="fade" className="text-3xl md:text-5xl font-bold text-white mb-4 leading-snug">
+              Waste into <span style={{ color: '#22C47A' }}>Commercially Viable By-Products.</span>
             </h1>
-            <p data-reveal="fade" data-delay="120" className="text-base leading-relaxed" style={{ color: 'rgba(255,255,255,0.8)' }}>
+            <p data-reveal="fade" data-delay="120" className="text-base leading-relaxed mb-8" style={{ color: 'rgba(255,255,255,0.8)' }}>
               ECO Regenion converts landfill-bound waste into energy and valuable materials using chemical-free technology.
             </p>
+            <div data-reveal="fade" data-delay="240" className="flex flex-col sm:flex-row gap-3">
+              <Link href="/contact" className="btn-eco inline-flex items-center gap-2 uppercase tracking-widest text-xs font-semibold px-7 py-3 rounded" style={{ backgroundColor: '#1A835A', color: '#fff' }}>
+                Request Information <ArrowRight size={13} />
+              </Link>
+              <Link href="/technologies/h2o-recover" className="btn-eco inline-flex items-center gap-2 uppercase tracking-widest text-xs font-semibold px-7 py-3 rounded" style={{ backgroundColor: 'transparent', color: '#fff', border: '2px solid rgba(255,255,255,0.3)' }}>
+                View H2O Recover
+              </Link>
+            </div>
           </div>
         </div>
       </section>

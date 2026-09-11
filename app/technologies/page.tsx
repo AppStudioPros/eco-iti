@@ -14,10 +14,10 @@ export default function TechnologiesPage() {
         <img src="/images/hero-technologies.jpg" alt="" className="w-full h-auto block" />
         <div className="absolute inset-0 flex items-center px-8 md:px-16" style={{ paddingTop: '80px' }}>
           <div className="w-full max-w-[38%]">
-            <h1 data-reveal="fade" className="text-3xl md:text-4xl font-bold text-white mb-4 leading-snug">
-              Two Platforms. One Mission.
+            <h1 data-reveal="fade" className="text-3xl md:text-5xl font-bold text-white mb-4 leading-snug">
+              Two Platforms. <span style={{ color: '#22C47A' }}>One Mission.</span>
             </h1>
-            <p data-reveal="fade" data-delay="120" className="text-base leading-relaxed" style={{ color: 'rgba(255,255,255,0.8)' }}>
+            <p data-reveal="fade" data-delay="120" className="text-base leading-relaxed mb-8" style={{ color: 'rgba(255,255,255,0.8)' }}>
               ECO's proprietary cleantech platforms address two of the world's most pressing challenges: waste and water.
             </p>
           </div>

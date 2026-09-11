@@ -41,10 +41,10 @@ export default function AboutPage() {
         <img src="/images/hero-about.jpg" alt="" className="w-full h-auto block" />
         <div className="absolute inset-0 flex items-center px-8 md:px-16" style={{ paddingTop: '80px' }}>
           <div className="w-full max-w-[38%]">
-            <h1 data-reveal="fade" className="text-3xl md:text-4xl font-bold text-white mb-4 leading-snug">
-              Cleantech Built on Purpose.
+            <h1 data-reveal="fade" className="text-3xl md:text-5xl font-bold text-white mb-4 leading-snug">
+              Cleantech <span style={{ color: '#22C47A' }}>Built on Purpose.</span>
             </h1>
-            <p data-reveal="fade" data-delay="120" className="text-base leading-relaxed" style={{ color: 'rgba(255,255,255,0.8)' }}>
+            <p data-reveal="fade" data-delay="120" className="text-base leading-relaxed mb-8" style={{ color: 'rgba(255,255,255,0.8)' }}>
               ECO Integrated Technologies was built around a simple belief: environmental stewardship and commercial viability work together.
             </p>
           </div>
