@@ -50,6 +50,7 @@ export default function RegenionPage() {
         style={{
           backgroundImage: 'url("/images/hero-regenion.jpg")',
           backgroundSize: '100%',
+          backgroundRepeat: 'no-repeat',
           backgroundPosition: 'center 50%',
           backgroundColor: '#0A1A10',
         }}

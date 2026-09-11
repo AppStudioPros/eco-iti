@@ -16,6 +16,7 @@ export default function TechnologiesPage() {
         style={{
           backgroundImage: 'url("/images/hero-technologies.jpg")',
           backgroundSize: '100%',
+          backgroundRepeat: 'no-repeat',
           backgroundPosition: 'center 45%',
           backgroundColor: '#0B2240',
         }}

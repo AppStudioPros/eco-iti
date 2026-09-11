@@ -50,6 +50,7 @@ export default function HomePage() {
         style={{
           backgroundImage: 'url("/images/hero-home.jpg")',
           backgroundSize: '100%',
+          backgroundRepeat: 'no-repeat',
           backgroundPosition: 'center 40%',
           backgroundColor: '#0B2240',
         }}

@@ -41,6 +41,7 @@ export default function ContactPage() {
         style={{
           backgroundImage: 'url("/images/hero-contact.jpg")',
           backgroundSize: '100%',
+          backgroundRepeat: 'no-repeat',
           backgroundPosition: 'center 50%',
           backgroundColor: '#0B1A2E',
         }}>

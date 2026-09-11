@@ -50,6 +50,7 @@ export default function H2ORecoverPage() {
         style={{
           backgroundImage: 'url("/images/hero-h2o.jpg")',
           backgroundSize: '100%',
+          backgroundRepeat: 'no-repeat',
           backgroundPosition: 'center 50%',
           backgroundColor: '#0B2240',
         }}>

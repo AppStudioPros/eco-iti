@@ -43,6 +43,7 @@ export default function AboutPage() {
         style={{
           backgroundImage: 'url("/images/hero-about.jpg")',
           backgroundSize: '100%',
+          backgroundRepeat: 'no-repeat',
           backgroundPosition: 'center 40%',
           backgroundColor: '#0B2240',
         }}
