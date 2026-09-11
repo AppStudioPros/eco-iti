@@ -65,10 +65,10 @@ export default function H2ORecoverPage() {
             CLAW Technology is a proprietary water-recovery platform converting contaminated oilfield produced water and wellhead CO₂ into reusable water, critical mineral carbonates, and commercially valuable industrial products, while targeting true zero-liquid-discharge performance.
           </p>
           <div data-reveal="fade" data-delay="260" className="flex flex-col sm:flex-row gap-4">
-            <Link href="/contact" className="btn-eco inline-flex items-center gap-2 justify-center uppercase tracking-widest text-sm font-semibold px-10 py-4 rounded" style={{ backgroundColor: '#1663AF', color: '#fff' }}>
+            <Link href="/contact" className="btn-eco inline-flex items-center gap-2 uppercase tracking-widest text-sm font-semibold px-10 py-4 rounded" style={{ backgroundColor: '#1663AF', color: '#fff' }}>
               Request Information <ArrowRight size={15} />
             </Link>
-            <Link href="/technologies/regenion" className="btn-eco inline-flex items-center gap-2 justify-center uppercase tracking-widest text-sm font-semibold px-10 py-4 rounded" style={{ backgroundColor: 'transparent', color: '#fff', border: '2px solid rgba(255,255,255,0.25)' }}>
+            <Link href="/technologies/regenion" className="btn-eco inline-flex items-center gap-2 uppercase tracking-widest text-sm font-semibold px-10 py-4 rounded" style={{ backgroundColor: 'transparent', color: '#fff', border: '2px solid rgba(255,255,255,0.25)' }}>
               View Regenion
             </Link>
           </div>

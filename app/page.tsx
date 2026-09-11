@@ -67,10 +67,10 @@ export default function HomePage() {
           </p>
           <div data-reveal="fade" data-delay="320" className="flex flex-col sm:flex-row gap-4">
             {/* Blue bg hero → green buttons */}
-            <Link href="/technologies" className="btn-eco inline-flex items-center justify-center gap-2 uppercase tracking-widest text-sm font-semibold px-10 py-4 rounded" style={{ backgroundColor: '#1A835A', color: '#fff' }}>
+            <Link href="/technologies" className="btn-eco inline-flex items-center gap-2 uppercase tracking-widest text-sm font-semibold px-10 py-4 rounded" style={{ backgroundColor: '#1A835A', color: '#fff' }}>
               Our Technologies <ArrowRight size={16} />
             </Link>
-            <Link href="/contact" className="btn-eco inline-flex items-center justify-center gap-2 uppercase tracking-widest text-sm font-semibold px-10 py-4 rounded" style={{ backgroundColor: 'transparent', color: '#fff', border: '2px solid rgba(255,255,255,0.3)' }}>
+            <Link href="/contact" className="btn-eco inline-flex items-center gap-2 uppercase tracking-widest text-sm font-semibold px-10 py-4 rounded" style={{ backgroundColor: 'transparent', color: '#fff', border: '2px solid rgba(255,255,255,0.3)' }}>
               Get In Touch
             </Link>
           </div>

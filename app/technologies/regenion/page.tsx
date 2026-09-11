@@ -64,10 +64,10 @@ export default function RegenionPage() {
             ECO Regenion™ integrates ECO&apos;s environmental technologies to bring greater profitability while providing more efficient and sustainable operations, directly addressing landfill, energy, and water quality concerns.
           </p>
           <div data-reveal="fade" data-delay="260" className="flex flex-col sm:flex-row gap-4">
-            <Link href="/contact" className="btn-eco inline-flex items-center gap-2 justify-center uppercase tracking-widest text-sm font-semibold px-10 py-4 rounded" style={{ backgroundColor: '#1A835A', color: '#fff' }}>
+            <Link href="/contact" className="btn-eco inline-flex items-center gap-2 uppercase tracking-widest text-sm font-semibold px-10 py-4 rounded" style={{ backgroundColor: '#1A835A', color: '#fff' }}>
               Request Information <ArrowRight size={15} />
             </Link>
-            <Link href="/technologies/h2o-recover" className="btn-eco inline-flex items-center gap-2 justify-center uppercase tracking-widest text-sm font-semibold px-10 py-4 rounded" style={{ backgroundColor: 'transparent', color: '#fff', border: '2px solid rgba(255,255,255,0.25)' }}>
+            <Link href="/technologies/h2o-recover" className="btn-eco inline-flex items-center gap-2 uppercase tracking-widest text-sm font-semibold px-10 py-4 rounded" style={{ backgroundColor: 'transparent', color: '#fff', border: '2px solid rgba(255,255,255,0.25)' }}>
               View H2O Recover
             </Link>
           </div>
