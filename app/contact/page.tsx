@@ -36,20 +36,15 @@ export default function ContactPage() {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 
-      {/* ── Hero ── */}
-      <section className="relative min-h-[40vh] flex items-center px-8 md:px-16 pt-20 pb-16"
-        style={{
-          backgroundImage: 'url("/images/hero-contact.jpg")',
-          backgroundSize: '100%',
-          backgroundRepeat: 'no-repeat',
-          backgroundPosition: 'center 50%',
-          backgroundColor: '#0B1A2E',
-        }}>
-        <div className="w-full">
-          <h1 data-reveal="fade" className="text-4xl md:text-6xl font-bold text-white mb-4">Get In Touch</h1>
-          <p data-reveal="fade" data-delay="150" className="text-lg max-w-xl leading-relaxed" style={{ color: 'rgba(255,255,255,0.7)' }}>
-          Ready to learn more about our solutions? Have a project to discuss? Fill out the form below or reach out directly.
-          </p>
+      <section className="relative w-full">
+        <img src="/images/hero-contact.jpg" alt="" className="w-full h-auto block" />
+        <div className="absolute inset-0 flex items-center px-8 md:px-16" style={{ paddingTop: '80px' }}>
+          <div className="w-full">
+            <h1 data-reveal="fade" className="text-4xl md:text-6xl font-bold text-white mb-4">Get In Touch</h1>
+            <p data-reveal="fade" data-delay="150" className="text-lg max-w-xl leading-relaxed" style={{ color: 'rgba(255,255,255,0.75)' }}>
+              Ready to learn more about our solutions? Have a project to discuss? Fill out the form below or reach out directly.
+            </p>
+          </div>
         </div>
       </section>
 

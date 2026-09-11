@@ -45,30 +45,28 @@ export default function H2ORecoverPage() {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 
-      {/* ── Hero ── */}
-      <section className="relative min-h-[45vh] flex items-center px-8 md:px-16 pt-20 pb-16"
-        style={{
-          backgroundImage: 'url("/images/hero-h2o.jpg")',
-          backgroundSize: '100%',
-          backgroundRepeat: 'no-repeat',
-          backgroundPosition: 'center 50%',
-          backgroundColor: '#0B2240',
-        }}>
-        <div className="max-w-5xl mx-auto">
-          <h1 data-reveal="fade" className="text-4xl md:text-6xl font-bold text-white mb-6">
-            Converting Contaminated Water<br />
-            <span style={{ color: '#3B9FE0' }}>into Valuable Resources</span>
-          </h1>
-          <p data-reveal="fade" data-delay="150" className="text-lg max-w-2xl leading-relaxed mb-10" style={{ color: 'rgba(255,255,255,0.7)' }}>
-            CLAW Technology is a proprietary water-recovery platform converting contaminated oilfield produced water and wellhead CO₂ into reusable water, critical mineral carbonates, and commercially valuable industrial products, while targeting true zero-liquid-discharge performance.
-          </p>
-          <div data-reveal="fade" data-delay="260" className="flex flex-col sm:flex-row gap-4">
-            <Link href="/contact" className="btn-eco inline-flex items-center gap-2 uppercase tracking-widest text-sm font-semibold px-10 py-4 rounded" style={{ backgroundColor: '#1663AF', color: '#fff' }}>
-              Request Information <ArrowRight size={15} />
-            </Link>
-            <Link href="/technologies/regenion" className="btn-eco inline-flex items-center gap-2 uppercase tracking-widest text-sm font-semibold px-10 py-4 rounded" style={{ backgroundColor: 'transparent', color: '#fff', border: '2px solid rgba(255,255,255,0.25)' }}>
-              View Regenion
-            </Link>
+      <section className="relative w-full">
+        <img src="/images/hero-h2o.jpg" alt="" className="w-full h-auto block" />
+        <div className="absolute inset-0 flex items-center px-8 md:px-16" style={{ paddingTop: '80px' }}>
+          <div className="w-full">
+            <p data-reveal="fade" className="text-xs font-bold uppercase tracking-widest mb-6" style={{ color: '#3B9FE0' }}>
+              CLAW Water Recovery Technology
+            </p>
+            <h1 data-reveal="fade" data-delay="80" className="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight">
+              Converting Contaminated Water<br />
+              <span style={{ color: '#3B9FE0' }}>into Valuable Resources</span>
+            </h1>
+            <p data-reveal="fade" data-delay="160" className="text-lg max-w-2xl leading-relaxed mb-10" style={{ color: 'rgba(255,255,255,0.75)' }}>
+              CLAW Technology transforms oilfield produced water and wellhead CO₂ into reusable water, critical mineral carbonates, and industrial by-products.
+            </p>
+            <div data-reveal="fade" data-delay="260" className="flex flex-col sm:flex-row gap-4">
+              <Link href="/contact" className="btn-eco inline-flex items-center gap-2 uppercase tracking-widest text-sm font-semibold px-10 py-4 rounded" style={{ backgroundColor: '#1663AF', color: '#fff' }}>
+                Request Information <ArrowRight size={15} />
+              </Link>
+              <Link href="/technologies/regenion" className="btn-eco inline-flex items-center gap-2 uppercase tracking-widest text-sm font-semibold px-10 py-4 rounded" style={{ backgroundColor: 'transparent', color: '#fff', border: '2px solid rgba(255,255,255,0.25)' }}>
+                View Regenion
+              </Link>
+            </div>
           </div>
         </div>
       </section>

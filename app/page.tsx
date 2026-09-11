@@ -44,36 +44,28 @@ export default function HomePage() {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 
-      {/* ── Hero — dark navy, green accents ── */}
-      <section
-        className="relative min-h-[80vh] flex items-center px-8 md:px-16 pt-20"
-        style={{
-          backgroundImage: 'url("/images/hero-home.jpg")',
-          backgroundSize: '100%',
-          backgroundRepeat: 'no-repeat',
-          backgroundPosition: 'center 40%',
-          backgroundColor: '#0B2240',
-        }}
-      >
-        <div className="relative w-full">
-          <p data-reveal="fade" className="text-xs font-bold uppercase tracking-widest mb-8" style={{ color: '#22C47A' }}>
-            Cleantech for the Future
-          </p>
-          <h1 data-reveal="fade" data-delay="100" className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
-            Sustainable Innovations<br />
-            <span style={{ color: '#22C47A' }}>Built to Last</span>
-          </h1>
-          <p data-reveal="fade" data-delay="200" className="text-lg md:text-xl max-w-2xl mb-10 leading-relaxed" style={{ color: 'rgba(255,255,255,0.75)' }}>
-            ECO Integrated Technologies protects water environments without using chemicals, across commercial, industrial, and oil and gas operations.
-          </p>
-          <div data-reveal="fade" data-delay="320" className="flex flex-col sm:flex-row gap-4">
-            {/* Blue bg hero → green buttons */}
-            <Link href="/technologies" className="btn-eco inline-flex items-center gap-2 uppercase tracking-widest text-sm font-semibold px-10 py-4 rounded" style={{ backgroundColor: '#1A835A', color: '#fff' }}>
-              Our Technologies <ArrowRight size={16} />
-            </Link>
-            <Link href="/contact" className="btn-eco inline-flex items-center gap-2 uppercase tracking-widest text-sm font-semibold px-10 py-4 rounded" style={{ backgroundColor: 'transparent', color: '#fff', border: '2px solid rgba(255,255,255,0.3)' }}>
-              Get In Touch
-            </Link>
+      <section className="relative w-full">
+        <img src="/images/hero-home.jpg" alt="" className="w-full h-auto block" />
+        <div className="absolute inset-0 flex items-center px-8 md:px-16" style={{ paddingTop: '80px' }}>
+          <div className="w-full">
+            <p data-reveal="fade" className="text-xs font-bold uppercase tracking-widest mb-6" style={{ color: '#22C47A' }}>
+              Cleantech for the Future
+            </p>
+            <h1 data-reveal="fade" data-delay="100" className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
+              Sustainable Innovations<br />
+              <span style={{ color: '#22C47A' }}>Built to Last</span>
+            </h1>
+            <p data-reveal="fade" data-delay="200" className="text-lg md:text-xl max-w-2xl mb-10 leading-relaxed" style={{ color: 'rgba(255,255,255,0.75)' }}>
+              ECO Integrated Technologies protects water environments without using chemicals, across commercial, industrial, and oil and gas operations.
+            </p>
+            <div data-reveal="fade" data-delay="320" className="flex flex-col sm:flex-row gap-4">
+              <Link href="/technologies" className="btn-eco inline-flex items-center gap-2 uppercase tracking-widest text-sm font-semibold px-10 py-4 rounded" style={{ backgroundColor: '#1A835A', color: '#fff' }}>
+                Our Technologies <ArrowRight size={16} />
+              </Link>
+              <Link href="/contact" className="btn-eco inline-flex items-center gap-2 uppercase tracking-widest text-sm font-semibold px-10 py-4 rounded" style={{ backgroundColor: 'transparent', color: '#fff', border: '2px solid rgba(255,255,255,0.3)' }}>
+                Get In Touch
+              </Link>
+            </div>
           </div>
         </div>
       </section>

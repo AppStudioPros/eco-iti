@@ -37,36 +37,20 @@ const values = [
 export default function AboutPage() {
   return (
     <>
-      {/* ── Hero ── */}
-      <section
-        className="relative min-h-[45vh] flex items-center px-8 md:px-16 pt-20 pb-16"
-        style={{
-          backgroundImage: 'url("/images/hero-about.jpg")',
-          backgroundSize: '100%',
-          backgroundRepeat: 'no-repeat',
-          backgroundPosition: 'center 40%',
-          backgroundColor: '#0B2240',
-        }}
-      >
-        <div className="w-full">
-        <p data-reveal="fade" className="text-xs font-bold uppercase tracking-widest mb-4" style={{ color: '#22C47A' }}>
-          Our Story
-        </p>
-        <h1
-          data-reveal="fade"
-          data-delay="80"
-          className="text-4xl md:text-6xl font-bold text-white mb-6"
-        >
-          Cleantech Built on Purpose
-        </h1>
-        <p
-          data-reveal="fade"
-          data-delay="160"
-          className="text-lg max-w-2xl leading-relaxed"
-          style={{ color: 'rgba(255,255,255,0.7)' }}
-        >
-          ECO Integrated Technologies exists because environmental stewardship and commercial viability are not opposites, they are the same goal, pursued with the right technology.
-          </p>
+      <section className="relative w-full">
+        <img src="/images/hero-about.jpg" alt="" className="w-full h-auto block" />
+        <div className="absolute inset-0 flex items-center px-8 md:px-16" style={{ paddingTop: '80px' }}>
+          <div className="w-full">
+            <p data-reveal="fade" className="text-xs font-bold uppercase tracking-widest mb-4" style={{ color: '#22C47A' }}>
+              Our Story
+            </p>
+            <h1 data-reveal="fade" data-delay="80" className="text-4xl md:text-6xl font-bold text-white mb-6">
+              Cleantech Built on Purpose
+            </h1>
+            <p data-reveal="fade" data-delay="160" className="text-lg max-w-2xl leading-relaxed" style={{ color: 'rgba(255,255,255,0.75)' }}>
+              ECO Integrated Technologies exists because environmental stewardship and commercial viability work together when you have the right technology.
+            </p>
+          </div>
         </div>
       </section>
 
