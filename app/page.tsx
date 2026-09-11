@@ -34,9 +34,9 @@ const stats = [
 ]
 
 const whyEco = [
-  { title: 'No Chemicals Required', body: 'Our technologies operate without chemical additives — protecting communities, waterways, and ecosystems.' },
+  { title: 'No Chemicals Required', body: 'Our technologies operate without chemical additives, protecting communities, waterways, and ecosystems.' },
   { title: 'Environmental Stewardship', body: 'We help industry and communities meet environmental stewardship needs through sustainable, scalable operations.' },
-  { title: 'Profitability Meets Sustainability', body: 'ECO solutions reduce operational costs while generating commercially valuable by-products — ESG in action.' },
+  { title: 'Profitability Meets Sustainability', body: 'ECO solutions reduce operational costs while generating commercially valuable by-products. ESG in action.' },
 ]
 
 export default function HomePage() {
@@ -44,24 +44,23 @@ export default function HomePage() {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 
-      {/* ── Hero ── */}
-      {/* NOTE: This image should eventually move to the H2O Recover page — Kelsi 2026-09-08 */}
+      {/* ── Hero — dark navy ── */}
       <section
-        className="relative min-h-[75vh] flex items-center px-8 md:px-16 pt-20"
+        className="relative min-h-[80vh] flex items-center px-8 md:px-16 pt-20"
         style={{
-          backgroundImage: 'linear-gradient(rgba(10,26,20,0.52), rgba(10,26,20,0.52)), url("/images/hero-home.jpg")',
-          backgroundSize: '140%',
+          backgroundImage: 'linear-gradient(rgba(11,34,64,0.72), rgba(11,34,64,0.72)), url("/images/hero-home.jpg")',
+          backgroundSize: 'cover',
           backgroundPosition: 'center 40%',
-          backgroundColor: '#0A1A14',
+          backgroundColor: '#0B2240',
         }}
       >
-        <div className="relative w-full text-left">
+        <div className="relative w-full max-w-7xl mx-auto">
           <div
             data-reveal="fade"
             className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-widest mb-8"
-            style={{ backgroundColor: 'rgba(26,131,90,0.15)', border: '1px solid rgba(26,131,90,0.3)', color: '#22C47A' }}
+            style={{ backgroundColor: 'rgba(26,131,90,0.18)', border: '1px solid rgba(26,131,90,0.35)', color: '#22C47A' }}
           >
-            <span className="w-1.5 h-1.5 rounded-full bg-eco-bright animate-pulse inline-block" />
+            <span className="w-1.5 h-1.5 rounded-full bg-[#22C47A] animate-pulse inline-block" />
             Cleantech for the Future
           </div>
           <h1
@@ -76,11 +75,11 @@ export default function HomePage() {
             data-reveal="fade"
             data-delay="200"
             className="text-lg md:text-xl max-w-2xl mb-10 leading-relaxed"
-            style={{ color: 'rgba(255,255,255,0.7)' }}
+            style={{ color: 'rgba(255,255,255,0.75)' }}
           >
-            ECO Integrated Technologies impacts the health and safety of water environments without the use of chemicals — in commercial, industrial, and oil & gas settings.
+            ECO Integrated Technologies impacts the health and safety of water environments without the use of chemicals — in commercial, industrial, and oil &amp; gas settings.
           </p>
-          <div data-reveal="fade" data-delay="320" className="flex flex-col sm:flex-row gap-4 justify-start">
+          <div data-reveal="fade" data-delay="320" className="flex flex-col sm:flex-row gap-4">
             <Link
               href="/technologies"
               className="btn-eco inline-flex items-center justify-center gap-2 uppercase tracking-widest text-sm font-semibold px-10 py-4 rounded"
@@ -99,74 +98,78 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ── Stats Bar ── */}
-      <section className="bg-white py-14 px-6">
-        <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-0 md:divide-x" style={{ borderColor: '#e8f0eb' }}>
+      {/* ── Stats Bar — white ── */}
+      <section className="bg-white py-14 px-6 border-b" style={{ borderColor: '#E4EDF5' }}>
+        <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-0 md:divide-x" style={{ borderColor: '#E4EDF5' }}>
           {stats.map((s, i) => (
             <div key={s.label} data-reveal data-delay={i * 100} className="text-center px-8">
-              <p className="text-xs font-bold uppercase tracking-widest mb-2" style={{ color: '#1A835A' }}>{s.label}</p>
-              <p className="text-xl font-bold mb-1" style={{ color: '#0A1A14' }}>{s.value}</p>
-              <p className="text-xs leading-relaxed" style={{ color: '#5A8070' }}>{s.sub}</p>
+              <p className="text-xs font-bold uppercase tracking-widest mb-2" style={{ color: '#1663AF' }}>{s.label}</p>
+              <p className="text-xl font-bold mb-1" style={{ color: '#1A2535' }}>{s.value}</p>
+              <p className="text-xs leading-relaxed" style={{ color: '#4A5E72' }}>{s.sub}</p>
             </div>
           ))}
         </div>
       </section>
 
-      {/* ── Two Technology Cards ── */}
-      <section style={{ backgroundColor: '#F3F7F5' }} className="py-16 md:py-24 px-6">
+      {/* ── Two Technology Cards — light blue-gray bg, white cards ── */}
+      <section style={{ backgroundColor: '#F4F8FC' }} className="py-16 md:py-24 px-6">
         <div className="max-w-6xl mx-auto">
-          <h2 data-reveal="fade" className="text-3xl md:text-5xl font-bold text-center mb-4" style={{ color: '#0A1A14' }}>
+          <h2 data-reveal="fade" className="text-3xl md:text-5xl font-bold text-center mb-4" style={{ color: '#1A2535' }}>
             Our Technology Platforms
           </h2>
-          <p data-reveal="fade" data-delay="100" className="text-center max-w-2xl mx-auto mb-12 leading-relaxed" style={{ color: '#5A8070' }}>
-            Two proprietary technology platforms addressing the world&apos;s most pressing environmental challenges — waste and water.
+          <p data-reveal="fade" data-delay="100" className="text-center max-w-2xl mx-auto mb-12 leading-relaxed" style={{ color: '#4A5E72' }}>
+            Two proprietary technology platforms addressing the world&apos;s most pressing environmental challenges: waste and water.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <Link href="/technologies/regenion" data-reveal data-delay="0" className="group card-hover block rounded-2xl overflow-hidden" style={{ backgroundColor: '#0A1A14', border: '1px solid rgba(26,131,90,0.3)' }}>
-              <div className="p-1 rounded-t-2xl" style={{ background: 'linear-gradient(90deg, #1A835A, #22C47A)' }} />
+
+            {/* Regenion — green accent */}
+            <Link href="/technologies/regenion" data-reveal data-delay="0" className="group card-hover block rounded-2xl overflow-hidden bg-white" style={{ boxShadow: '0 2px 16px rgba(11,34,64,0.08)', border: '1px solid #E0EBF5' }}>
+              <div className="h-1.5 w-full rounded-t-2xl" style={{ background: 'linear-gradient(90deg, #1A835A, #22C47A)' }} />
               <div className="p-8">
                 <div className="mb-6">
-                  <img src="/images/logos/ECO_REGENION_logo-1.png" alt="ECO Regenion" className="h-12 w-auto object-contain" />
+                  <img src="/images/logos/ECO_REGENION_logo-1.png" alt="ECO Regenion" className="h-10 w-auto object-contain" />
                 </div>
-                <h3 className="text-2xl font-bold text-white mb-3">Waste-to-Energy Solutions</h3>
-                <p className="text-sm leading-relaxed mb-6" style={{ color: 'rgba(255,255,255,0.6)' }}>
-                  ECO Regenion™ converts waste into commercially viable by-products while cleaning up the environment. Integrating ECO&apos;s technologies for greater profitability and sustainable operations.
+                <h3 className="text-2xl font-bold mb-3" style={{ color: '#1A2535' }}>Waste-to-Energy Solutions</h3>
+                <p className="text-sm leading-relaxed mb-6" style={{ color: '#4A5E72' }}>
+                  ECO Regenion™ converts waste into commercially viable by-products while cleaning up the environment — integrating ECO technologies for greater profitability and sustainable operations.
                 </p>
-                <div className="flex items-center gap-2 text-sm font-semibold" style={{ color: '#22C47A' }}>
+                <div className="flex items-center gap-2 text-sm font-semibold" style={{ color: '#1A835A' }}>
                   Explore Regenion <ArrowRight size={16} className="transition-transform group-hover:translate-x-1" />
                 </div>
               </div>
             </Link>
 
-            <Link href="/technologies/h2o-recover" data-reveal data-delay="100" className="group card-hover block rounded-2xl overflow-hidden" style={{ backgroundColor: '#0A1A14', border: '1px solid rgba(22,99,175,0.4)' }}>
-              <div className="p-1 rounded-t-2xl" style={{ background: 'linear-gradient(90deg, #1663AF, #22B8C4)' }} />
+            {/* H2O Recover — blue accent */}
+            <Link href="/technologies/h2o-recover" data-reveal data-delay="100" className="group card-hover block rounded-2xl overflow-hidden bg-white" style={{ boxShadow: '0 2px 16px rgba(11,34,64,0.08)', border: '1px solid #E0EBF5' }}>
+              <div className="h-1.5 w-full rounded-t-2xl" style={{ background: 'linear-gradient(90deg, #1663AF, #17718A)' }} />
               <div className="p-8">
                 <div className="mb-6">
-                  <img src="/images/logos/ECO-H2O-SYSTEMS_logo.png" alt="ECO H2O Recover" className="h-12 w-auto object-contain" />
+                  <img src="/images/logos/ECO-H2O-SYSTEMS_logo.png" alt="ECO H2O Recover" className="h-10 w-auto object-contain" />
                 </div>
-                <h3 className="text-2xl font-bold text-white mb-3">CLAW Water Recovery</h3>
-                <p className="text-sm leading-relaxed mb-6" style={{ color: 'rgba(255,255,255,0.6)' }}>
+                <h3 className="text-2xl font-bold mb-3" style={{ color: '#1A2535' }}>CLAW Water Recovery</h3>
+                <p className="text-sm leading-relaxed mb-6" style={{ color: '#4A5E72' }}>
                   A proprietary water-recovery platform transforming contaminated oilfield produced water and wellhead CO₂ into reusable water, critical mineral carbonates, and industrial products.
                 </p>
-                <div className="flex items-center gap-2 text-sm font-semibold" style={{ color: '#22B8C4' }}>
+                <div className="flex items-center gap-2 text-sm font-semibold" style={{ color: '#1663AF' }}>
                   Explore H2O Recover <ArrowRight size={16} className="transition-transform group-hover:translate-x-1" />
                 </div>
               </div>
             </Link>
+
           </div>
         </div>
       </section>
 
-      {/* ── Why ECO ── */}
+      {/* ── Why ECO — white bg ── */}
       <section className="bg-white py-16 md:py-24 px-6">
         <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
           <div>
-            <p data-reveal="fade" className="text-xs font-bold uppercase tracking-widest mb-3" style={{ color: '#1A835A' }}>Our Mission</p>
-            <h2 data-reveal="fade" data-delay="80" className="text-3xl md:text-5xl font-bold mb-6" style={{ color: '#0A1A14' }}>
+            <p data-reveal="fade" className="text-xs font-bold uppercase tracking-widest mb-3" style={{ color: '#1663AF' }}>Our Mission</p>
+            <h2 data-reveal="fade" data-delay="80" className="text-3xl md:text-5xl font-bold mb-6" style={{ color: '#1A2535' }}>
               The Compelling Cleantech Offering for the Future
             </h2>
-            <p data-reveal="fade" data-delay="160" className="leading-relaxed mb-8" style={{ color: '#5A8070' }}>
-              As custodians of the environment, our mission is to ensure industry and communities meet their environmental stewardship needs — without compromise. We deliver solutions that are non-toxic, chemical-free, and commercially viable.
+            <p data-reveal="fade" data-delay="160" className="leading-relaxed mb-8" style={{ color: '#4A5E72' }}>
+              As custodians of the environment, our mission is to ensure industry and communities meet their environmental stewardship needs without compromise. We deliver solutions that are non-toxic, chemical-free, and commercially viable.
             </p>
             <Link data-reveal="fade" data-delay="240" href="/about" className="btn-eco inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-widest px-8 py-3 rounded" style={{ backgroundColor: '#1A835A', color: '#fff' }}>
               About ECO <ArrowRight size={15} />
@@ -179,18 +182,19 @@ export default function HomePage() {
                 data-reveal
                 data-delay={i * 100}
                 className="card-hover rounded-xl p-6"
-                style={{ backgroundColor: '#F3F7F5', border: '1px solid rgba(26,131,90,0.15)' }}
+                style={{ backgroundColor: '#F4F8FC', border: '1px solid #D8E8F4' }}
               >
-                <h4 className="font-bold text-sm mb-2" style={{ color: '#0A1A14' }}>{item.title}</h4>
-                <p className="text-sm leading-relaxed" style={{ color: '#5A8070' }}>{item.body}</p>
+                <div className="w-2 h-2 rounded-full mb-3" style={{ backgroundColor: i === 1 ? '#1663AF' : '#1A835A' }} />
+                <h4 className="font-bold text-sm mb-2" style={{ color: '#1A2535' }}>{item.title}</h4>
+                <p className="text-sm leading-relaxed" style={{ color: '#4A5E72' }}>{item.body}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* ── CTA ── */}
-      <section className="py-24 md:py-36 px-6 text-center" style={{ background: 'linear-gradient(135deg, #0A1A14 0%, #0D2E1E 100%)' }}>
+      {/* ── CTA — dark navy ── */}
+      <section className="py-24 md:py-36 px-6 text-center" style={{ background: 'linear-gradient(135deg, #0B2240 0%, #0D2E4A 100%)' }}>
         <h2 data-reveal="fade" className="text-3xl md:text-5xl lg:text-6xl font-bold text-white mb-5">
           Ready to Explore Our Solutions?
         </h2>

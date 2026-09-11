@@ -46,7 +46,7 @@ export default function H2ORecoverPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 
       {/* ── Hero ── */}
-      <section className="pt-32 pb-20 px-6" style={{ background: 'linear-gradient(135deg, #0A1A14 0%, #0D2618 50%, #091828 100%)' }}>
+      <section className="pt-32 pb-20 px-6" style={{ background: 'linear-gradient(135deg, #0B2240 0%, #0D2618 50%, #091828 100%)' }}>
         <div className="max-w-5xl mx-auto">
           <div className="mb-8">
             <img src="/images/logos/ECO-H2O-SYSTEMS_logo.png" alt="ECO H2O Recover" className="h-16 w-auto object-contain" />
@@ -71,17 +71,17 @@ export default function H2ORecoverPage() {
 
       {/* ── Feature Bar ── */}
       <section className="bg-white py-8 px-6" style={{ borderBottom: '1px solid rgba(22,99,175,0.15)' }}>
-        <p className="text-center text-lg font-semibold" style={{ color: '#0A1A14' }}>
+        <p className="text-center text-lg font-semibold" style={{ color: '#0B2240' }}>
           Oilfield Water Recovery &nbsp;•&nbsp; Zero Liquid Discharge &nbsp;•&nbsp; Critical Mineral Extraction &nbsp;•&nbsp; CO₂ Utilization
         </p>
       </section>
 
       {/* ── The Problem ── */}
-      <section style={{ backgroundColor: '#F3F7F5' }} className="py-16 md:py-24 px-6">
+      <section style={{ backgroundColor: '#F4F8FC' }} className="py-16 md:py-24 px-6">
         <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
           <div>
             <p data-reveal="fade" className="text-xs font-bold uppercase tracking-widest mb-3" style={{ color: '#1663AF' }}>The Challenge</p>
-            <h2 data-reveal="fade" data-delay="80" className="text-3xl md:text-4xl font-bold mb-6" style={{ color: '#0A1A14' }}>
+            <h2 data-reveal="fade" data-delay="80" className="text-3xl md:text-4xl font-bold mb-6" style={{ color: '#0B2240' }}>
               Produced Water Is the Oil and Gas Industry&apos;s Largest Waste Problem
             </h2>
             <div className="prose-eco">
@@ -102,7 +102,7 @@ export default function H2ORecoverPage() {
                 <div className="shrink-0 mt-0.5 w-5 h-5 rounded-full flex items-center justify-center" style={{ backgroundColor: '#1663AF' }}>
                   <Check size={11} color="#fff" strokeWidth={3} />
                 </div>
-                <p className="text-sm leading-relaxed" style={{ color: '#3a5a4a' }}>{point}</p>
+                <p className="text-sm leading-relaxed" style={{ color: '#4A5E72' }}>{point}</p>
               </div>
             ))}
           </div>
@@ -112,16 +112,16 @@ export default function H2ORecoverPage() {
       {/* ── What CLAW Produces ── */}
       <section className="bg-white py-16 md:py-24 px-6">
         <div className="max-w-5xl mx-auto">
-          <h2 data-reveal="fade" className="text-3xl md:text-5xl font-bold text-center mb-4" style={{ color: '#0A1A14' }}>What CLAW Produces</h2>
-          <p data-reveal="fade" data-delay="80" className="text-center max-w-2xl mx-auto mb-12 leading-relaxed" style={{ color: '#5A8070' }}>
+          <h2 data-reveal="fade" className="text-3xl md:text-5xl font-bold text-center mb-4" style={{ color: '#0B2240' }}>What CLAW Produces</h2>
+          <p data-reveal="fade" data-delay="80" className="text-center max-w-2xl mx-auto mb-12 leading-relaxed" style={{ color: '#4A5E72' }}>
             Every input becomes an output. CLAW converts contaminated water and CO₂ into four categories of value.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
             {outputs.map((o, i) => {
               return (
-                <div key={o.title} data-reveal data-delay={i * 80} className="card-hover rounded-xl p-7" style={{ backgroundColor: '#F3F7F5', border: '1px solid rgba(22,99,175,0.15)' }}>
-                  <h3 className="font-bold text-lg mb-2" style={{ color: '#0A1A14' }}>{o.title}</h3>
-                  <p className="text-sm leading-relaxed" style={{ color: '#5A8070' }}>{o.body}</p>
+                <div key={o.title} data-reveal data-delay={i * 80} className="card-hover rounded-xl p-7" style={{ backgroundColor: '#F4F8FC', border: '1px solid rgba(22,99,175,0.15)' }}>
+                  <h3 className="font-bold text-lg mb-2" style={{ color: '#0B2240' }}>{o.title}</h3>
+                  <p className="text-sm leading-relaxed" style={{ color: '#4A5E72' }}>{o.body}</p>
                 </div>
               )
             })}
@@ -130,7 +130,7 @@ export default function H2ORecoverPage() {
       </section>
 
       {/* ── How It Works ── */}
-      <section style={{ backgroundColor: '#0A1A14' }} className="py-16 md:py-24 px-6">
+      <section style={{ backgroundColor: '#0B2240' }} className="py-16 md:py-24 px-6">
         <div className="max-w-5xl mx-auto">
           <h2 data-reveal="fade" className="text-3xl md:text-5xl font-bold text-center text-white mb-12">The CLAW Process</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
@@ -160,9 +160,9 @@ export default function H2ORecoverPage() {
       </section>
 
       {/* ── FAQ ── */}
-      <section style={{ backgroundColor: '#F3F7F5' }} className="py-16 md:py-20 px-6">
+      <section style={{ backgroundColor: '#F4F8FC' }} className="py-16 md:py-20 px-6">
         <div className="max-w-3xl mx-auto">
-          <h2 data-reveal="fade" className="text-3xl md:text-4xl font-bold text-center mb-10" style={{ color: '#0A1A14' }}>Frequently Asked Questions</h2>
+          <h2 data-reveal="fade" className="text-3xl md:text-4xl font-bold text-center mb-10" style={{ color: '#0B2240' }}>Frequently Asked Questions</h2>
           <FaqAccordion items={faqs} />
         </div>
       </section>
@@ -170,16 +170,16 @@ export default function H2ORecoverPage() {
       {/* ── Nav + CTA ── */}
       <section className="bg-white py-10 px-6">
         <div className="max-w-5xl mx-auto flex justify-between items-center">
-          <Link href="/technologies/regenion" className="inline-flex items-center gap-2 font-semibold text-sm" style={{ color: '#0A1A14' }}>
+          <Link href="/technologies/regenion" className="inline-flex items-center gap-2 font-semibold text-sm" style={{ color: '#0B2240' }}>
             <ArrowLeft size={16} /> ECO Regenion™
           </Link>
-          <Link href="/technologies" className="inline-flex items-center gap-2 font-semibold text-sm" style={{ color: '#0A1A14' }}>
+          <Link href="/technologies" className="inline-flex items-center gap-2 font-semibold text-sm" style={{ color: '#0B2240' }}>
             All Technologies <ArrowRight size={16} />
           </Link>
         </div>
       </section>
 
-      <section className="py-24 px-6 text-center" style={{ background: 'linear-gradient(135deg, #0A1A14 0%, #091828 100%)' }}>
+      <section className="py-24 px-6 text-center" style={{ background: 'linear-gradient(135deg, #0B2240 0%, #091828 100%)' }}>
         <h2 data-reveal="fade" className="text-3xl md:text-5xl font-bold text-white mb-4">Turn Produced Water into an Asset</h2>
         <p data-reveal="fade" data-delay="120" className="max-w-xl mx-auto mb-8 leading-relaxed" style={{ color: 'rgba(255,255,255,0.7)' }}>
           Contact ECO to discuss how CLAW Technology can address your produced water management challenges — and generate commercial value in the process.

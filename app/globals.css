@@ -1,14 +1,21 @@
 @import "tailwindcss";
 
 @theme {
-  --color-eco-dark:    #0A1A14;
-  --color-eco-forest:  #0D2E1E;
+  /* Dark sections: navy (nav, footer, CTA) */
+  --color-eco-dark:    #0B2240;
+  --color-eco-navy:    #0B2240;
+  /* Light section backgrounds */
+  --color-eco-light:   #F4F8FC;
+  --color-eco-cream:   #F0F6FF;
+  /* Brand green — kept for accents, CTAs, links */
   --color-eco-green:   #1A835A;
+  --color-eco-bright:  #22C47A;
+  /* Brand blue — secondary accent */
   --color-eco-blue:    #1663AF;
   --color-eco-teal:    #17718A;
-  --color-eco-bright:  #22C47A;
-  --color-eco-cream:   #F3F7F5;
-  --color-eco-muted:   #5A8070;
+  /* Text */
+  --color-eco-text:    #1A2535;
+  --color-eco-muted:   #4A5E72;
   --font-display: var(--font-sora), system-ui, sans-serif;
   --font-sans:    var(--font-inter), system-ui, sans-serif;
 }
@@ -19,7 +26,7 @@ html {
 
 body {
   font-family: var(--font-sans);
-  color: #0A1A14;
+  color: #1A2535;
   background: #ffffff;
   -webkit-font-smoothing: antialiased;
 }
@@ -34,7 +41,7 @@ h1, h2, h3, h4, h5 {
 .prose-eco p {
   font-size: 1rem;
   line-height: 1.8;
-  color: #3a5a4a;
+  color: #4A5E72;
   margin-bottom: 1.1rem;
 }
 

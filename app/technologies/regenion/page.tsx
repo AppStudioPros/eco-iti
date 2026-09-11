@@ -45,7 +45,7 @@ export default function RegenionPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 
       {/* ── Hero ── */}
-      <section className="pt-32 pb-20 px-6" style={{ background: 'linear-gradient(135deg, #0A1A14 0%, #0D2E1E 100%)' }}>
+      <section className="pt-32 pb-20 px-6" style={{ background: 'linear-gradient(135deg, #0B2240 0%, #0B2240 100%)' }}>
         <div className="max-w-5xl mx-auto">
           <div className="mb-8">
             <img src="/images/logos/ECO_REGENION_logo-1.png" alt="ECO Regenion" className="h-16 w-auto object-contain" />
@@ -70,17 +70,17 @@ export default function RegenionPage() {
 
       {/* ── Feature Bar ── */}
       <section className="bg-white py-8 px-6" style={{ borderBottom: '1px solid rgba(26,131,90,0.15)' }}>
-        <p className="text-center text-lg font-semibold" style={{ color: '#0A1A14' }}>
+        <p className="text-center text-lg font-semibold" style={{ color: '#0B2240' }}>
           Waste-to-Energy &nbsp;•&nbsp; Chemical-Free &nbsp;•&nbsp; Commercially Viable By-Products &nbsp;•&nbsp; ESG Compliant
         </p>
       </section>
 
       {/* ── The Problem ── */}
-      <section style={{ backgroundColor: '#F3F7F5' }} className="py-16 md:py-24 px-6">
+      <section style={{ backgroundColor: '#F4F8FC' }} className="py-16 md:py-24 px-6">
         <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
           <div>
             <p data-reveal="fade" className="text-xs font-bold uppercase tracking-widest mb-3" style={{ color: '#1A835A' }}>The Challenge</p>
-            <h2 data-reveal="fade" data-delay="80" className="text-3xl md:text-4xl font-bold mb-6" style={{ color: '#0A1A14' }}>
+            <h2 data-reveal="fade" data-delay="80" className="text-3xl md:text-4xl font-bold mb-6" style={{ color: '#0B2240' }}>
               Waste Is a Resource That Industry Has Been Throwing Away
             </h2>
             <div className="prose-eco">
@@ -94,7 +94,7 @@ export default function RegenionPage() {
                 <div className="shrink-0 mt-0.5 w-5 h-5 rounded-full flex items-center justify-center" style={{ backgroundColor: '#1A835A' }}>
                   <Check size={11} color="#fff" strokeWidth={3} />
                 </div>
-                <p className="text-sm leading-relaxed" style={{ color: '#3a5a4a' }}>{point}</p>
+                <p className="text-sm leading-relaxed" style={{ color: '#4A5E72' }}>{point}</p>
               </div>
             ))}
           </div>
@@ -104,13 +104,13 @@ export default function RegenionPage() {
       {/* ── How It Works ── */}
       <section className="bg-white py-16 md:py-24 px-6">
         <div className="max-w-5xl mx-auto">
-          <h2 data-reveal="fade" className="text-3xl md:text-5xl font-bold text-center mb-12" style={{ color: '#0A1A14' }}>How Regenion Works</h2>
+          <h2 data-reveal="fade" className="text-3xl md:text-5xl font-bold text-center mb-12" style={{ color: '#0B2240' }}>How Regenion Works</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
             {howItWorks.map((step, i) => (
-              <div key={step.step} data-reveal data-delay={i * 80} className="card-hover rounded-xl p-7" style={{ backgroundColor: '#F3F7F5', border: '1px solid rgba(26,131,90,0.15)' }}>
+              <div key={step.step} data-reveal data-delay={i * 80} className="card-hover rounded-xl p-7" style={{ backgroundColor: '#F4F8FC', border: '1px solid rgba(26,131,90,0.15)' }}>
                 <p className="text-4xl font-bold mb-3" style={{ color: 'rgba(26,131,90,0.2)' }}>{step.step}</p>
-                <h3 className="font-bold text-lg mb-2" style={{ color: '#0A1A14' }}>{step.title}</h3>
-                <p className="text-sm leading-relaxed" style={{ color: '#5A8070' }}>{step.body}</p>
+                <h3 className="font-bold text-lg mb-2" style={{ color: '#0B2240' }}>{step.title}</h3>
+                <p className="text-sm leading-relaxed" style={{ color: '#4A5E72' }}>{step.body}</p>
               </div>
             ))}
           </div>
@@ -118,7 +118,7 @@ export default function RegenionPage() {
       </section>
 
       {/* ── Benefits ── */}
-      <section style={{ backgroundColor: '#0A1A14' }} className="py-16 md:py-24 px-6">
+      <section style={{ backgroundColor: '#0B2240' }} className="py-16 md:py-24 px-6">
         <div className="max-w-5xl mx-auto">
           <h2 data-reveal="fade" className="text-3xl md:text-5xl font-bold text-center text-white mb-12">Why ECO Regenion™</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
@@ -137,9 +137,9 @@ export default function RegenionPage() {
       </section>
 
       {/* ── FAQ ── */}
-      <section style={{ backgroundColor: '#F3F7F5' }} className="py-16 md:py-20 px-6">
+      <section style={{ backgroundColor: '#F4F8FC' }} className="py-16 md:py-20 px-6">
         <div className="max-w-3xl mx-auto">
-          <h2 data-reveal="fade" className="text-3xl md:text-4xl font-bold text-center mb-10" style={{ color: '#0A1A14' }}>Frequently Asked Questions</h2>
+          <h2 data-reveal="fade" className="text-3xl md:text-4xl font-bold text-center mb-10" style={{ color: '#0B2240' }}>Frequently Asked Questions</h2>
           <FaqAccordion items={faqs} />
         </div>
       </section>
@@ -147,16 +147,16 @@ export default function RegenionPage() {
       {/* ── Nav + CTA ── */}
       <section className="bg-white py-10 px-6">
         <div className="max-w-5xl mx-auto flex justify-between items-center">
-          <Link href="/technologies" className="inline-flex items-center gap-2 font-semibold text-sm" style={{ color: '#0A1A14' }}>
+          <Link href="/technologies" className="inline-flex items-center gap-2 font-semibold text-sm" style={{ color: '#0B2240' }}>
             <ArrowLeft size={16} /> All Technologies
           </Link>
-          <Link href="/technologies/h2o-recover" className="inline-flex items-center gap-2 font-semibold text-sm" style={{ color: '#0A1A14' }}>
+          <Link href="/technologies/h2o-recover" className="inline-flex items-center gap-2 font-semibold text-sm" style={{ color: '#0B2240' }}>
             ECO H2O Recover™ <ArrowRight size={16} />
           </Link>
         </div>
       </section>
 
-      <section className="py-24 px-6 text-center" style={{ background: 'linear-gradient(135deg, #0A1A14 0%, #0D2E1E 100%)' }}>
+      <section className="py-24 px-6 text-center" style={{ background: 'linear-gradient(135deg, #0B2240 0%, #0B2240 100%)' }}>
         <h2 data-reveal="fade" className="text-3xl md:text-5xl font-bold text-white mb-4">Waste Is a Resource. Let&apos;s Use It.</h2>
         <p data-reveal="fade" data-delay="120" className="max-w-xl mx-auto mb-8 leading-relaxed" style={{ color: 'rgba(255,255,255,0.7)' }}>
           Contact ECO to learn how Regenion can transform your waste management operation into a commercially viable, ESG-compliant system.

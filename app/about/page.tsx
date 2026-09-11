@@ -37,7 +37,7 @@ export default function AboutPage() {
       {/* ── Hero ── */}
       <section
         className="pt-32 pb-20 px-6 text-center"
-        style={{ background: 'linear-gradient(135deg, #0A1A14 0%, #0D2E1E 100%)' }}
+        style={{ background: 'linear-gradient(135deg, #0B2240 0%, #0B2240 100%)' }}
       >
         <p data-reveal="fade" className="text-xs font-bold uppercase tracking-widest mb-4" style={{ color: '#22C47A' }}>
           Our Story
@@ -65,7 +65,7 @@ export default function AboutPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-start">
             <div>
               <p data-reveal="fade" className="text-xs font-bold uppercase tracking-widest mb-3" style={{ color: '#1A835A' }}>Who We Are</p>
-              <h2 data-reveal="fade" data-delay="80" className="text-3xl md:text-4xl font-bold mb-6" style={{ color: '#0A1A14' }}>
+              <h2 data-reveal="fade" data-delay="80" className="text-3xl md:text-4xl font-bold mb-6" style={{ color: '#0B2240' }}>
                 Sustainable Innovations Powering Change
               </h2>
               <div className="prose-eco">
@@ -91,12 +91,12 @@ export default function AboutPage() {
                   data-reveal
                   data-delay={i * 80}
                   className="card-hover rounded-xl p-6 flex items-center gap-6"
-                  style={{ backgroundColor: '#F3F7F5', border: '1px solid rgba(26,131,90,0.15)' }}
+                  style={{ backgroundColor: '#F4F8FC', border: '1px solid rgba(26,131,90,0.15)' }}
                 >
                   <span className="text-4xl font-bold shrink-0" style={{ color: '#1A835A' }}>{s.num}</span>
                   <div>
-                    <p className="font-bold text-sm mb-0.5" style={{ color: '#0A1A14' }}>{s.label}</p>
-                    <p className="text-xs" style={{ color: '#5A8070' }}>{s.sub}</p>
+                    <p className="font-bold text-sm mb-0.5" style={{ color: '#0B2240' }}>{s.label}</p>
+                    <p className="text-xs" style={{ color: '#4A5E72' }}>{s.sub}</p>
                   </div>
                 </div>
               ))}
@@ -106,9 +106,9 @@ export default function AboutPage() {
       </section>
 
       {/* ── Mission & Values ── */}
-      <section style={{ backgroundColor: '#F3F7F5' }} className="py-16 md:py-24 px-6">
+      <section style={{ backgroundColor: '#F4F8FC' }} className="py-16 md:py-24 px-6">
         <div className="max-w-5xl mx-auto">
-          <h2 data-reveal="fade" className="text-3xl md:text-5xl font-bold text-center mb-12" style={{ color: '#0A1A14' }}>
+          <h2 data-reveal="fade" className="text-3xl md:text-5xl font-bold text-center mb-12" style={{ color: '#0B2240' }}>
             Mission & Values
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -121,8 +121,8 @@ export default function AboutPage() {
                   className="card-hover rounded-xl p-8 bg-white"
                   style={{ border: '1px solid rgba(26,131,90,0.15)' }}
                 >
-                  <h3 className="font-bold text-lg mb-3" style={{ color: '#0A1A14' }}>{v.title}</h3>
-                  <p className="text-sm leading-relaxed" style={{ color: '#5A8070' }}>{v.body}</p>
+                  <h3 className="font-bold text-lg mb-3" style={{ color: '#0B2240' }}>{v.title}</h3>
+                  <p className="text-sm leading-relaxed" style={{ color: '#4A5E72' }}>{v.body}</p>
                 </div>
               )
             })}
@@ -134,7 +134,7 @@ export default function AboutPage() {
       <section className="bg-white py-16 md:py-24 px-6">
         <div className="max-w-5xl mx-auto">
           <p data-reveal="fade" className="text-xs font-bold uppercase tracking-widest text-center mb-3" style={{ color: '#1A835A' }}>The People Behind ECO</p>
-          <h2 data-reveal="fade" data-delay="80" className="text-3xl md:text-5xl font-bold text-center mb-12" style={{ color: '#0A1A14' }}>
+          <h2 data-reveal="fade" data-delay="80" className="text-3xl md:text-5xl font-bold text-center mb-12" style={{ color: '#0B2240' }}>
             Executive Leadership
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -149,28 +149,28 @@ export default function AboutPage() {
                 {/* Photo placeholder — styled with gradient */}
                 <div
                   className="h-48 flex items-center justify-center"
-                  style={{ background: 'linear-gradient(135deg, #0D2E1E, #1A835A)' }}
+                  style={{ background: 'linear-gradient(135deg, #0B2240, #1A835A)' }}
                 >
                   <div className="w-20 h-20 rounded-full flex items-center justify-center text-2xl font-bold text-white" style={{ backgroundColor: 'rgba(255,255,255,0.15)' }}>
                     {member.name.split(' ').map(n => n[0]).join('')}
                   </div>
                 </div>
                 <div className="p-6">
-                  <h3 className="font-bold text-lg mb-1" style={{ color: '#0A1A14' }}>{member.name}</h3>
+                  <h3 className="font-bold text-lg mb-1" style={{ color: '#0B2240' }}>{member.name}</h3>
                   <p className="text-xs font-semibold uppercase tracking-widest mb-3" style={{ color: '#1A835A' }}>{member.title}</p>
-                  <p className="text-sm leading-relaxed" style={{ color: '#5A8070' }}>{member.bio}</p>
+                  <p className="text-sm leading-relaxed" style={{ color: '#4A5E72' }}>{member.bio}</p>
                 </div>
               </div>
             ))}
           </div>
-          <p data-reveal="fade" data-delay="100" className="text-center text-xs mt-8 italic" style={{ color: '#5A8070' }}>
+          <p data-reveal="fade" data-delay="100" className="text-center text-xs mt-8 italic" style={{ color: '#4A5E72' }}>
             Team headshots coming soon — contact us to connect directly with our leadership.
           </p>
         </div>
       </section>
 
       {/* ── CTA ── */}
-      <section className="py-20 px-6 text-center" style={{ background: 'linear-gradient(135deg, #0A1A14 0%, #0D2E1E 100%)' }}>
+      <section className="py-20 px-6 text-center" style={{ background: 'linear-gradient(135deg, #0B2240 0%, #0B2240 100%)' }}>
         <h2 data-reveal="fade" className="text-3xl md:text-5xl font-bold text-white mb-4">Ready to Connect?</h2>
         <p data-reveal="fade" data-delay="100" className="max-w-xl mx-auto mb-8 leading-relaxed" style={{ color: 'rgba(255,255,255,0.7)' }}>
           Whether you&apos;re exploring a partnership, looking for cleantech solutions, or interested in investor relations — we&apos;d love to hear from you.
