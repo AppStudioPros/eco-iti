@@ -132,10 +132,10 @@ export default function RegenionPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
             {benefits.map((b, i) => {
               return (
-                <div key={b.title} data-reveal data-delay={i * 80} className="flex items-start gap-4 card-hover rounded-xl p-6" style={{ backgroundColor: 'rgba(255,255,255,0.07)', border: '1px solid rgba(34,196,122,0.25)' }}>
+                <div key={b.title} data-reveal data-delay={i * 80} className="rounded-xl p-6" style={{ backgroundColor: 'rgba(255,255,255,0.07)', border: '1px solid rgba(34,196,122,0.35)' }}>
                   <div>
                     <h4 className="font-bold text-white mb-1">{b.title}</h4>
-                    <p className="text-sm leading-relaxed" style={{ color: '#4A5E72' }}>{b.body}</p>
+                    <p className="text-sm leading-relaxed" style={{ color: 'rgba(255,255,255,0.72)' }}>{b.body}</p>
                   </div>
                 </div>
               )
