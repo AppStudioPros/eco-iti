@@ -55,14 +55,13 @@ export default function HomePage() {
         }}
       >
         <div className="relative w-full max-w-7xl mx-auto">
-          <div
+          <p
             data-reveal="fade"
-            className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-widest mb-8"
-            style={{ backgroundColor: 'rgba(26,131,90,0.18)', border: '1px solid rgba(26,131,90,0.35)', color: '#22C47A' }}
+            className="text-xs font-bold uppercase tracking-widest mb-8"
+            style={{ color: '#22C47A' }}
           >
-            <span className="w-1.5 h-1.5 rounded-full bg-[#22C47A] animate-pulse inline-block" />
             Cleantech for the Future
-          </div>
+          </p>
           <h1
             data-reveal="fade"
             data-delay="100"
