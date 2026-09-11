@@ -3,6 +3,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import { useState } from 'react'
+import { usePathname } from 'next/navigation'
 import { Menu, X } from 'lucide-react'
 
 const navLinks = [
@@ -13,6 +14,19 @@ const navLinks = [
 
 export default function Navbar() {
   const [open, setOpen] = useState(false)
+  const pathname = usePathname()
+
+  const logoSrc = pathname === '/technologies/regenion'
+    ? '/images/logos/ECO_REGENION_logo-1.png'
+    : pathname === '/technologies/h2o-recover'
+    ? '/images/logos/ECO-H2O-SYSTEMS_logo.png'
+    : '/images/logos/Eco-Integrated-Technologies-Logo-retina.png'
+
+  const logoAlt = pathname === '/technologies/regenion'
+    ? 'ECO Regenion'
+    : pathname === '/technologies/h2o-recover'
+    ? 'ECO H2O Recover'
+    : 'ECO Integrated Technologies'
 
   return (
     <nav
@@ -24,8 +38,8 @@ export default function Navbar() {
         {/* Logo */}
         <Link href="/" className="flex items-center">
           <Image
-            src="/images/logos/Eco-Integrated-Technologies-Logo-retina.png"
-            alt="ECO Integrated Technologies"
+            src={logoSrc}
+            alt={logoAlt}
             width={180}
             height={39}
             priority
