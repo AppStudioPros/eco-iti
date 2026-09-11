@@ -4,7 +4,7 @@ import Image from 'next/image'
 export default function Footer() {
   return (
     <footer style={{ backgroundColor: '#ffffff', borderTop: '1px solid #E0EBF5' }}>
-      <div className="max-w-7xl mx-auto px-6 py-16 grid grid-cols-1 md:grid-cols-4 gap-10">
+      <div className="max-w-7xl mx-auto px-6 py-16 grid grid-cols-1 md:grid-cols-5 gap-10">
 
         {/* Brand */}
         <div className="md:col-span-1">
@@ -48,6 +48,25 @@ export default function Footer() {
             ].map((l) => (
               <li key={l.href}>
                 <Link href={l.href} className="text-sm transition-colors" style={{ color: '#4A5E72' }}>
+                  {l.label}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        {/* Legal */}
+        <div>
+          <h4 className="text-xs font-bold uppercase tracking-widest mb-4" style={{ color: '#1A2535' }}>Legal</h4>
+          <ul className="flex flex-col gap-2">
+            {[
+              { label: 'Privacy Policy', href: '/privacy-policy' },
+              { label: 'Terms of Use', href: '/terms-of-use' },
+              { label: 'Disclaimer', href: '/disclaimer' },
+              { label: 'Cookie Policy', href: '/cookie-policy' },
+            ].map((l) => (
+              <li key={l.href}>
+                <Link href={l.href} className="text-sm transition-colors hover:underline" style={{ color: '#4A5E72' }}>
                   {l.label}
                 </Link>
               </li>
