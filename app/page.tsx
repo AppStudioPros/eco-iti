@@ -91,7 +91,7 @@ export default function HomePage() {
       </section>
 
       {/* ── Tech Cards — blue-tinted light bg, green label → blue buttons on cards ── */}
-      <section style={{ backgroundColor: '#F4F8FC' }} className="py-16 md:py-24 px-6">
+      <section className="bg-white py-16 md:py-24 px-6" style={{ borderBottom: '1px solid #E4EDF5' }}>
         <div className="max-w-6xl mx-auto">
           <p data-reveal="fade" className="text-xs font-bold uppercase tracking-widest mb-3" style={{ color: '#1663AF' }}>What We Build</p>
           <h2 data-reveal="fade" data-delay="80" className="text-3xl md:text-5xl font-bold mb-4" style={{ color: '#1A2535' }}>Our Technology Platforms</h2>
@@ -158,7 +158,7 @@ export default function HomePage() {
       </section>
 
       {/* ── CTA — dark green bg, blue buttons (green bg = blue accents) ── */}
-      <section className="py-24 md:py-36 px-6 text-center" style={{ background: 'linear-gradient(135deg, #0D2E1E 0%, #0A1E14 100%)' }}>
+      <section className="py-24 md:py-36 px-6 text-center" style={{ background: 'linear-gradient(135deg, #0B2240 0%, #0D2E4A 100%)' }}>
         <h2 data-reveal="fade" className="text-3xl md:text-5xl lg:text-6xl font-bold text-white mb-5">
           Ready to Explore Our Solutions?
         </h2>
@@ -167,7 +167,7 @@ export default function HomePage() {
         </p>
         <div data-reveal="fade" data-delay="280" className="flex flex-col sm:flex-row gap-4 justify-center">
           {/* Green dark bg → blue buttons */}
-          <Link href="/contact" className="btn-eco inline-block uppercase tracking-widest text-sm font-semibold px-12 py-4 rounded" style={{ backgroundColor: '#1663AF', color: '#fff' }}>
+          <Link href="/contact" className="btn-eco inline-block uppercase tracking-widest text-sm font-semibold px-12 py-4 rounded" style={{ backgroundColor: '#1A835A', color: '#fff' }}>
             Contact Us
           </Link>
           <Link href="/technologies" className="btn-eco inline-block uppercase tracking-widest text-sm font-semibold px-12 py-4 rounded" style={{ backgroundColor: 'transparent', color: '#fff', border: '2px solid rgba(255,255,255,0.3)' }}>
