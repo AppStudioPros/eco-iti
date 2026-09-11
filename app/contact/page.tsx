@@ -45,7 +45,7 @@ export default function ContactPage() {
       </section>
 
       {/* ── Contact Info Cards ── */}
-      <section style={{ backgroundColor: '#0B2240' }} className="py-12 px-6">
+      <section style={{ backgroundColor: '#F4F8FC' }} className="py-12 px-6">
         <div className="max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
           {contactCards.map((card, i) => {
             return (

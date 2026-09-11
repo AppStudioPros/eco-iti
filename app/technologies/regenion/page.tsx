@@ -118,7 +118,7 @@ export default function RegenionPage() {
       </section>
 
       {/* ── Benefits ── */}
-      <section style={{ backgroundColor: '#0B2240' }} className="py-16 md:py-24 px-6">
+      <section style={{ backgroundColor: '#F4F8FC' }} className="py-16 md:py-24 px-6">
         <div className="max-w-5xl mx-auto">
           <h2 data-reveal="fade" className="text-3xl md:text-5xl font-bold text-center text-white mb-12">Why ECO Regenion™</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5">

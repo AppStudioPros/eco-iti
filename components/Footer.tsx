@@ -1,11 +1,11 @@
 import Link from 'next/link'
 import Image from 'next/image'
 
-
 export default function Footer() {
   return (
-    <footer style={{ backgroundColor: '#0B2240', borderTop: '1px solid rgba(26,131,90,0.2)' }}>
+    <footer style={{ backgroundColor: '#ffffff', borderTop: '1px solid #E0EBF5' }}>
       <div className="max-w-7xl mx-auto px-6 py-16 grid grid-cols-1 md:grid-cols-4 gap-10">
+
         {/* Brand */}
         <div className="md:col-span-1">
           <Image
@@ -16,21 +16,21 @@ export default function Footer() {
             className="object-contain h-12 w-auto mb-4"
             loading="eager"
           />
-          <p className="text-xs leading-relaxed" style={{ color: 'rgba(255,255,255,0.5)' }}>
+          <p className="text-xs leading-relaxed" style={{ color: '#4A5E72' }}>
             Sustainable innovations powering change. Chemical-free cleantech for industry and communities.
           </p>
         </div>
 
         {/* Technologies */}
         <div>
-          <h4 className="text-xs font-bold uppercase tracking-widest mb-4" style={{ color: 'rgba(255,255,255,0.4)' }}>Technologies</h4>
+          <h4 className="text-xs font-bold uppercase tracking-widest mb-4" style={{ color: '#1A2535' }}>Technologies</h4>
           <ul className="flex flex-col gap-2">
             {[
               { label: 'ECO Regenion™', href: '/technologies/regenion' },
               { label: 'ECO H2O Recover™', href: '/technologies/h2o-recover' },
             ].map((l) => (
               <li key={l.href}>
-                <Link href={l.href} className="text-sm transition-colors hover:text-white" style={{ color: 'rgba(255,255,255,0.6)' }}>
+                <Link href={l.href} className="text-sm transition-colors hover:underline" style={{ color: '#1663AF' }}>
                   {l.label}
                 </Link>
               </li>
@@ -40,14 +40,14 @@ export default function Footer() {
 
         {/* Company */}
         <div>
-          <h4 className="text-xs font-bold uppercase tracking-widest mb-4" style={{ color: 'rgba(255,255,255,0.4)' }}>Company</h4>
+          <h4 className="text-xs font-bold uppercase tracking-widest mb-4" style={{ color: '#1A2535' }}>Company</h4>
           <ul className="flex flex-col gap-2">
             {[
               { label: 'About', href: '/about' },
               { label: 'Contact', href: '/contact' },
             ].map((l) => (
               <li key={l.href}>
-                <Link href={l.href} className="text-sm transition-colors hover:text-white" style={{ color: 'rgba(255,255,255,0.6)' }}>
+                <Link href={l.href} className="text-sm transition-colors" style={{ color: '#4A5E72' }}>
                   {l.label}
                 </Link>
               </li>
@@ -57,20 +57,20 @@ export default function Footer() {
 
         {/* Contact */}
         <div>
-          <h4 className="text-xs font-bold uppercase tracking-widest mb-4" style={{ color: 'rgba(255,255,255,0.4)' }}>Contact</h4>
+          <h4 className="text-xs font-bold uppercase tracking-widest mb-4" style={{ color: '#1A2535' }}>Contact</h4>
           <ul className="flex flex-col gap-3">
-            <li className="flex items-start gap-2">
-              <span className="text-xs leading-relaxed" style={{ color: 'rgba(255,255,255,0.6)' }}>
+            <li>
+              <span className="text-xs leading-relaxed" style={{ color: '#4A5E72' }}>
                 23986 Aliso Creek Road #312<br />Laguna Niguel, CA 92677
               </span>
             </li>
-            <li className="flex items-center gap-2">
-              <a href="tel:18774770021" className="text-xs transition-colors hover:text-white" style={{ color: 'rgba(255,255,255,0.6)' }}>
+            <li>
+              <a href="tel:18774770021" className="text-xs transition-colors hover:underline" style={{ color: '#1663AF' }}>
                 1-877-477-0021
               </a>
             </li>
-            <li className="flex items-center gap-2">
-              <a href="mailto:info@ecoiti.com" className="text-xs transition-colors hover:text-white" style={{ color: 'rgba(255,255,255,0.6)' }}>
+            <li>
+              <a href="mailto:info@ecoiti.com" className="text-xs transition-colors hover:underline" style={{ color: '#1663AF' }}>
                 info@ecoiti.com
               </a>
             </li>
@@ -78,15 +78,13 @@ export default function Footer() {
         </div>
       </div>
 
-      <div
-        className="border-t px-6 py-5"
-        style={{ borderColor: 'rgba(26,131,90,0.2)' }}
-      >
+      {/* Bottom bar */}
+      <div className="border-t px-6 py-5" style={{ borderColor: '#E0EBF5', backgroundColor: '#F4F8FC' }}>
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-2">
-          <p className="text-xs" style={{ color: 'rgba(255,255,255,0.3)' }}>
+          <p className="text-xs" style={{ color: '#4A5E72' }}>
             © {new Date().getFullYear()} ECO Integrated Technologies. All rights reserved.
           </p>
-          <p className="text-xs" style={{ color: 'rgba(255,255,255,0.3)' }}>
+          <p className="text-xs" style={{ color: '#4A5E72' }}>
             Sustainable Innovations Powering Change
           </p>
         </div>
