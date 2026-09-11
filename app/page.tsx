@@ -45,12 +45,13 @@ export default function HomePage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 
       <section
-        className="relative flex items-center px-5 md:px-16 pt-24 pb-16 md:pt-36 md:pb-24"
+        className="relative flex items-center px-5 md:px-16 min-h-[520px] md:min-h-0 md:aspect-[3/1]"
         style={{
           backgroundImage: 'url("/images/hero-home.jpg")',
           backgroundSize: 'cover',
           backgroundPosition: 'center 40%',
-          minHeight: '90vh',
+          paddingTop: 'clamp(80px, 12vw, 160px)',
+          paddingBottom: 'clamp(40px, 6vw, 80px)',
         }}
       >
         <div className="absolute inset-0 md:hidden" style={{ backgroundColor: 'rgba(0,0,0,0.45)' }} />
