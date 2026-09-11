@@ -112,7 +112,7 @@ export default function AboutPage() {
                   className="card-hover rounded-xl p-8 bg-white"
                   style={{ border: '1px solid rgba(26,131,90,0.15)' }}
                 >
-                  <h3 className="font-bold text-lg mb-3" style={{ color: '#0B2240' }}>{v.title}</h3>
+                  <h3 className="font-bold text-lg mb-3" style={{ color: '#1A835A' }}>{v.title}</h3>
                   <p className="text-sm leading-relaxed" style={{ color: '#4A5E72' }}>{v.body}</p>
                 </div>
               )
