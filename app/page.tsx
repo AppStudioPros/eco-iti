@@ -86,7 +86,7 @@ export default function HomePage() {
       {/* ── Tech Cards — blue-tinted light bg, green label → blue buttons on cards ── */}
       <section className="bg-white py-16 md:py-24 px-6" style={{ borderBottom: '1px solid #E4EDF5' }}>
         <div className="max-w-6xl mx-auto">
-          <p data-reveal="fade" className="text-xs font-bold uppercase tracking-widest mb-3" style={{ color: '#1663AF' }}>What We Build</p>
+          <p data-reveal="fade" className="text-xs font-bold uppercase tracking-widest mb-3" style={{ color: '#1A835A' }}>What We Build</p>
           <h2 data-reveal="fade" data-delay="80" className="text-3xl md:text-5xl font-bold mb-4" style={{ color: '#1A2535' }}>Our Technology Platforms</h2>
           <p data-reveal="fade" data-delay="120" className="max-w-2xl mx-auto mb-12 leading-relaxed" style={{ color: '#4A5E72' }}>
             Two proprietary platforms addressing the world's most pressing environmental challenges: waste and water.
@@ -126,7 +126,7 @@ export default function HomePage() {
       <section style={{ backgroundColor: '#F3FAF6' }} className="py-16 md:py-24 px-6">
         <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
           <div>
-            <p data-reveal="fade" className="text-xs font-bold uppercase tracking-widest mb-3" style={{ color: '#1A835A' }}>Our Mission</p>
+            <p data-reveal="fade" className="text-xs font-bold uppercase tracking-widest mb-3" style={{ color: '#1663AF' }}>Our Mission</p>
             <h2 data-reveal="fade" data-delay="80" className="text-3xl md:text-5xl font-bold mb-6" style={{ color: '#1A2535' }}>
               The Compelling Cleantech Offering for the Future
             </h2>
@@ -141,7 +141,7 @@ export default function HomePage() {
           <div className="flex flex-col gap-5">
             {whyEco.map((item, i) => (
               <div key={item.title} data-reveal data-delay={i * 100} className="card-hover rounded-xl p-6 bg-white" style={{ border: '1px solid #C8EAD8' }}>
-                <h4 className="font-bold text-sm mb-2" style={{ color: '#0B2240' }}>{item.title}</h4>
+                <h4 className="font-bold text-sm mb-2" style={{ color: '#1663AF' }}>{item.title}</h4>
                 <p className="text-sm leading-relaxed" style={{ color: '#4A5E72' }}>{item.body}</p>
               </div>
             ))}
