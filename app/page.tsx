@@ -88,7 +88,7 @@ export default function HomePage() {
         <div className="max-w-6xl mx-auto">
           <p data-reveal="fade" className="text-xs font-bold uppercase tracking-widest mb-3" style={{ color: '#1663AF' }}>What We Build</p>
           <h2 data-reveal="fade" data-delay="80" className="text-3xl md:text-5xl font-bold mb-4" style={{ color: '#1A2535' }}>Our Technology Platforms</h2>
-          <p data-reveal="fade" data-delay="120" className="max-w-2xl mb-12 leading-relaxed" style={{ color: '#4A5E72' }}>
+          <p data-reveal="fade" data-delay="120" className="max-w-2xl mx-auto mb-12 leading-relaxed" style={{ color: '#4A5E72' }}>
             Two proprietary platforms addressing the world's most pressing environmental challenges: waste and water.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
