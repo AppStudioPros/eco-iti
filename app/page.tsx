@@ -53,14 +53,14 @@ export default function HomePage() {
           minHeight: '55vh',
         }}
       >
-        <div className="hero-overlay relative z-10 w-full md:max-w-[42%]">
-          <h1 data-reveal="fade" className="text-2xl sm:text-3xl md:text-5xl font-bold text-white mb-3 leading-snug">
+        <div className="hero-overlay relative z-10 w-full md:max-w-[42%] text-center md:text-left">
+          <h1 data-reveal="fade" className="text-3xl sm:text-3xl md:text-5xl font-bold text-white mb-3 leading-snug">
             Sustainable Innovations <span style={{ color: '#22C47A' }}>Built to Last.</span>
           </h1>
           <p data-reveal="fade" data-delay="120" className="text-sm md:text-base leading-relaxed mb-6" style={{ color: 'rgba(255,255,255,0.85)' }}>
             ECO Integrated Technologies protects water environments without using chemicals, across commercial, industrial, and oil and gas operations.
           </p>
-          <div data-reveal="fade" data-delay="240" className="flex flex-col sm:flex-row gap-3">
+          <div data-reveal="fade" data-delay="240" className="flex flex-wrap justify-center md:justify-start gap-3">
             <Link href="/technologies" className="btn-eco inline-flex items-center gap-2 uppercase tracking-widest text-xs font-semibold px-6 py-3 rounded" style={{ backgroundColor: '#1A835A', color: '#fff' }}>
               Our Technologies <ArrowRight size={13} />
             </Link>

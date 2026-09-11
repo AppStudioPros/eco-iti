@@ -61,7 +61,7 @@ export default function H2ORecoverPage() {
             <p data-reveal="fade" data-delay="120" className="text-base leading-relaxed mb-8" style={{ color: 'rgba(255,255,255,0.8)' }}>
               CLAW Technology turns oilfield produced water into clean water and commercially valuable by-products.
             </p>
-            <div data-reveal="fade" data-delay="240" className="flex flex-col sm:flex-row gap-3">
+            <div data-reveal="fade" data-delay="240" className="flex flex-wrap justify-center md:justify-start gap-3">
               <Link href="/contact" className="btn-eco inline-flex items-center gap-2 uppercase tracking-widest text-xs font-semibold px-7 py-3 rounded" style={{ backgroundColor: '#1663AF', color: '#fff' }}>
                 Request Information <ArrowRight size={13} />
               </Link>
