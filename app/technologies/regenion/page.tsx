@@ -44,10 +44,17 @@ export default function RegenionPage() {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 
-      <section className="relative w-full">
-        <img src="/images/hero-regenion.jpg" alt="" className="w-full h-auto block" />
-        <div className="hero-overlay absolute inset-0 flex items-center px-5 md:px-16" style={{ paddingTop: '80px' }}>
-          <div className="w-full md:max-w-[38%]">
+      <section
+        className="relative flex items-center px-5 md:px-16 pt-24 pb-12 md:pt-32 md:pb-20"
+        style={{
+          backgroundImage: 'url("/images/hero-regenion.jpg")',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center 40%',
+          minHeight: '55vh',
+        }}
+      >
+        <div className="absolute inset-0" style={{ backgroundColor: 'rgba(10,26,16,0.5)' }} />
+        <div className="hero-overlay relative z-10 md:max-w-[42%]">
             <h1 data-reveal="fade" className="text-xl sm:text-3xl md:text-5xl font-bold text-white mb-3 md:mb-4 leading-snug">
               Waste into <span style={{ color: '#22C47A' }}>Commercially Viable By-Products.</span>
             </h1>
@@ -63,7 +70,6 @@ export default function RegenionPage() {
               </Link>
             </div>
           </div>
-        </div>
       </section>
 
       {/* ── Feature Bar ── */}

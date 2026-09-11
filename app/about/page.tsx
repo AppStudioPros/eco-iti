@@ -37,10 +37,17 @@ const values = [
 export default function AboutPage() {
   return (
     <>
-      <section className="relative w-full">
-        <img src="/images/hero-about.jpg" alt="" className="w-full h-auto block" />
-        <div className="hero-overlay absolute inset-0 flex items-center px-5 md:px-16" style={{ paddingTop: '80px' }}>
-          <div className="w-full md:max-w-[38%]">
+      <section
+        className="relative flex items-center px-5 md:px-16 pt-24 pb-12 md:pt-32 md:pb-20"
+        style={{
+          backgroundImage: 'url("/images/hero-about.jpg")',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center 40%',
+          minHeight: '55vh',
+        }}
+      >
+        <div className="absolute inset-0" style={{ backgroundColor: 'rgba(8,20,38,0.45)' }} />
+        <div className="hero-overlay relative z-10 md:max-w-[42%]">
             <h1 data-reveal="fade" className="text-3xl md:text-5xl font-bold text-white mb-4 leading-snug">
               Cleantech <span style={{ color: '#22C47A' }}>Built on Purpose.</span>
             </h1>
@@ -48,7 +55,6 @@ export default function AboutPage() {
               ECO Integrated Technologies was built around a simple belief: environmental stewardship and commercial viability work together.
             </p>
           </div>
-        </div>
       </section>
 
       {/* ── Company Story ── */}

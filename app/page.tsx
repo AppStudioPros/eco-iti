@@ -44,10 +44,17 @@ export default function HomePage() {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 
-      <section className="relative w-full">
-        <img src="/images/hero-home.jpg" alt="" className="w-full h-auto block" />
-        <div className="hero-overlay absolute inset-0 flex items-center px-5 md:px-16" style={{ paddingTop: '80px' }}>
-          <div className="w-full">
+      <section
+        className="relative flex items-center px-5 md:px-16 pt-24 pb-16 md:pt-36 md:pb-24"
+        style={{
+          backgroundImage: 'url("/images/hero-home.jpg")',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center 40%',
+          minHeight: '90vh',
+        }}
+      >
+        <div className="absolute inset-0 md:hidden" style={{ backgroundColor: 'rgba(0,0,0,0.45)' }} />
+        <div className="hero-overlay relative z-10">
             <p data-reveal="fade" className="text-xs font-bold uppercase tracking-widest mb-6" style={{ color: '#22C47A' }}>
               Cleantech for the Future
             </p>
@@ -67,7 +74,6 @@ export default function HomePage() {
               </Link>
             </div>
           </div>
-        </div>
       </section>
 
       {/* ── Stats Bar — white, blue labels ── */}
