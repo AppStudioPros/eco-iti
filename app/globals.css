@@ -133,20 +133,25 @@ h1, h2, h3, h4, h5 {
 }
 
 /* ── Animated gradient bars ── */
-@keyframes gradientShift {
+@keyframes gradientShiftGreen {
+  0%   { background-position: 0% 50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+@keyframes gradientShiftBlue {
   0%   { background-position: 0% 50%; }
   50%  { background-position: 100% 50%; }
   100% { background-position: 0% 50%; }
 }
 
 .gradient-bar-green {
-  background: linear-gradient(90deg, #1A835A, #22C47A, #17718A, #1A835A);
-  background-size: 300% 100%;
-  animation: gradientShift 5s ease-in-out infinite;
+  background: linear-gradient(90deg, #1A835A, #22C47A, #1A835A, #22C47A, #1A835A);
+  background-size: 400% 100%;
+  animation: gradientShiftGreen 6s ease-in-out infinite;
 }
 
 .gradient-bar-blue {
-  background: linear-gradient(90deg, #1663AF, #17718A, #22C47A, #1663AF);
-  background-size: 300% 100%;
-  animation: gradientShift 5s ease-in-out infinite;
+  background: linear-gradient(90deg, #1663AF, #3B9FE0, #1663AF, #3B9FE0, #1663AF);
+  background-size: 400% 100%;
+  animation: gradientShiftBlue 6s ease-in-out infinite;
 }
