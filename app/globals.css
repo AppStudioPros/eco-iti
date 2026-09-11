@@ -170,3 +170,16 @@ main section {
 form, input, textarea, select, label {
   text-align: left;
 }
+
+/* ── Legal pages — left-aligned override ── */
+.legal-page,
+.legal-page section,
+.legal-page p,
+.legal-page h1,
+.legal-page h2,
+.legal-page h3,
+.legal-page h4,
+.legal-page li,
+.legal-page ul {
+  text-align: left !important;
+}
