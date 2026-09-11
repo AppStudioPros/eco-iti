@@ -48,13 +48,13 @@ export default function HomePage() {
       <section
         className="relative min-h-[80vh] flex items-center px-8 md:px-16 pt-20"
         style={{
-          backgroundImage: 'linear-gradient(rgba(11,34,64,0.72), rgba(11,34,64,0.72)), url("/images/hero-home.jpg")',
-          backgroundSize: 'cover',
+          backgroundImage: 'url("/images/hero-home.jpg")',
+          backgroundSize: '100%',
           backgroundPosition: 'center 40%',
           backgroundColor: '#0B2240',
         }}
       >
-        <div className="relative w-full max-w-7xl mx-auto">
+        <div className="relative w-full">
           <p data-reveal="fade" className="text-xs font-bold uppercase tracking-widest mb-8" style={{ color: '#22C47A' }}>
             Cleantech for the Future
           </p>

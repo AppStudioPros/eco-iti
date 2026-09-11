@@ -39,12 +39,12 @@ export default function ContactPage() {
       {/* ── Hero ── */}
       <section className="relative min-h-[40vh] flex items-center px-8 md:px-16 pt-20 pb-16"
         style={{
-          backgroundImage: 'linear-gradient(rgba(11,27,46,0.65), rgba(11,27,46,0.65)), url("/images/hero-contact.jpg")',
-          backgroundSize: 'cover',
+          backgroundImage: 'url("/images/hero-contact.jpg")',
+          backgroundSize: '100%',
           backgroundPosition: 'center 50%',
           backgroundColor: '#0B1A2E',
         }}>
-        <div className="max-w-7xl w-full">
+        <div className="w-full">
           <h1 data-reveal="fade" className="text-4xl md:text-6xl font-bold text-white mb-4">Get In Touch</h1>
           <p data-reveal="fade" data-delay="150" className="text-lg max-w-xl leading-relaxed" style={{ color: 'rgba(255,255,255,0.7)' }}>
           Ready to learn more about our solutions? Have a project to discuss? Fill out the form below or reach out directly.

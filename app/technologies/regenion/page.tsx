@@ -48,13 +48,13 @@ export default function RegenionPage() {
       <section
         className="relative min-h-[60vh] flex items-center px-8 md:px-16 pt-24 pb-16"
         style={{
-          backgroundImage: 'linear-gradient(rgba(13,46,30,0.65), rgba(13,46,30,0.65)), url("/images/hero-regenion.jpg")',
-          backgroundSize: 'cover',
+          backgroundImage: 'url("/images/hero-regenion.jpg")',
+          backgroundSize: '100%',
           backgroundPosition: 'center 50%',
           backgroundColor: '#0A1A10',
         }}
       >
-        <div className="max-w-7xl w-full">
+        <div className="w-full">
           <p data-reveal="fade" className="text-xs font-bold uppercase tracking-widest mb-6" style={{ color: '#22C47A' }}>
             Waste-to-Energy Technology
           </p>

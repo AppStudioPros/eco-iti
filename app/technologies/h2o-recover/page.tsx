@@ -48,8 +48,8 @@ export default function H2ORecoverPage() {
       {/* ── Hero ── */}
       <section className="relative min-h-[45vh] flex items-center px-8 md:px-16 pt-20 pb-16"
         style={{
-          backgroundImage: 'linear-gradient(rgba(11,34,64,0.72), rgba(11,34,64,0.72)), url("/images/hero-h2o.jpg")',
-          backgroundSize: 'cover',
+          backgroundImage: 'url("/images/hero-h2o.jpg")',
+          backgroundSize: '100%',
           backgroundPosition: 'center 50%',
           backgroundColor: '#0B2240',
         }}>

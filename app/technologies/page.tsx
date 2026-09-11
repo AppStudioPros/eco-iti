@@ -14,13 +14,13 @@ export default function TechnologiesPage() {
       <section
         className="relative min-h-[45vh] flex items-center px-8 md:px-16 pt-20 pb-16"
         style={{
-          backgroundImage: 'linear-gradient(rgba(8,20,38,0.65), rgba(8,20,38,0.65)), url("/images/hero-technologies.jpg")',
-          backgroundSize: 'cover',
+          backgroundImage: 'url("/images/hero-technologies.jpg")',
+          backgroundSize: '100%',
           backgroundPosition: 'center 45%',
           backgroundColor: '#0B2240',
         }}
       >
-        <div className="max-w-7xl w-full">
+        <div className="w-full">
           <p data-reveal="fade" className="text-xs font-bold uppercase tracking-widest mb-4" style={{ color: '#22C47A' }}>
             What We Build
           </p>

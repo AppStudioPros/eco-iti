@@ -41,13 +41,13 @@ export default function AboutPage() {
       <section
         className="relative min-h-[45vh] flex items-center px-8 md:px-16 pt-20 pb-16"
         style={{
-          backgroundImage: 'linear-gradient(rgba(11,34,64,0.55), rgba(11,34,64,0.55)), url("/images/hero-about.jpg")',
-          backgroundSize: 'cover',
+          backgroundImage: 'url("/images/hero-about.jpg")',
+          backgroundSize: '100%',
           backgroundPosition: 'center 40%',
           backgroundColor: '#0B2240',
         }}
       >
-        <div className="max-w-7xl w-full">
+        <div className="w-full">
         <p data-reveal="fade" className="text-xs font-bold uppercase tracking-widest mb-4" style={{ color: '#22C47A' }}>
           Our Story
         </p>
