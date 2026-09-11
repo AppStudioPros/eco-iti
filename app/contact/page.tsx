@@ -38,8 +38,8 @@ export default function ContactPage() {
 
       <section className="relative w-full">
         <img src="/images/hero-contact.jpg" alt="" className="w-full h-auto block" />
-        <div className="hero-overlay absolute inset-0 flex items-center px-8 md:px-16" style={{ paddingTop: '80px' }}>
-          <div className="w-full max-w-[38%]">
+        <div className="hero-overlay absolute inset-0 flex items-center px-5 md:px-16" style={{ paddingTop: '80px' }}>
+          <div className="w-full md:max-w-[38%]">
             <h1 data-reveal="fade" className="text-3xl md:text-5xl font-bold text-white mb-4 leading-snug">
               Get <span style={{ color: '#1663AF' }}>In Touch.</span>
             </h1>
@@ -52,7 +52,7 @@ export default function ContactPage() {
 
       {/* ── Contact Info Cards ── */}
       <section style={{ backgroundColor: '#F4F8FC' }} className="py-12 px-6">
-        <div className="max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
+        <div className="max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-2 gap-4">
           {contactCards.map((card, i) => {
             return (
               <div key={card.label} data-reveal data-delay={i * 80} className="card-hover rounded-xl p-8 bg-white" style={{ border: '1px solid #D0E4F4' }}>

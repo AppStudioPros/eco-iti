@@ -46,9 +46,9 @@ export default function RegenionPage() {
 
       <section className="relative w-full">
         <img src="/images/hero-regenion.jpg" alt="" className="w-full h-auto block" />
-        <div className="hero-overlay absolute inset-0 flex items-center px-8 md:px-16" style={{ paddingTop: '80px' }}>
-          <div className="w-full max-w-[38%]">
-            <h1 data-reveal="fade" className="text-3xl md:text-5xl font-bold text-white mb-4 leading-snug">
+        <div className="hero-overlay absolute inset-0 flex items-center px-5 md:px-16" style={{ paddingTop: '80px' }}>
+          <div className="w-full md:max-w-[38%]">
+            <h1 data-reveal="fade" className="text-xl sm:text-3xl md:text-5xl font-bold text-white mb-3 md:mb-4 leading-snug">
               Waste into <span style={{ color: '#22C47A' }}>Commercially Viable By-Products.</span>
             </h1>
             <p data-reveal="fade" data-delay="120" className="text-base leading-relaxed mb-8" style={{ color: 'rgba(255,255,255,0.8)' }}>
@@ -103,7 +103,7 @@ export default function RegenionPage() {
       <section className="bg-white py-16 md:py-24 px-6">
         <div className="max-w-5xl mx-auto">
           <h2 data-reveal="fade" className="text-3xl md:text-5xl font-bold text-center mb-12" style={{ color: '#0D2E1E' }}>How Regenion Works</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {howItWorks.map((step, i) => (
               <div key={step.step} data-reveal data-delay={i * 80} className="card-hover rounded-xl p-7" style={{ backgroundColor: '#ffffff', border: '1px solid rgba(26,131,90,0.25)' }}>
                 <h3 className="font-bold text-lg mb-2" style={{ color: '#1A835A' }}>{step.title}</h3>
@@ -118,7 +118,7 @@ export default function RegenionPage() {
       <section style={{ backgroundColor: '#0D2E1E' }} className="py-16 md:py-24 px-6">
         <div className="max-w-5xl mx-auto">
           <h2 data-reveal="fade" className="text-3xl md:text-5xl font-bold text-center text-white mb-12">Why ECO Regenion™</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {benefits.map((b, i) => {
               return (
                 <div key={b.title} data-reveal data-delay={i * 80} className="card-hover-dark rounded-xl p-6" style={{ backgroundColor: 'rgba(255,255,255,0.07)', border: '1px solid rgba(34,196,122,0.35)' }}>

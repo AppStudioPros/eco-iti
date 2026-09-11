@@ -12,8 +12,8 @@ export default function TechnologiesPage() {
     <>
       <section className="relative w-full">
         <img src="/images/hero-technologies.jpg" alt="" className="w-full h-auto block" />
-        <div className="hero-overlay absolute inset-0 flex items-center px-8 md:px-16" style={{ paddingTop: '80px' }}>
-          <div className="w-full max-w-[38%]">
+        <div className="hero-overlay absolute inset-0 flex items-center px-5 md:px-16" style={{ paddingTop: '80px' }}>
+          <div className="w-full md:max-w-[38%]">
             <h1 data-reveal="fade" className="text-3xl md:text-5xl font-bold text-white mb-4 leading-snug">
               Two Platforms. <span style={{ color: '#22C47A' }}>One Mission.</span>
             </h1>
@@ -26,7 +26,7 @@ export default function TechnologiesPage() {
 
       {/* ── Regenion ── */}
       <section className="py-20 md:py-28 px-6" style={{ backgroundColor: '#F3FAF6' }}>
-        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 items-start md:items-center">
           <div>
             <p data-reveal="fade" className="text-xs font-bold uppercase tracking-widest mb-3" style={{ color: '#1A835A' }}>Waste-to-Energy</p>
             <h2 data-reveal="fade" data-delay="80" className="text-3xl md:text-4xl font-bold mb-6" style={{ color: '#0B2240' }}>
@@ -43,10 +43,10 @@ export default function TechnologiesPage() {
             </Link>
           </div>
           <div>
-            <div className="mb-8 flex justify-center">
+            <div className="mb-6 md:mb-8 flex justify-center">
               <img src="/images/logos/ECO_REGENION_logo-1.png" alt="ECO Regenion" className="h-20 w-auto object-contain" />
             </div>
-            <div className="grid grid-cols-2 gap-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {[
               { label: 'Waste-to-Energy', desc: 'Converts landfill waste into commercially viable energy and by-products' },
               { label: 'ESG Compliance', desc: 'Directly supports environmental, social, and governance goals' },
@@ -67,7 +67,7 @@ export default function TechnologiesPage() {
 
       {/* ── H2O Recover ── */}
       <section style={{ backgroundColor: '#F4F8FC' }} className="py-20 md:py-28 px-6">
-        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 items-start md:items-center">
           <div className="md:order-2">
             <p data-reveal="fade" className="text-xs font-bold uppercase tracking-widest mb-3" style={{ color: '#1663AF' }}>CLAW Technology</p>
             <h2 data-reveal="fade" data-delay="80" className="text-3xl md:text-4xl font-bold mb-6" style={{ color: '#0B2240' }}>
@@ -84,10 +84,10 @@ export default function TechnologiesPage() {
             </Link>
           </div>
           <div className="md:order-1">
-            <div className="mb-8 flex justify-center">
+            <div className="mb-6 md:mb-8 flex justify-center">
               <img src="/images/logos/ECO-H2O-SYSTEMS_logo.png" alt="ECO H2O Recover" className="h-20 w-auto object-contain" />
             </div>
-            <div className="grid grid-cols-2 gap-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {[
               { label: 'Reusable Water', desc: 'Converts contaminated produced water into clean, reusable water' },
               { label: 'Mineral Carbonates', desc: 'Extracts critical mineral carbonates as commercially valuable by-products' },

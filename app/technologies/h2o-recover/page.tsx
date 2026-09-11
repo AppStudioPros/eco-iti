@@ -47,9 +47,9 @@ export default function H2ORecoverPage() {
 
       <section className="relative w-full">
         <img src="/images/hero-h2o.jpg" alt="" className="w-full h-auto block" />
-        <div className="hero-overlay absolute inset-0 flex items-center px-8 md:px-16" style={{ paddingTop: '80px' }}>
-          <div className="w-full max-w-[38%]">
-            <h1 data-reveal="fade" className="text-3xl md:text-5xl font-bold text-white mb-4 leading-snug">
+        <div className="hero-overlay absolute inset-0 flex items-center px-5 md:px-16" style={{ paddingTop: '80px' }}>
+          <div className="w-full md:max-w-[38%]">
+            <h1 data-reveal="fade" className="text-xl sm:text-3xl md:text-5xl font-bold text-white mb-3 md:mb-4 leading-snug">
               Contaminated Water into <span style={{ color: '#3B9FE0' }}>a Valuable Resource.</span>
             </h1>
             <p data-reveal="fade" data-delay="120" className="text-base leading-relaxed mb-8" style={{ color: 'rgba(255,255,255,0.8)' }}>
@@ -114,7 +114,7 @@ export default function H2ORecoverPage() {
           <p data-reveal="fade" data-delay="80" className="text-center max-w-2xl mx-auto mb-12 leading-relaxed" style={{ color: '#4A5E72' }}>
             Every input becomes an output. CLAW converts contaminated water and CO₂ into four categories of value.
           </p>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {outputs.map((o, i) => {
               return (
                 <div key={o.title} data-reveal data-delay={i * 80} className="card-hover rounded-xl p-7" style={{ backgroundColor: '#F4F8FC', border: '1px solid rgba(22,99,175,0.15)' }}>
@@ -131,7 +131,7 @@ export default function H2ORecoverPage() {
       <section style={{ backgroundColor: '#0B2240' }} className="py-16 md:py-24 px-6">
         <div className="max-w-5xl mx-auto">
           <h2 data-reveal="fade" className="text-3xl md:text-5xl font-bold text-white mb-12 text-center">The CLAW Process</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {process.map((step, i) => (
               <div key={step.step} data-reveal data-delay={i * 80} className="card-hover-dark rounded-xl p-7" style={{ backgroundColor: 'rgba(255,255,255,0.06)', border: '1px solid rgba(59,159,224,0.3)' }}>
                 <h3 className="font-bold text-lg mb-2" style={{ color: '#3B9FE0' }}>{step.title}</h3>

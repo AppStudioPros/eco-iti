@@ -46,12 +46,12 @@ export default function HomePage() {
 
       <section className="relative w-full">
         <img src="/images/hero-home.jpg" alt="" className="w-full h-auto block" />
-        <div className="hero-overlay absolute inset-0 flex items-center px-8 md:px-16" style={{ paddingTop: '80px' }}>
+        <div className="hero-overlay absolute inset-0 flex items-center px-5 md:px-16" style={{ paddingTop: '80px' }}>
           <div className="w-full">
             <p data-reveal="fade" className="text-xs font-bold uppercase tracking-widest mb-6" style={{ color: '#22C47A' }}>
               Cleantech for the Future
             </p>
-            <h1 data-reveal="fade" data-delay="100" className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
+            <h1 data-reveal="fade" data-delay="100" className="text-2xl sm:text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-4 md:mb-6 leading-tight">
               Sustainable Innovations<br />
               <span style={{ color: '#22C47A' }}>Built to Last</span>
             </h1>
@@ -71,7 +71,7 @@ export default function HomePage() {
       </section>
 
       {/* ── Stats Bar — white, blue labels ── */}
-      <section className="bg-white py-14 px-6 border-b" style={{ borderColor: '#E4EDF5' }}>
+      <section className="bg-white py-10 md:py-14 px-4 md:px-6 border-b" style={{ borderColor: '#E4EDF5' }}>
         <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-0 md:divide-x" style={{ borderColor: '#E4EDF5' }}>
           {stats.map((s, i) => (
             <div key={s.label} data-reveal data-delay={i * 100} className="text-center px-8">
@@ -84,7 +84,7 @@ export default function HomePage() {
       </section>
 
       {/* ── Tech Cards — blue-tinted light bg, green label → blue buttons on cards ── */}
-      <section className="bg-white py-16 md:py-24 px-6" style={{ borderBottom: '1px solid #E4EDF5' }}>
+      <section className="bg-white py-10 md:py-24 px-4 md:px-6" style={{ borderBottom: '1px solid #E4EDF5' }}>
         <div className="max-w-6xl mx-auto">
           <p data-reveal="fade" className="text-xs font-bold uppercase tracking-widest mb-3" style={{ color: '#1A835A' }}>What We Build</p>
           <h2 data-reveal="fade" data-delay="80" className="text-3xl md:text-5xl font-bold mb-4" style={{ color: '#1A2535' }}>Our Technology Platforms</h2>
@@ -123,8 +123,8 @@ export default function HomePage() {
       </section>
 
       {/* ── Why ECO — green-tinted bg, blue label → blue buttons (green bg = blue accents) ── */}
-      <section style={{ backgroundColor: '#F3FAF6' }} className="py-16 md:py-24 px-6">
-        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+      <section style={{ backgroundColor: '#F3FAF6' }} className="py-10 md:py-24 px-4 md:px-6">
+        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 items-center">
           <div>
             <p data-reveal="fade" className="text-xs font-bold uppercase tracking-widest mb-3" style={{ color: '#1663AF' }}>Our Mission</p>
             <h2 data-reveal="fade" data-delay="80" className="text-3xl md:text-5xl font-bold mb-6" style={{ color: '#1A2535' }}>
@@ -150,7 +150,7 @@ export default function HomePage() {
       </section>
 
       {/* ── CTA — dark green bg, blue buttons (green bg = blue accents) ── */}
-      <section className="py-24 md:py-36 px-6 text-center" style={{ background: 'linear-gradient(135deg, #0B2240 0%, #0D2E4A 100%)' }}>
+      <section className="py-16 md:py-36 px-4 md:px-6 text-center" style={{ background: 'linear-gradient(135deg, #0B2240 0%, #0D2E4A 100%)' }}>
         <h2 data-reveal="fade" className="text-3xl md:text-5xl lg:text-6xl font-bold text-white mb-5">
           Ready to Explore Our Solutions?
         </h2>
