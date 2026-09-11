@@ -11,16 +11,19 @@ const team = [
   {
     name: 'Jess Rae Booth',
     title: 'Chairman & CEO',
+    photo: '/images/team-jess.jpg',
     bio: 'Jess Rae Booth leads ECO Integrated Technologies with a vision for sustainable innovation that delivers measurable environmental and commercial results. Under her leadership, ECO has developed two proprietary technology platforms addressing critical global challenges in water recovery and waste management.',
   },
   {
     name: 'Walter Carlson',
     title: 'Chief Financial Officer',
+    photo: '/images/team-walter.jpg',
     bio: 'Walter Carlson brings extensive financial leadership experience to ECO, overseeing the company\'s financial strategy, investor relations, and capital structure. His guidance supports ECO\'s growth as a venture capital-backed cleantech company scaling its technology platforms to new markets.',
   },
   {
     name: 'Kristin Johnston',
     title: 'Executive Business Administrator',
+    photo: '/images/team-kristin.jpg',
     bio: 'Kristin Johnston drives operational excellence at ECO Integrated Technologies, managing internal systems, client communications, and cross-functional coordination that keeps ECO\'s technology and business development efforts moving forward.',
   },
 ]
@@ -153,14 +156,12 @@ export default function AboutPage() {
                 className="card-hover rounded-xl overflow-hidden"
                 style={{ border: '1px solid rgba(26,131,90,0.15)' }}
               >
-                {/* Photo placeholder, styled with gradient */}
-                <div
-                  className="h-48 flex items-center justify-center"
-                  style={{ background: 'linear-gradient(135deg, #0B2240, #1A835A)' }}
-                >
-                  <div className="w-20 h-20 rounded-full flex items-center justify-center text-2xl font-bold text-white" style={{ backgroundColor: 'rgba(255,255,255,0.15)' }}>
-                    {member.name.split(' ').map(n => n[0]).join('')}
-                  </div>
+                <div className="img-hover-zoom h-56 overflow-hidden">
+                  <img
+                    src={member.photo}
+                    alt={member.name}
+                    className="w-full h-full object-cover object-top"
+                  />
                 </div>
                 <div className="p-6">
                   <h3 className="font-bold text-lg mb-1" style={{ color: '#0B2240' }}>{member.name}</h3>
@@ -170,9 +171,7 @@ export default function AboutPage() {
               </div>
             ))}
           </div>
-          <p data-reveal="fade" data-delay="100" className="text-center text-xs mt-8 italic" style={{ color: '#4A5E72' }}>
-            Team headshots coming soon, contact us to connect directly with our leadership.
-          </p>
+
         </div>
       </section>
 
