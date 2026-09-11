@@ -4,7 +4,7 @@ import Image from 'next/image'
 export default function Footer() {
   return (
     <footer style={{ backgroundColor: '#ffffff', borderTop: '1px solid #E0EBF5' }}>
-      <div className="max-w-7xl mx-auto px-6 py-16 grid grid-cols-1 md:grid-cols-5 gap-10">
+      <div className="max-w-7xl mx-auto px-6 py-16 grid grid-cols-1 md:grid-cols-4 gap-10">
 
         {/* Brand */}
         <div className="md:col-span-1">
@@ -21,33 +21,20 @@ export default function Footer() {
           </p>
         </div>
 
-        {/* Technologies */}
+        {/* Quick Links */}
         <div>
-          <h4 className="text-xs font-bold uppercase tracking-widest mb-4" style={{ color: '#1A2535' }}>Technologies</h4>
+          <h4 className="text-xs font-bold uppercase tracking-widest mb-4" style={{ color: '#1A2535' }}>Quick Links</h4>
           <ul className="flex flex-col gap-2">
             {[
+              { label: 'Home', href: '/' },
+              { label: 'Technologies', href: '/technologies' },
               { label: 'ECO Regenion™', href: '/technologies/regenion' },
               { label: 'ECO H2O Recover™', href: '/technologies/h2o-recover' },
-            ].map((l) => (
-              <li key={l.href}>
-                <Link href={l.href} className="text-sm transition-colors hover:underline" style={{ color: '#1663AF' }}>
-                  {l.label}
-                </Link>
-              </li>
-            ))}
-          </ul>
-        </div>
-
-        {/* Company */}
-        <div>
-          <h4 className="text-xs font-bold uppercase tracking-widest mb-4" style={{ color: '#1A2535' }}>Company</h4>
-          <ul className="flex flex-col gap-2">
-            {[
               { label: 'About', href: '/about' },
               { label: 'Contact', href: '/contact' },
             ].map((l) => (
               <li key={l.href}>
-                <Link href={l.href} className="text-sm transition-colors" style={{ color: '#4A5E72' }}>
+                <Link href={l.href} className="text-sm transition-colors hover:underline" style={{ color: '#4A5E72' }}>
                   {l.label}
                 </Link>
               </li>
