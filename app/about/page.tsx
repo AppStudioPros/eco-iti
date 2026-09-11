@@ -85,9 +85,8 @@ export default function AboutPage() {
                   className="card-hover rounded-xl p-6 flex items-center gap-6"
                   style={{ backgroundColor: '#F3FAF6', border: '1px solid rgba(26,131,90,0.15)' }}
                 >
-                  <span className="text-4xl font-bold shrink-0" style={{ color: '#1A835A' }}>{s.num}</span>
                   <div>
-                    <p className="font-bold text-sm mb-0.5" style={{ color: '#0B2240' }}>{s.label}</p>
+                    <p className="font-bold text-sm mb-0.5" style={{ color: '#1663AF' }}>{s.label}</p>
                     <p className="text-xs" style={{ color: '#4A5E72' }}>{s.sub}</p>
                   </div>
                 </div>
