@@ -59,7 +59,7 @@ export default function H2ORecoverPage() {
           </div>
           <h1 data-reveal="fade" className="text-4xl md:text-6xl font-bold text-white mb-6">
             Converting Contaminated Water<br />
-            <span style={{ color: '#22B8C4' }}>into Valuable Resources</span>
+            <span style={{ color: '#3B9FE0' }}>into Valuable Resources</span>
           </h1>
           <p data-reveal="fade" data-delay="150" className="text-lg max-w-2xl leading-relaxed mb-10" style={{ color: 'rgba(255,255,255,0.7)' }}>
             CLAW Technology is a proprietary water-recovery platform converting contaminated oilfield produced water and wellhead CO₂ into reusable water, critical mineral carbonates, and commercially valuable industrial products, while targeting true zero-liquid-discharge performance.
@@ -156,7 +156,7 @@ export default function H2ORecoverPage() {
             className="mt-8 rounded-2xl p-8 text-center"
             style={{ backgroundColor: 'rgba(22,99,175,0.12)', border: '1px solid rgba(22,99,175,0.3)' }}
           >
-            <p className="text-xs font-bold uppercase tracking-widest mb-2" style={{ color: '#22B8C4' }}>Performance Target</p>
+            <p className="text-xs font-bold uppercase tracking-widest mb-2" style={{ color: '#3B9FE0' }}>Performance Target</p>
             <p className="text-2xl md:text-3xl font-bold text-white mb-2">True Zero-Liquid-Discharge</p>
             <p className="text-sm max-w-lg mx-auto" style={{ color: 'rgba(255,255,255,0.6)' }}>
               CLAW Technology is engineered to achieve zero liquid discharge, no liquid waste leaves the system. Every input is converted, recovered, or reused.

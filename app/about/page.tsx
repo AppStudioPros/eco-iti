@@ -98,7 +98,7 @@ export default function AboutPage() {
                   data-reveal
                   data-delay={i * 80}
                   className="card-hover rounded-xl p-6 flex items-center gap-6"
-                  style={{ backgroundColor: '#F4F8FC', border: '1px solid rgba(26,131,90,0.15)' }}
+                  style={{ backgroundColor: '#F3FAF6', border: '1px solid rgba(26,131,90,0.15)' }}
                 >
                   <span className="text-4xl font-bold shrink-0" style={{ color: '#1A835A' }}>{s.num}</span>
                   <div>
@@ -177,7 +177,7 @@ export default function AboutPage() {
       </section>
 
       {/* ── CTA ── */}
-      <section className="py-20 px-6 text-center" style={{ background: 'linear-gradient(135deg, #0B2240 0%, #0B2240 100%)' }}>
+      <section className="py-20 px-6 text-center" style={{ background: 'linear-gradient(135deg, #0D2E1E 0%, #0A1E14 100%)' }}>
         <h2 data-reveal="fade" className="text-3xl md:text-5xl font-bold text-white mb-4">Ready to Connect?</h2>
         <p data-reveal="fade" data-delay="100" className="max-w-xl mx-auto mb-8 leading-relaxed" style={{ color: 'rgba(255,255,255,0.7)' }}>
           Whether you&apos;re exploring a partnership, looking for cleantech solutions, or interested in investor relations, we&apos;d love to hear from you.

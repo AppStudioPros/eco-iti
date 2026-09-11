@@ -11,7 +11,7 @@ export default function TechnologiesPage() {
   return (
     <>
       {/* ── Hero ── */}
-      <section className="pt-32 pb-20 px-6 text-center" style={{ background: 'linear-gradient(135deg, #0B2240 0%, #0B2240 100%)' }}>
+      <section className="pt-32 pb-20 px-6 text-center" style={{ background: 'linear-gradient(135deg, #0D2E1E 0%, #0A1E14 100%)' }}>
         <p data-reveal="fade" className="text-xs font-bold uppercase tracking-widest mb-4" style={{ color: '#22C47A' }}>
           What We Build
         </p>
@@ -40,7 +40,7 @@ export default function TechnologiesPage() {
             <p data-reveal="fade" data-delay="220" className="leading-relaxed mb-8" style={{ color: '#4A5E72' }}>
               This platform improves the lives of the communities it serves by directly addressing current landfill, energy, and water quality concerns. measurable environmental and financial results.
             </p>
-            <Link data-reveal="fade" data-delay="300" href="/technologies/regenion" className="btn-eco inline-flex items-center gap-2 uppercase tracking-widest text-sm font-semibold px-8 py-3 rounded" style={{ backgroundColor: '#1A835A', color: '#fff' }}>
+            <Link data-reveal="fade" data-delay="300" href="/technologies/regenion" className="btn-eco inline-flex items-center gap-2 uppercase tracking-widest text-sm font-semibold px-8 py-3 rounded" style={{ backgroundColor: '#1663AF', color: '#fff' }}>
               Explore Regenion <ArrowRight size={15} />
             </Link>
           </div>
@@ -102,12 +102,12 @@ export default function TechnologiesPage() {
       </section>
 
       {/* ── CTA ── */}
-      <section className="py-20 px-6 text-center" style={{ background: 'linear-gradient(135deg, #0B2240 0%, #0B2240 100%)' }}>
+      <section className="py-20 px-6 text-center" style={{ background: 'linear-gradient(135deg, #0D2E1E 0%, #0A1E14 100%)' }}>
         <h2 data-reveal="fade" className="text-3xl md:text-5xl font-bold text-white mb-4">Interested in Our Technologies?</h2>
         <p data-reveal="fade" data-delay="100" className="max-w-xl mx-auto mb-8 leading-relaxed" style={{ color: 'rgba(255,255,255,0.7)' }}>
           Contact us to discuss how ECO&apos;s proprietary platforms can address your specific environmental and operational challenges.
         </p>
-        <Link data-reveal="fade" data-delay="220" href="/contact" className="btn-eco inline-flex items-center gap-2 justify-center uppercase tracking-widest text-sm font-semibold px-10 py-4 rounded" style={{ backgroundColor: '#1A835A', color: '#fff' }}>
+        <Link data-reveal="fade" data-delay="220" href="/contact" className="btn-eco inline-flex items-center gap-2 justify-center uppercase tracking-widest text-sm font-semibold px-10 py-4 rounded" style={{ backgroundColor: '#1663AF', color: '#fff' }}>
           Get In Touch <ArrowRight size={15} />
         </Link>
       </section>
