@@ -161,10 +161,7 @@ main section {
   text-align: center;
 }
 
-/* Hero overlays stay left-aligned */
-.hero-overlay {
-  text-align: left;
-}
+/* Hero text alignment handled by Tailwind classes (text-center md:text-left) */
 
 /* Forms and inputs stay left */
 form, input, textarea, select, label {
