@@ -11,7 +11,15 @@ export default function TechnologiesPage() {
   return (
     <>
       {/* ── Hero ── */}
-      <section className="pt-32 pb-20 px-6 text-center" style={{ background: 'linear-gradient(135deg, #0D2E1E 0%, #0A1E14 100%)' }}>
+      <section
+        className="relative min-h-[45vh] flex items-center px-8 md:px-16 pt-20 pb-16"
+        style={{
+          backgroundImage: 'linear-gradient(rgba(8,20,38,0.65), rgba(8,20,38,0.65)), url("/images/hero-technologies.jpg")',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center 45%',
+          backgroundColor: '#0B2240',
+        }}
+      >
         <p data-reveal="fade" className="text-xs font-bold uppercase tracking-widest mb-4" style={{ color: '#22C47A' }}>
           What We Build
         </p>
