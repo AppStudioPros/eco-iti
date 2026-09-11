@@ -20,15 +20,17 @@ export default function TechnologiesPage() {
           backgroundColor: '#0B2240',
         }}
       >
-        <p data-reveal="fade" className="text-xs font-bold uppercase tracking-widest mb-4" style={{ color: '#22C47A' }}>
-          What We Build
-        </p>
-        <h1 data-reveal="fade" data-delay="80" className="text-4xl md:text-6xl font-bold text-white mb-6">
-          Two Platforms. One Mission.
-        </h1>
-        <p data-reveal="fade" data-delay="160" className="text-lg max-w-2xl leading-relaxed" style={{ color: 'rgba(255,255,255,0.7)' }}>
-          ECO&apos;s proprietary technology platforms address two of the world&apos;s most pressing environmental challenges, what to do with waste, and how to recover water.
-        </p>
+        <div className="max-w-7xl w-full">
+          <p data-reveal="fade" className="text-xs font-bold uppercase tracking-widest mb-4" style={{ color: '#22C47A' }}>
+            What We Build
+          </p>
+          <h1 data-reveal="fade" data-delay="80" className="text-4xl md:text-6xl font-bold text-white mb-6">
+            Two Platforms. One Mission.
+          </h1>
+          <p data-reveal="fade" data-delay="160" className="text-lg max-w-2xl leading-relaxed" style={{ color: 'rgba(255,255,255,0.7)' }}>
+            ECO's proprietary technology platforms address two of the world's most pressing environmental challenges, what to do with waste, and how to recover water.
+          </p>
+        </div>
       </section>
 
       {/* ── Regenion ── */}
