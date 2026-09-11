@@ -24,7 +24,7 @@ export default function TechnologiesPage() {
       </section>
 
       {/* ── Regenion ── */}
-      <section className="bg-white py-20 md:py-28 px-6">
+      <section className="py-20 md:py-28 px-6" style={{ backgroundColor: '#F3FAF6' }}>
         <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
           <div>
             <p data-reveal="fade" className="text-xs font-bold uppercase tracking-widest mb-3" style={{ color: '#1A835A' }}>Waste-to-Energy</p>
@@ -37,7 +37,7 @@ export default function TechnologiesPage() {
             <p data-reveal="fade" data-delay="220" className="leading-relaxed mb-8" style={{ color: '#4A5E72' }}>
               This platform improves the lives of the communities it serves by directly addressing current landfill, energy, and water quality concerns. measurable environmental and financial results.
             </p>
-            <Link data-reveal="fade" data-delay="300" href="/technologies/regenion" className="btn-eco inline-flex items-center gap-2 uppercase tracking-widest text-sm font-semibold px-8 py-3 rounded" style={{ backgroundColor: '#1663AF', color: '#fff' }}>
+            <Link data-reveal="fade" data-delay="300" href="/technologies/regenion" className="btn-eco inline-flex items-center gap-2 uppercase tracking-widest text-sm font-semibold px-8 py-3 rounded" style={{ backgroundColor: '#1A835A', color: '#fff' }}>
               Explore Regenion <ArrowRight size={15} />
             </Link>
           </div>
@@ -53,7 +53,7 @@ export default function TechnologiesPage() {
               { label: 'Greater Profitability', desc: 'Improves operational efficiency and creates new revenue streams' },
             ].map((item, i) => {
               return (
-                <div key={item.label} data-reveal data-delay={i * 80} className="card-hover rounded-xl p-5" style={{ backgroundColor: '#F4F8FC', border: '1px solid rgba(26,131,90,0.15)' }}>
+                <div key={item.label} data-reveal data-delay={i * 80} className="card-hover rounded-xl p-5" style={{ backgroundColor: '#ffffff', border: '1px solid rgba(26,131,90,0.2)' }}>
                   <p className="text-sm font-bold mb-1" style={{ color: '#0B2240' }}>{item.label}</p>
                   <p className="text-xs leading-relaxed" style={{ color: '#4A5E72' }}>{item.desc}</p>
                 </div>
@@ -94,7 +94,7 @@ export default function TechnologiesPage() {
               { label: 'CO₂ Utilization', desc: 'Processes wellhead CO₂ as part of the water recovery system' },
             ].map((item, i) => {
               return (
-                <div key={item.label} data-reveal data-delay={i * 80} className="card-hover rounded-xl p-5 bg-white" style={{ border: '1px solid rgba(22,99,175,0.15)' }}>
+                <div key={item.label} data-reveal data-delay={i * 80} className="card-hover rounded-xl p-5 bg-white" style={{ backgroundColor: '#ffffff', border: '1px solid rgba(22,99,175,0.2)' }}>
                   <p className="text-sm font-bold mb-1" style={{ color: '#0B2240' }}>{item.label}</p>
                   <p className="text-xs leading-relaxed" style={{ color: '#4A5E72' }}>{item.desc}</p>
                 </div>
