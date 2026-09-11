@@ -46,7 +46,13 @@ export default function H2ORecoverPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 
       {/* ── Hero ── */}
-      <section className="pt-32 pb-20 px-6" style={{ background: 'linear-gradient(135deg, #0B2240 0%, #0D2618 50%, #091828 100%)' }}>
+      <section className="relative min-h-[45vh] flex items-center px-8 md:px-16 pt-20 pb-16"
+        style={{
+          backgroundImage: 'linear-gradient(rgba(11,34,64,0.72), rgba(11,34,64,0.72)), url("/images/hero-h2o.jpg")',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center 50%',
+          backgroundColor: '#0B2240',
+        }}>
         <div className="max-w-5xl mx-auto">
           <div className="mb-8">
             <img src="/images/logos/ECO-H2O-SYSTEMS_logo.png" alt="ECO H2O Recover" className="h-16 w-auto object-contain" />

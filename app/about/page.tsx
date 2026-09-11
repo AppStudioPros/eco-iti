@@ -36,8 +36,13 @@ export default function AboutPage() {
     <>
       {/* ── Hero ── */}
       <section
-        className="pt-32 pb-20 px-6 text-center"
-        style={{ background: 'linear-gradient(135deg, #0B2240 0%, #0B2240 100%)' }}
+        className="relative min-h-[45vh] flex items-center px-8 md:px-16 pt-20 pb-16 text-center justify-center"
+        style={{
+          backgroundImage: 'linear-gradient(rgba(11,34,64,0.55), rgba(11,34,64,0.55)), url("/images/hero-about.jpg")',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center 40%',
+          backgroundColor: '#0B2240',
+        }}
       >
         <p data-reveal="fade" className="text-xs font-bold uppercase tracking-widest mb-4" style={{ color: '#22C47A' }}>
           Our Story

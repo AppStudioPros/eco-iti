@@ -45,7 +45,13 @@ export default function RegenionPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 
       {/* ── Hero ── */}
-      <section className="pt-32 pb-20 px-6" style={{ background: 'linear-gradient(135deg, #0B2240 0%, #0B2240 100%)' }}>
+      <section className="relative min-h-[45vh] flex items-center px-8 md:px-16 pt-20 pb-16"
+        style={{
+          backgroundImage: 'linear-gradient(rgba(10,26,16,0.62), rgba(10,26,16,0.62)), url("/images/hero-regenion.jpg")',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center 50%',
+          backgroundColor: '#0A1A10',
+        }}>
         <div className="max-w-5xl mx-auto">
           <div className="mb-8">
             <img src="/images/logos/ECO_REGENION_logo-1.png" alt="ECO Regenion" className="h-16 w-auto object-contain" />
