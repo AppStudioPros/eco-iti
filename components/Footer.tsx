@@ -11,9 +11,9 @@ export default function Footer() {
           <Image
             src="/images/logos/Eco-Integrated-Technologies-Logo-retina.png"
             alt="ECO Integrated Technologies"
-            width={160}
-            height={35}
-            className="object-contain h-8 w-auto mb-4"
+            width={220}
+            height={48}
+            className="object-contain h-12 w-auto mb-4"
             loading="eager"
           />
           <p className="text-xs leading-relaxed" style={{ color: 'rgba(255,255,255,0.5)' }}>
