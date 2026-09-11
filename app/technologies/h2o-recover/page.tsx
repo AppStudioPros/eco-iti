@@ -54,7 +54,7 @@ export default function H2ORecoverPage() {
           minHeight: '55vh',
         }}
       >
-        <div className="hero-overlay relative z-10 md:max-w-[42%]">
+        <div className="hero-overlay relative z-10 md:max-w-[42%] text-center md:text-left">
             <h1 data-reveal="fade" className="text-xl sm:text-3xl md:text-5xl font-bold text-white mb-3 md:mb-4 leading-snug">
               Contaminated Water into <span style={{ color: '#3B9FE0' }}>a Valuable Resource.</span>
             </h1>

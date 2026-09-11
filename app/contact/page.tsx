@@ -45,7 +45,7 @@ export default function ContactPage() {
           minHeight: '55vh',
         }}
       >
-        <div className="hero-overlay relative z-10 md:max-w-[42%]">
+        <div className="hero-overlay relative z-10 md:max-w-[42%] text-center md:text-left">
             <h1 data-reveal="fade" className="text-3xl md:text-5xl font-bold text-white mb-4 leading-snug">
               Get <span style={{ color: '#1663AF' }}>In Touch.</span>
             </h1>
