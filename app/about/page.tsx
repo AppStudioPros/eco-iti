@@ -82,12 +82,12 @@ export default function AboutPage() {
                   key={s.label}
                   data-reveal
                   data-delay={i * 80}
-                  className="card-hover rounded-xl p-6 flex items-center gap-6"
+                  className="card-hover rounded-xl p-8 text-center"
                   style={{ backgroundColor: '#F3FAF6', border: '1px solid rgba(26,131,90,0.15)' }}
                 >
                   <div>
-                    <p className="font-bold text-sm mb-0.5" style={{ color: '#1663AF' }}>{s.label}</p>
-                    <p className="text-xs" style={{ color: '#4A5E72' }}>{s.sub}</p>
+                    <p className="font-bold text-base mb-2" style={{ color: '#1663AF' }}>{s.label}</p>
+                    <p className="text-sm" style={{ color: '#4A5E72' }}>{s.sub}</p>
                   </div>
                 </div>
               ))}
