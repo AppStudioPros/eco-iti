@@ -4,38 +4,38 @@ import { ArrowRight, ArrowLeft, Check } from 'lucide-react'
 import FaqAccordion from '@/components/FaqAccordion'
 
 export const metadata: Metadata = {
-  title: 'ECO H2O Recover™ — CLAW Water Recovery Technology',
+  title: 'ECO H2O Recover™, CLAW Water Recovery Technology',
   description: 'CLAW Technology transforms contaminated oilfield produced water and wellhead CO₂ into reusable water, critical mineral carbonates, and industrial products. Zero-liquid-discharge performance.',
 }
 
 const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'Product',
-  name: 'ECO H2O Recover™ — CLAW Technology',
+  name: 'ECO H2O Recover™, CLAW Technology',
   description: 'Proprietary water-recovery platform for oilfield produced water treatment and zero-liquid-discharge.',
   brand: { '@type': 'Organization', name: 'ECO Integrated Technologies' },
   url: 'https://www.ecoiti.com/technologies/h2o-recover',
 }
 
 const outputs = [
-  { title: 'Reusable Water', body: 'Contaminated oilfield produced water is processed into clean, reusable water — returning a critical resource to productive use.' },
-  { title: 'Critical Mineral Carbonates', body: 'The CLAW process extracts critical mineral carbonates from the water stream — commercially valuable materials with established industrial demand.' },
+  { title: 'Reusable Water', body: 'Contaminated oilfield produced water is processed into clean, reusable water, returning a critical resource to productive use.' },
+  { title: 'Critical Mineral Carbonates', body: 'The CLAW process extracts critical mineral carbonates from the water stream, commercially valuable materials with established industrial demand.' },
   { title: 'Industrial By-Products', body: 'Additional commercially valuable industrial products are generated as part of the CLAW recovery process.' },
-  { title: 'CO₂ Utilization', body: 'Wellhead CO₂ is incorporated into the CLAW process rather than released — transforming an environmental liability into a process input.' },
+  { title: 'CO₂ Utilization', body: 'Wellhead CO₂ is incorporated into the CLAW process rather than released, converting an environmental liability into a process input.' },
 ]
 
 const process = [
-  { step: '01', title: 'Produced Water Intake', body: 'Contaminated oilfield produced water is collected at the wellhead or production facility — water that would otherwise require costly disposal or create environmental liability.' },
+  { step: '01', title: 'Produced Water Intake', body: 'Contaminated oilfield produced water is collected at the wellhead or production facility, water that would otherwise require costly disposal or create environmental liability.' },
   { step: '02', title: 'CLAW Processing', body: 'ECO\'s proprietary CLAW Technology processes the produced water through a multi-stage recovery system, incorporating wellhead CO₂ as part of the treatment mechanism.' },
-  { step: '03', title: 'Water Recovery', body: 'Clean, reusable water is extracted from the processed stream — meeting regulatory standards and enabling reuse in operations, agriculture, or other applications.' },
-  { step: '04', title: 'By-Product Capture', body: 'Critical mineral carbonates and industrial by-products are captured and prepared for commercial sale — creating a new revenue stream from what was previously a waste stream.' },
+  { step: '03', title: 'Water Recovery', body: 'Clean, reusable water is extracted from the processed stream, meeting regulatory standards and enabling reuse in operations, agriculture, or other applications.' },
+  { step: '04', title: 'By-Product Capture', body: 'Critical mineral carbonates and industrial by-products are captured and prepared for commercial sale, creating a new revenue stream from what was previously a waste stream.' },
 ]
 
 const faqs = [
-  { q: 'What is CLAW Technology?', a: 'CLAW Technology is ECO\'s proprietary water-recovery platform designed to transform contaminated oilfield produced water and wellhead CO₂ into reusable water, critical mineral carbonates, and commercially valuable industrial products — while targeting true zero-liquid-discharge performance.' },
-  { q: 'What is "produced water" in oil and gas operations?', a: 'Produced water is the water that comes up from the ground along with oil and gas during extraction. It is typically contaminated with hydrocarbons, minerals, and other substances, making it one of the largest waste streams in the oil and gas industry. Historically it has required costly disposal — CLAW converts it into a recoverable resource.' },
-  { q: 'What does zero-liquid-discharge mean?', a: 'Zero-liquid-discharge (ZLD) means that no liquid waste is discharged from the treatment process. All water is recovered or converted — eliminating liquid disposal requirements and the associated environmental and regulatory risks.' },
-  { q: 'What are critical mineral carbonates and why are they valuable?', a: 'Mineral carbonates are compounds that form during the treatment of produced water and CO₂. Certain mineral carbonates — particularly those containing lithium, calcium, magnesium, and other elements — have significant commercial value in industrial, battery, and manufacturing applications.' },
+  { q: 'What is CLAW Technology?', a: 'CLAW Technology is ECO\'s proprietary water-recovery platform designed to transform contaminated oilfield produced water and wellhead CO₂ into reusable water, critical mineral carbonates, and commercially valuable industrial products, while targeting true zero-liquid-discharge performance.' },
+  { q: 'What is "produced water" in oil and gas operations?', a: 'Produced water is the water that comes up from the ground along with oil and gas during extraction. It is typically contaminated with hydrocarbons, minerals, and other substances, making it one of the largest waste streams in the oil and gas industry. Historically it has required costly disposal, CLAW converts it into a recoverable resource.' },
+  { q: 'What does zero-liquid-discharge mean?', a: 'Zero-liquid-discharge (ZLD) means that no liquid waste is discharged from the treatment process. All water is recovered or converted, eliminating liquid disposal requirements and the associated environmental and regulatory risks.' },
+  { q: 'What are critical mineral carbonates and why are they valuable?', a: 'Mineral carbonates are compounds that form during the treatment of produced water and CO₂. Certain mineral carbonates, particularly those containing lithium, calcium, magnesium, and other elements, have significant commercial value in industrial, battery, and manufacturing applications.' },
   { q: 'Is the CLAW process chemical-free?', a: 'ECO\'s operations are designed to be non-toxic and chemical-free. The CLAW process uses physical and proprietary treatment mechanisms rather than chemical additives, consistent with ECO\'s core environmental mandate.' },
   { q: 'What types of oil and gas operations can deploy CLAW?', a: 'CLAW Technology is designed for oilfield production environments where produced water management is a challenge. Contact ECO to discuss your specific production volume, geography, and operational requirements.' },
 ]
@@ -52,11 +52,11 @@ export default function H2ORecoverPage() {
             <img src="/images/logos/ECO-H2O-SYSTEMS_logo.png" alt="ECO H2O Recover" className="h-16 w-auto object-contain" />
           </div>
           <h1 data-reveal="fade" className="text-4xl md:text-6xl font-bold text-white mb-6">
-            Transforming Contaminated Water<br />
+            Converting Contaminated Water<br />
             <span style={{ color: '#22B8C4' }}>into Valuable Resources</span>
           </h1>
           <p data-reveal="fade" data-delay="150" className="text-lg max-w-2xl leading-relaxed mb-10" style={{ color: 'rgba(255,255,255,0.7)' }}>
-            CLAW Technology is a proprietary water-recovery platform converting contaminated oilfield produced water and wellhead CO₂ into reusable water, critical mineral carbonates, and commercially valuable industrial products — while targeting true zero-liquid-discharge performance.
+            CLAW Technology is a proprietary water-recovery platform converting contaminated oilfield produced water and wellhead CO₂ into reusable water, critical mineral carbonates, and commercially valuable industrial products, while targeting true zero-liquid-discharge performance.
           </p>
           <div data-reveal="fade" data-delay="260" className="flex flex-col sm:flex-row gap-4">
             <Link href="/contact" className="btn-eco inline-flex items-center gap-2 justify-center uppercase tracking-widest text-sm font-semibold px-10 py-4 rounded" style={{ backgroundColor: '#1663AF', color: '#fff' }}>
@@ -85,9 +85,9 @@ export default function H2ORecoverPage() {
               Produced Water Is the Oil and Gas Industry&apos;s Largest Waste Problem
             </h2>
             <div className="prose-eco">
-              <p data-reveal="fade" data-delay="160">For every barrel of oil produced, operators generate multiple barrels of produced water — contaminated water that must be managed, treated, or disposed of at significant cost.</p>
-              <p data-reveal="fade" data-delay="220">Traditional disposal methods — injection wells, evaporation ponds, off-site treatment — are expensive, environmentally risky, and increasingly restricted by regulation. The water crisis in oil-producing regions is intensifying this pressure.</p>
-              <p data-reveal="fade" data-delay="280">CLAW Technology changes what produced water is. Instead of a liability, it becomes a source of clean water and commercially valuable materials.</p>
+              <p data-reveal="fade" data-delay="160">For every barrel of oil produced, operators generate multiple barrels of produced water. That water is contaminated and has to be managed, treated, or disposed of at real cost.</p>
+              <p data-reveal="fade" data-delay="220">Traditional disposal methods like injection wells, evaporation ponds, and off-site treatment are expensive, carry environmental risk, and face growing regulatory restrictions. In oil-producing regions, that pressure is getting worse.</p>
+              <p data-reveal="fade" data-delay="280">CLAW Technology changes what produced water can be. Instead of a liability, it becomes a source of clean water and commercially useful materials.</p>
             </div>
           </div>
           <div className="flex flex-col gap-4">
@@ -153,7 +153,7 @@ export default function H2ORecoverPage() {
             <p className="text-xs font-bold uppercase tracking-widest mb-2" style={{ color: '#22B8C4' }}>Performance Target</p>
             <p className="text-2xl md:text-3xl font-bold text-white mb-2">True Zero-Liquid-Discharge</p>
             <p className="text-sm max-w-lg mx-auto" style={{ color: 'rgba(255,255,255,0.6)' }}>
-              CLAW Technology is engineered to achieve zero liquid discharge — no liquid waste leaves the system. Every input is converted, recovered, or reused.
+              CLAW Technology is engineered to achieve zero liquid discharge, no liquid waste leaves the system. Every input is converted, recovered, or reused.
             </p>
           </div>
         </div>
@@ -182,7 +182,7 @@ export default function H2ORecoverPage() {
       <section className="py-24 px-6 text-center" style={{ background: 'linear-gradient(135deg, #0B2240 0%, #091828 100%)' }}>
         <h2 data-reveal="fade" className="text-3xl md:text-5xl font-bold text-white mb-4">Turn Produced Water into an Asset</h2>
         <p data-reveal="fade" data-delay="120" className="max-w-xl mx-auto mb-8 leading-relaxed" style={{ color: 'rgba(255,255,255,0.7)' }}>
-          Contact ECO to discuss how CLAW Technology can address your produced water management challenges — and generate commercial value in the process.
+          Contact ECO to discuss how CLAW Technology can address your produced water management challenges, and generate commercial value in the process.
         </p>
         <div data-reveal="fade" data-delay="240" className="flex flex-col sm:flex-row gap-4 justify-center">
           <Link href="/contact" className="btn-eco inline-block uppercase tracking-widest text-sm font-semibold px-12 py-4 rounded" style={{ backgroundColor: '#1663AF', color: '#fff' }}>

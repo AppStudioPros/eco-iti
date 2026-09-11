@@ -4,7 +4,7 @@ import { ArrowRight, ArrowLeft, Check } from 'lucide-react'
 import FaqAccordion from '@/components/FaqAccordion'
 
 export const metadata: Metadata = {
-  title: 'ECO Regenion™ — Waste-to-Energy Solutions',
+  title: 'ECO Regenion™, Waste-to-Energy Solutions',
   description: 'ECO Regenion™ converts waste into commercially viable by-products while cleaning up the environment. Waste-to-energy solutions for commercial and industrial operations. Chemical-free, ESG-compliant.',
 }
 
@@ -18,24 +18,24 @@ const jsonLd = {
 }
 
 const howItWorks = [
-  { step: '01', title: 'Waste Intake', body: 'Organic and industrial waste streams are collected and processed through ECO\'s proprietary intake system — diverting material from landfills.' },
-  { step: '02', title: 'ECO Processing', body: 'Waste is processed through ECO\'s environmental technology platform — a chemical-free, non-toxic conversion system that breaks down waste into usable outputs.' },
-  { step: '03', title: 'Energy Recovery', body: 'The processing cycle generates recoverable energy as a by-product — reducing operational energy costs and creating a commercially viable output.' },
-  { step: '04', title: 'By-Product Extraction', body: 'Commercially valuable by-products are extracted and prepared for market — turning what was formerly a disposal cost into a revenue-generating asset.' },
+  { step: '01', title: 'Waste Intake', body: 'Organic and industrial waste streams are collected and processed through ECO\'s proprietary intake system, diverting material from landfills.' },
+  { step: '02', title: 'ECO Processing', body: 'Waste is processed through ECO\'s environmental technology platform, a chemical-free, non-toxic conversion system that breaks down waste into usable outputs.' },
+  { step: '03', title: 'Energy Recovery', body: 'The processing cycle generates recoverable energy as a by-product, reducing operational energy costs and creating a commercially viable output.' },
+  { step: '04', title: 'By-Product Extraction', body: 'Commercially valuable by-products are extracted and prepared for market, turning what was formerly a disposal cost into a revenue-generating asset.' },
 ]
 
 const benefits = [
-  { title: 'Landfill Diversion', body: 'Directly reduces waste volume entering landfills — addressing one of the most significant community environmental concerns.' },
+  { title: 'Landfill Diversion', body: 'Directly reduces waste volume entering landfills, addressing one of the most significant community environmental concerns.' },
   { title: 'Energy Generation', body: 'Waste processing generates recoverable energy, reducing net operational costs and improving sustainability metrics.' },
-  { title: 'Chemical-Free Process', body: 'All conversion operations are non-toxic and chemical-free — safe for operators, communities, and surrounding ecosystems.' },
-  { title: 'Commercial Value', body: 'By-products from the Regenion process have commercial market value — transforming a cost center into a profit driver.' },
+  { title: 'Chemical-Free Process', body: 'All conversion operations are non-toxic and chemical-free, safe for operators, communities, and surrounding environments.' },
+  { title: 'Commercial Value', body: 'By-products from the Regenion process have commercial market value, converting a cost center into a profit driver.' },
 ]
 
 const faqs = [
   { q: 'What types of waste does ECO Regenion™ process?', a: 'ECO Regenion™ is designed to process organic and industrial waste streams, with a focus on materials that would otherwise enter the landfill system. Specific waste stream compatibility is assessed on a per-project basis.' },
   { q: 'Is the Regenion process truly chemical-free?', a: 'Yes. ECO\'s core mandate is chemical-free, non-toxic operations. The Regenion platform does not introduce chemical additives into the waste conversion process.' },
   { q: 'What commercial by-products does the system produce?', a: 'The Regenion process generates commercially viable by-products and recoverable energy. Specific outputs vary based on the waste stream and project configuration. Our team provides detailed output profiles during the evaluation phase.' },
-  { q: 'How does Regenion support ESG compliance?', a: 'ECO Regenion™ directly addresses three ESG pillars: Environmental (landfill diversion, chemical-free operations), Social (community health and safety), and Governance (transparent, sustainable operations). It represents ESG in action — measurable impact at the operational level.' },
+  { q: 'How does Regenion support ESG compliance?', a: 'ECO Regenion™ directly addresses three ESG pillars: Environmental (landfill diversion, chemical-free operations), Social (community health and safety), and Governance (transparent, sustainable operations). It represents measurable environmental and financial results, measurable impact at the operational level.' },
   { q: 'Can Regenion be deployed at my existing facility?', a: 'ECO evaluates site-specific conditions for each deployment. Contact our team to discuss your facility type, waste stream volume, and operational goals.' },
 ]
 
@@ -55,7 +55,7 @@ export default function RegenionPage() {
             <span style={{ color: '#22C47A' }}>Commercially Viable By-Products</span>
           </h1>
           <p data-reveal="fade" data-delay="150" className="text-lg max-w-2xl leading-relaxed mb-10" style={{ color: 'rgba(255,255,255,0.7)' }}>
-            ECO Regenion™ integrates ECO&apos;s environmental technologies to bring greater profitability while providing more efficient and sustainable operations — directly addressing landfill, energy, and water quality concerns.
+            ECO Regenion™ integrates ECO&apos;s environmental technologies to bring greater profitability while providing more efficient and sustainable operations, directly addressing landfill, energy, and water quality concerns.
           </p>
           <div data-reveal="fade" data-delay="260" className="flex flex-col sm:flex-row gap-4">
             <Link href="/contact" className="btn-eco inline-flex items-center gap-2 justify-center uppercase tracking-widest text-sm font-semibold px-10 py-4 rounded" style={{ backgroundColor: '#1A835A', color: '#fff' }}>
@@ -84,12 +84,12 @@ export default function RegenionPage() {
               Waste Is a Resource That Industry Has Been Throwing Away
             </h2>
             <div className="prose-eco">
-              <p data-reveal="fade" data-delay="160">Landfills are reaching capacity. Communities are bearing the environmental cost of industrial and commercial waste disposal. And the energy potential locked inside that waste is being wasted along with it.</p>
-              <p data-reveal="fade" data-delay="220">Traditional waste disposal models treat waste as a cost center. ECO Regenion™ changes that equation — converting waste into energy and commercially viable by-products while improving environmental outcomes for the communities operations serve.</p>
+              <p data-reveal="fade" data-delay="160">Landfills are filling up. Communities pay the environmental cost of industrial and commercial waste. The energy locked inside that waste gets buried right along with it.</p>
+              <p data-reveal="fade" data-delay="220">Traditional waste disposal treats waste as a cost. ECO Regenion changes that. It converts waste into energy and commercially valuable by-products while reducing the environmental burden on surrounding communities.</p>
             </div>
           </div>
           <div className="flex flex-col gap-4">
-            {['Landfill capacity reaching critical limits globally', 'Increasing regulatory pressure on industrial waste disposal', 'ESG frameworks demanding measurable environmental action', 'Energy costs rising — recoverable waste energy going untapped'].map((point, i) => (
+            {['Landfill capacity reaching critical limits globally', 'Increasing regulatory pressure on industrial waste disposal', 'ESG frameworks demanding measurable environmental action', 'Energy costs rising, recoverable waste energy going untapped'].map((point, i) => (
               <div key={i} data-reveal data-delay={i * 80} className="flex items-start gap-3 rounded-xl p-4 bg-white" style={{ border: '1px solid rgba(26,131,90,0.15)' }}>
                 <div className="shrink-0 mt-0.5 w-5 h-5 rounded-full flex items-center justify-center" style={{ backgroundColor: '#1A835A' }}>
                   <Check size={11} color="#fff" strokeWidth={3} />

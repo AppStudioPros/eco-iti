@@ -4,7 +4,7 @@ import { ArrowRight } from 'lucide-react'
 
 export const metadata: Metadata = {
   title: 'About ECO Integrated Technologies',
-  description: 'Learn about ECO Integrated Technologies — a VC-backed cleantech company delivering chemical-free water recovery and waste-to-energy solutions. Meet our leadership team.',
+  description: 'Learn about ECO Integrated Technologies, a VC-backed cleantech company delivering chemical-free water recovery and waste-to-energy solutions. Meet our leadership team.',
 }
 
 const team = [
@@ -26,9 +26,9 @@ const team = [
 ]
 
 const values = [
-  { title: 'Mission-Driven', body: 'Every technology we develop is guided by a single mission: ensure industry and communities can meet environmental stewardship goals without compromise.' },
+  { title: 'Mission-Driven', body: 'Every technology we develop is guided by a single mission: ensure industry and communities can meet environmental stewardship goals without cutting corners.' },
   { title: 'Transparency', body: 'We believe in honest, clear communication with clients, partners, investors, and the communities we serve. Our results speak for themselves.' },
-  { title: 'Stewardship', body: 'We operate as custodians of the environment — our solutions are designed to protect, recover, and sustain natural resources for this generation and the next.' },
+  { title: 'Stewardship', body: 'We operate as stewards of the environment, our solutions are designed to protect, recover, and sustain natural resources for this generation and the next.' },
 ]
 
 export default function AboutPage() {
@@ -55,7 +55,7 @@ export default function AboutPage() {
           className="text-lg max-w-2xl mx-auto leading-relaxed"
           style={{ color: 'rgba(255,255,255,0.7)' }}
         >
-          ECO Integrated Technologies exists because environmental stewardship and commercial viability are not opposites — they are the same goal, pursued with the right technology.
+          ECO Integrated Technologies exists because environmental stewardship and commercial viability are not opposites, they are the same goal, pursued with the right technology.
         </p>
       </section>
 
@@ -66,17 +66,17 @@ export default function AboutPage() {
             <div>
               <p data-reveal="fade" className="text-xs font-bold uppercase tracking-widest mb-3" style={{ color: '#1A835A' }}>Who We Are</p>
               <h2 data-reveal="fade" data-delay="80" className="text-3xl md:text-4xl font-bold mb-6" style={{ color: '#0B2240' }}>
-                Sustainable Innovations Powering Change
+                Sustainable Innovations Built to Last
               </h2>
               <div className="prose-eco">
                 <p data-reveal="fade" data-delay="160">
-                  ECO Integrated Technologies impacts the health and safety of natural, managed, and contaminated water environments — without the use of chemicals. We serve commercial, industrial, and oil and gas production facilities and sites.
+                  ECO Integrated Technologies impacts the health and safety of natural, managed, and contaminated water environments without using chemicals. We serve commercial, industrial, and oil and gas production facilities and sites.
                 </p>
                 <p data-reveal="fade" data-delay="220">
-                  Our mission as custodians of the environment is to ensure industry and communities meet their environmental stewardship needs and goals. We are the compelling cleantech offering for the future.
+                  Our mission as stewards of the environment is to ensure industry and communities meet their environmental stewardship needs and goals. We are the compelling cleantech offering for the future.
                 </p>
                 <p data-reveal="fade" data-delay="280">
-                  ECO customers receive innovative cleantech solutions that reduce costs, resolve environmental concerns, address sustainability goals, and improve community image — all at the same time.
+                  ECO customers receive innovative cleantech solutions that reduce costs, resolve environmental concerns, address sustainability goals, and improve community image, all at the same time.
                 </p>
               </div>
             </div>
@@ -146,7 +146,7 @@ export default function AboutPage() {
                 className="card-hover rounded-xl overflow-hidden"
                 style={{ border: '1px solid rgba(26,131,90,0.15)' }}
               >
-                {/* Photo placeholder — styled with gradient */}
+                {/* Photo placeholder, styled with gradient */}
                 <div
                   className="h-48 flex items-center justify-center"
                   style={{ background: 'linear-gradient(135deg, #0B2240, #1A835A)' }}
@@ -164,7 +164,7 @@ export default function AboutPage() {
             ))}
           </div>
           <p data-reveal="fade" data-delay="100" className="text-center text-xs mt-8 italic" style={{ color: '#4A5E72' }}>
-            Team headshots coming soon — contact us to connect directly with our leadership.
+            Team headshots coming soon, contact us to connect directly with our leadership.
           </p>
         </div>
       </section>
@@ -173,7 +173,7 @@ export default function AboutPage() {
       <section className="py-20 px-6 text-center" style={{ background: 'linear-gradient(135deg, #0B2240 0%, #0B2240 100%)' }}>
         <h2 data-reveal="fade" className="text-3xl md:text-5xl font-bold text-white mb-4">Ready to Connect?</h2>
         <p data-reveal="fade" data-delay="100" className="max-w-xl mx-auto mb-8 leading-relaxed" style={{ color: 'rgba(255,255,255,0.7)' }}>
-          Whether you&apos;re exploring a partnership, looking for cleantech solutions, or interested in investor relations — we&apos;d love to hear from you.
+          Whether you&apos;re exploring a partnership, looking for cleantech solutions, or interested in investor relations, we&apos;d love to hear from you.
         </p>
         <div data-reveal="fade" data-delay="220" className="flex flex-col sm:flex-row gap-4 justify-center">
           <Link href="/contact" className="btn-eco inline-flex items-center gap-2 justify-center uppercase tracking-widest text-sm font-semibold px-10 py-4 rounded" style={{ backgroundColor: '#1A835A', color: '#fff' }}>

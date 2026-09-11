@@ -4,7 +4,7 @@ import { ArrowRight } from 'lucide-react'
 
 export const metadata: Metadata = {
   title: 'Our Technologies',
-  description: 'ECO Integrated Technologies operates two proprietary cleantech platforms — ECO Regenion™ for waste-to-energy and ECO H2O Recover™ CLAW technology for oilfield water recovery.',
+  description: 'ECO Integrated Technologies operates two proprietary cleantech platforms, ECO Regenion™ for waste-to-energy and ECO H2O Recover™ CLAW technology for oilfield water recovery.',
 }
 
 export default function TechnologiesPage() {
@@ -19,7 +19,7 @@ export default function TechnologiesPage() {
           Two Platforms. One Mission.
         </h1>
         <p data-reveal="fade" data-delay="160" className="text-lg max-w-2xl mx-auto leading-relaxed" style={{ color: 'rgba(255,255,255,0.7)' }}>
-          ECO&apos;s proprietary technology platforms address two of the world&apos;s most pressing environmental challenges — what to do with waste, and how to recover water.
+          ECO&apos;s proprietary technology platforms address two of the world&apos;s most pressing environmental challenges, what to do with waste, and how to recover water.
         </p>
       </section>
 
@@ -35,10 +35,10 @@ export default function TechnologiesPage() {
               Converts Waste into Commercially Viable By-Products
             </h2>
             <p data-reveal="fade" data-delay="160" className="leading-relaxed mb-4" style={{ color: '#4A5E72' }}>
-              ECO Regenion™ was created as a developmental company to acquire innovations that incorporate waste-to-energy solutions. Regenion integrates ECO&apos;s environmental technologies — bringing greater profitability to the markets we serve while providing more efficient and sustainable operations.
+              ECO Regenion™ was created as a developmental company to acquire innovations that incorporate waste-to-energy solutions. Regenion integrates ECO&apos;s environmental technologies, bringing greater profitability to the markets we serve while providing more efficient and sustainable operations.
             </p>
             <p data-reveal="fade" data-delay="220" className="leading-relaxed mb-8" style={{ color: '#4A5E72' }}>
-              This platform improves the lives of the communities it serves by directly addressing current landfill, energy, and water quality concerns. ESG in action.
+              This platform improves the lives of the communities it serves by directly addressing current landfill, energy, and water quality concerns. measurable environmental and financial results.
             </p>
             <Link data-reveal="fade" data-delay="300" href="/technologies/regenion" className="btn-eco inline-flex items-center gap-2 uppercase tracking-widest text-sm font-semibold px-8 py-3 rounded" style={{ backgroundColor: '#1A835A', color: '#fff' }}>
               Explore Regenion <ArrowRight size={15} />
@@ -71,13 +71,13 @@ export default function TechnologiesPage() {
             </div>
             <p data-reveal="fade" className="text-xs font-bold uppercase tracking-widest mb-3" style={{ color: '#1663AF' }}>CLAW Technology</p>
             <h2 data-reveal="fade" data-delay="80" className="text-3xl md:text-4xl font-bold mb-6" style={{ color: '#0B2240' }}>
-              Transforming Contaminated Water into Valuable Resources
+              Converting Contaminated Water into Valuable Resources
             </h2>
             <p data-reveal="fade" data-delay="160" className="leading-relaxed mb-4" style={{ color: '#4A5E72' }}>
               CLAW Technology is a proprietary water-recovery platform designed to transform contaminated oilfield produced water and wellhead CO₂ into reusable water, critical mineral carbonates, and commercially valuable industrial products.
             </p>
             <p data-reveal="fade" data-delay="220" className="leading-relaxed mb-8" style={{ color: '#4A5E72' }}>
-              Targeting true zero-liquid-discharge performance — CLAW represents a breakthrough for oil and gas operators facing increasing regulatory pressure on produced water management.
+              Targeting true zero-liquid-discharge performance, CLAW represents a breakthrough for oil and gas operators facing increasing regulatory pressure on produced water management.
             </p>
             <Link data-reveal="fade" data-delay="300" href="/technologies/h2o-recover" className="btn-eco inline-flex items-center gap-2 uppercase tracking-widest text-sm font-semibold px-8 py-3 rounded" style={{ backgroundColor: '#1663AF', color: '#fff' }}>
               Explore H2O Recover <ArrowRight size={15} />
