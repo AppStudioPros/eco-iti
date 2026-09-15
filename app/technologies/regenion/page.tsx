@@ -65,7 +65,7 @@ export default function RegenionPage() {
                 Request Information <ArrowRight size={13} />
               </Link>
               <Link href="/technologies/h2o-recover" className="btn-eco inline-flex items-center gap-2 uppercase tracking-widest text-xs font-semibold px-7 py-3 rounded" style={{ backgroundColor: 'transparent', color: '#fff', border: '2px solid rgba(255,255,255,0.3)' }}>
-                View H2O Recover
+                View ECO H2O Recover™
               </Link>
             </div>
           </div>
@@ -168,7 +168,7 @@ export default function RegenionPage() {
             Request Information
           </Link>
           <Link href="/technologies/h2o-recover" className="btn-eco inline-block uppercase tracking-widest text-sm font-semibold px-12 py-4 rounded" style={{ backgroundColor: 'transparent', color: '#fff', border: '2px solid rgba(255,255,255,0.3)' }}>
-            Explore H2O Recover
+            Explore ECO H2O Recover™
           </Link>
         </div>
       </section>

@@ -26,7 +26,7 @@ export default function Navbar() {
   const logoAlt = pathname === '/technologies/regenion'
     ? 'ECO Regenion'
     : pathname === '/technologies/h2o-recover'
-    ? 'ECO H2O Recover'
+    ? 'ECO H2O Recover™'
     : 'ECO Integrated Technologies'
 
   return (

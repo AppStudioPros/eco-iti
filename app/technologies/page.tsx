@@ -85,12 +85,12 @@ export default function TechnologiesPage() {
               Targeting true zero-liquid-discharge performance, CLAW represents a breakthrough for oil and gas operators facing increasing regulatory pressure on produced water management.
             </p>
             <Link data-reveal="fade" data-delay="300" href="/technologies/h2o-recover" className="btn-eco inline-flex items-center gap-2 uppercase tracking-widest text-sm font-semibold px-8 py-3 rounded" style={{ backgroundColor: '#1663AF', color: '#fff' }}>
-              Explore H2O Recover <ArrowRight size={15} />
+              Explore ECO H2O Recover™ <ArrowRight size={15} />
             </Link>
           </div>
           <div className="md:order-1">
             <div className="mb-6 md:mb-8 flex justify-center">
-              <img src="/images/logos/ECO-H2O-SYSTEMS_logo.png" alt="ECO H2O Recover" className="h-20 w-auto object-contain" />
+              <img src="/images/logos/ECO-H2O-SYSTEMS_logo.png" alt="ECO H2O Recover™" className="h-20 w-auto object-contain" />
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {[
