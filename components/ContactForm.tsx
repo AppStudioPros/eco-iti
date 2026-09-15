@@ -55,7 +55,7 @@ export default function ContactForm() {
         <select name="interest" value={formData.interest} onChange={handleChange} className={inputClass} style={inputStyle}>
           <option value="">Select a topic</option>
           <option value="regenion">ECO Regenion™ — Waste-to-Energy</option>
-          <option value="h2o">ECO H2O Recover™ — CLAW Technology</option>
+          <option value="h2o">ECO H2O Recover™ — CLAW Technology™</option>
           <option value="investor">Investor Relations</option>
           <option value="partnership">Partnership Opportunities</option>
           <option value="general">General Inquiry</option>
