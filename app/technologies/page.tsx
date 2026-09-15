@@ -4,7 +4,7 @@ import { ArrowRight } from 'lucide-react'
 
 export const metadata: Metadata = {
   title: 'Our Technologies',
-  description: 'ECO Integrated Technologies operates two proprietary cleantech platforms, ECO Regenion™ for waste-to-energy and ECO H2O Recover™ CLAW technology for oilfield water recovery.',
+  description: 'ECO Integrated Technologies operates two proprietary cleantech platforms, ECO Regenion™ for waste-to-energy and ECO Water Recovery Systems™ CLAW technology for oilfield water recovery.',
 }
 
 export default function TechnologiesPage() {
@@ -84,13 +84,13 @@ export default function TechnologiesPage() {
             <p data-reveal="fade" data-delay="220" className="leading-relaxed mb-8" style={{ color: '#4A5E72' }}>
               Targeting true zero-liquid-discharge performance, CLAW represents a breakthrough for oil and gas operators facing increasing regulatory pressure on produced water management.
             </p>
-            <Link data-reveal="fade" data-delay="300" href="/technologies/h2o-recover" className="btn-eco inline-flex items-center gap-2 uppercase tracking-widest text-sm font-semibold px-8 py-3 rounded" style={{ backgroundColor: '#1663AF', color: '#fff' }}>
-              Explore ECO H2O Recover™ <ArrowRight size={15} />
+            <Link data-reveal="fade" data-delay="300" href="/technologies/water-recovery-systems" className="btn-eco inline-flex items-center gap-2 uppercase tracking-widest text-sm font-semibold px-8 py-3 rounded" style={{ backgroundColor: '#1663AF', color: '#fff' }}>
+              Explore ECO Water Recovery Systems™ <ArrowRight size={15} />
             </Link>
           </div>
           <div className="md:order-1">
             <div className="mb-6 md:mb-8 flex justify-center">
-              <img src="/images/logos/ECO-H2O-SYSTEMS_logo.png" alt="ECO H2O Recover™" className="h-20 w-auto object-contain" />
+              <img src="/images/logos/ECO-Water-Recovery-Systems-Logo.jpg" alt="ECO Water Recovery Systems™" className="h-20 w-auto object-contain" />
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {[

@@ -48,7 +48,7 @@ export default function TermsOfUsePage() {
           <section className="mb-10">
             <h2 className="text-xl font-bold mb-3" style={{ color: '#0B2240' }}>Intellectual Property</h2>
             <p className="leading-relaxed mb-4" style={{ color: '#4A5E72' }}>
-              All content on this Site, including but not limited to text, images, graphics, logos, technology descriptions, process diagrams, and the ECO Regenion™ and ECO H2O Recover™ brand names and materials, is the property of ECO Integrated Technologies or its licensors and is protected by applicable intellectual property laws.
+              All content on this Site, including but not limited to text, images, graphics, logos, technology descriptions, process diagrams, and the ECO Regenion™ and ECO Water Recovery Systems™ brand names and materials, is the property of ECO Integrated Technologies or its licensors and is protected by applicable intellectual property laws.
             </p>
             <p className="leading-relaxed" style={{ color: '#4A5E72' }}>
               Nothing on this Site grants any license or right to use any trademark, trade name, or proprietary technology of ECO Integrated Technologies without prior written permission. Unauthorized use of ECO's intellectual property is strictly prohibited.

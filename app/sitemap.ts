@@ -9,7 +9,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE}/about`, lastModified: now, changeFrequency: 'monthly', priority: 0.9 },
     { url: `${BASE}/technologies`, lastModified: now, changeFrequency: 'monthly', priority: 0.95 },
     { url: `${BASE}/technologies/regenion`, lastModified: now, changeFrequency: 'monthly', priority: 0.9 },
-    { url: `${BASE}/technologies/h2o-recover`, lastModified: now, changeFrequency: 'monthly', priority: 0.9 },
+    { url: `${BASE}/technologies/water-recovery-systems`, lastModified: now, changeFrequency: 'monthly', priority: 0.9 },
     { url: `${BASE}/contact`, lastModified: now, changeFrequency: 'monthly', priority: 0.8 },
   ]
 }

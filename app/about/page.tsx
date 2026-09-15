@@ -79,7 +79,7 @@ export default function AboutPage() {
             </div>
             <div className="flex flex-col gap-4">
               {[
-                { num: '2', label: 'Proprietary Technology Platforms', sub: 'ECO Regenion™ and ECO H2O Recover™' },
+                { num: '2', label: 'Proprietary Technology Platforms', sub: 'ECO Regenion™ and ECO Water Recovery Systems™' },
                 { num: '3', label: 'States of Licensure', sub: 'Commercial operations across multiple regions' },
                 { num: '0', label: 'Chemicals Required', sub: 'All solutions are non-toxic and chemical-free' },
               ].map((s, i) => (

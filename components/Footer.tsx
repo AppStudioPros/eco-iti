@@ -29,7 +29,7 @@ export default function Footer() {
               { label: 'Home', href: '/' },
               { label: 'Technologies', href: '/technologies' },
               { label: 'ECO Regenion™', href: '/technologies/regenion' },
-              { label: 'ECO H2O Recover™', href: '/technologies/h2o-recover' },
+              { label: 'ECO Water Recovery Systems™', href: '/technologies/water-recovery-systems' },
               { label: 'About', href: '/about' },
               { label: 'Contact', href: '/contact' },
             ].map((l) => (

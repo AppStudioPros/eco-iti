@@ -4,17 +4,17 @@ import { ArrowRight, ArrowLeft, Check } from 'lucide-react'
 import FaqAccordion from '@/components/FaqAccordion'
 
 export const metadata: Metadata = {
-  title: 'ECO H2O Recover™, CLAW Water Recovery Technology',
+  title: 'ECO Water Recovery Systems™, CLAW Water Recovery Technology',
   description: 'CLAW Technology™ transforms contaminated oilfield produced water and wellhead CO₂ into reusable water, critical mineral carbonates, and industrial products. Zero-liquid-discharge performance.',
 }
 
 const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'Product',
-  name: 'ECO H2O Recover™, CLAW Technology™',
+  name: 'ECO Water Recovery Systems™, CLAW Technology™',
   description: 'Proprietary water-recovery platform for oilfield produced water treatment and zero-liquid-discharge.',
   brand: { '@type': 'Organization', name: 'ECO Integrated Technologies' },
-  url: 'https://www.ecoiti.com/technologies/h2o-recover',
+  url: 'https://www.ecoiti.com/technologies/water-recovery-systems',
 }
 
 const outputs = [

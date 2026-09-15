@@ -19,14 +19,14 @@ export default function Navbar() {
 
   const logoSrc = pathname === '/technologies/regenion'
     ? '/images/logos/ECO_REGENION_logo-1.png'
-    : pathname === '/technologies/h2o-recover'
-    ? '/images/logos/ECO-H2O-SYSTEMS_logo.png'
+    : pathname === '/technologies/water-recovery-systems'
+    ? '/images/logos/ECO-Water-Recovery-Systems-Logo.jpg'
     : '/images/logos/Eco-Integrated-Technologies-Logo-retina.png'
 
   const logoAlt = pathname === '/technologies/regenion'
     ? 'ECO Regenion'
-    : pathname === '/technologies/h2o-recover'
-    ? 'ECO H2O Recover™'
+    : pathname === '/technologies/water-recovery-systems'
+    ? 'ECO Water Recovery Systems™'
     : 'ECO Integrated Technologies'
 
   return (

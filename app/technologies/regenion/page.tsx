@@ -64,8 +64,8 @@ export default function RegenionPage() {
               <Link href="/contact" className="btn-eco inline-flex items-center gap-2 uppercase tracking-widest text-xs font-semibold px-7 py-3 rounded" style={{ backgroundColor: '#1A835A', color: '#fff' }}>
                 Request Information <ArrowRight size={13} />
               </Link>
-              <Link href="/technologies/h2o-recover" className="btn-eco inline-flex items-center gap-2 uppercase tracking-widest text-xs font-semibold px-7 py-3 rounded" style={{ backgroundColor: 'transparent', color: '#fff', border: '2px solid rgba(255,255,255,0.3)' }}>
-                View ECO H2O Recover™
+              <Link href="/technologies/water-recovery-systems" className="btn-eco inline-flex items-center gap-2 uppercase tracking-widest text-xs font-semibold px-7 py-3 rounded" style={{ backgroundColor: 'transparent', color: '#fff', border: '2px solid rgba(255,255,255,0.3)' }}>
+                View ECO Water Recovery Systems™
               </Link>
             </div>
           </div>
@@ -152,8 +152,8 @@ export default function RegenionPage() {
           <Link href="/technologies" className="inline-flex items-center gap-2 font-semibold text-sm" style={{ color: '#0D2E1E' }}>
             <ArrowLeft size={16} /> All Technologies
           </Link>
-          <Link href="/technologies/h2o-recover" className="inline-flex items-center gap-2 font-semibold text-sm" style={{ color: '#0D2E1E' }}>
-            ECO H2O Recover™ <ArrowRight size={16} />
+          <Link href="/technologies/water-recovery-systems" className="inline-flex items-center gap-2 font-semibold text-sm" style={{ color: '#0D2E1E' }}>
+            ECO Water Recovery Systems™ <ArrowRight size={16} />
           </Link>
         </div>
       </section>
@@ -167,8 +167,8 @@ export default function RegenionPage() {
           <Link href="/contact" className="btn-eco inline-block uppercase tracking-widest text-sm font-semibold px-12 py-4 rounded" style={{ backgroundColor: '#1A835A', color: '#fff' }}>
             Request Information
           </Link>
-          <Link href="/technologies/h2o-recover" className="btn-eco inline-block uppercase tracking-widest text-sm font-semibold px-12 py-4 rounded" style={{ backgroundColor: 'transparent', color: '#fff', border: '2px solid rgba(255,255,255,0.3)' }}>
-            Explore ECO H2O Recover™
+          <Link href="/technologies/water-recovery-systems" className="btn-eco inline-block uppercase tracking-widest text-sm font-semibold px-12 py-4 rounded" style={{ backgroundColor: 'transparent', color: '#fff', border: '2px solid rgba(255,255,255,0.3)' }}>
+            Explore ECO Water Recovery Systems™
           </Link>
         </div>
       </section>

@@ -6,8 +6,10 @@ const nextConfig: NextConfig = {
       { source: '/home', destination: '/', permanent: true },
       { source: '/regenion', destination: '/technologies/regenion', permanent: true },
       { source: '/regenion/', destination: '/technologies/regenion', permanent: true },
-      { source: '/h2o-recover', destination: '/technologies/h2o-recover', permanent: true },
-      { source: '/h2o-recover/', destination: '/technologies/h2o-recover', permanent: true },
+      { source: '/h2o-recover', destination: '/technologies/water-recovery-systems', permanent: true },
+      { source: '/h2o-recover/', destination: '/technologies/water-recovery-systems', permanent: true },
+      { source: '/technologies/h2o-recover', destination: '/technologies/water-recovery-systems', permanent: true },
+      { source: '/technologies/h2o-recover/', destination: '/technologies/water-recovery-systems', permanent: true },
       { source: '/investor', destination: '/contact', permanent: false },
       { source: '/investor/', destination: '/contact', permanent: false },
     ]
