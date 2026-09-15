@@ -46,7 +46,7 @@ export default function H2ORecoverPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 
       <section
-        className="relative flex items-center px-5 md:px-16 pt-24 pb-12 md:pt-32 md:pb-20"
+        className="relative flex items-center justify-between px-5 md:px-16 pt-24 pb-12 md:pt-32 md:pb-20"
         style={{
           backgroundImage: 'url("/images/hero-h2o.jpg")',
           backgroundSize: 'cover',
@@ -69,6 +69,11 @@ export default function H2ORecoverPage() {
                 View Regenion
               </Link>
             </div>
+          </div>
+
+          {/* Subsidiary logo — right side, left-aligned */}
+          <div className="hidden md:flex items-center justify-start relative z-10 w-[40%]">
+            <img src="/images/logos/ECO-Water-Recovery-Systems-Logo.jpg" alt="ECO Water Recovery Systems™" className="h-28 w-auto object-contain" style={{ filter: 'drop-shadow(0 4px 24px rgba(0,0,0,0.3))' }} />
           </div>
       </section>
 

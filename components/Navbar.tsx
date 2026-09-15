@@ -17,17 +17,8 @@ export default function Navbar() {
   const [open, setOpen] = useState(false)
   const pathname = usePathname()
 
-  const logoSrc = pathname === '/technologies/regenion'
-    ? '/images/logos/ECO_REGENION_logo-1.png'
-    : pathname === '/technologies/water-recovery-systems'
-    ? '/images/logos/ECO-Water-Recovery-Systems-Logo.jpg'
-    : '/images/logos/Eco-Integrated-Technologies-Logo-retina.png'
-
-  const logoAlt = pathname === '/technologies/regenion'
-    ? 'ECO Regenion'
-    : pathname === '/technologies/water-recovery-systems'
-    ? 'ECO Water Recovery Systems™'
-    : 'ECO Integrated Technologies'
+  const logoSrc = '/images/logos/Eco-Integrated-Technologies-Logo-retina.png'
+  const logoAlt = 'ECO Integrated Technologies'
 
   return (
     <nav
