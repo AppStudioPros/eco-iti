@@ -90,7 +90,7 @@ export default function TechnologiesPage() {
           </div>
           <div className="md:order-1">
             <div className="mb-6 md:mb-8 flex justify-center">
-              <img src="/images/logos/ECO-Water-Recovery-Systems-Logo.jpg" alt="ECO Water Recovery Systems™" className="h-20 w-auto object-contain" />
+              <img src="/images/logos/ECO-Water-Recovery-Systems-Logo.jpg" alt="ECO Water Recovery Systems™" className="h-28 w-auto object-contain" />
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {[
