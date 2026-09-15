@@ -46,7 +46,7 @@ export default function H2ORecoverPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 
       <section
-        className="relative flex items-center justify-between px-5 md:px-16 pt-24 pb-12 md:pt-32 md:pb-20"
+        className="relative flex items-center px-5 md:px-16 pt-24 pb-12 md:pt-32 md:pb-20"
         style={{
           backgroundImage: 'url("/images/hero-h2o.jpg")',
           backgroundSize: 'cover',
@@ -55,6 +55,9 @@ export default function H2ORecoverPage() {
         }}
       >
         <div className="hero-overlay relative z-10 md:max-w-[42%] text-center md:text-left">
+            <div className="flex justify-center md:justify-start mb-5">
+              <img src="/images/logos/ECO-Water-Recovery-Systems-Logo.jpg" alt="ECO Water Recovery Systems™" className="h-16 w-auto object-contain" style={{ filter: 'drop-shadow(0 2px 12px rgba(0,0,0,0.4))' }} />
+            </div>
             <h1 data-reveal="fade" className="text-xl sm:text-3xl md:text-5xl font-bold text-white mb-3 md:mb-4 leading-snug">
               Contaminated Water into <span style={{ color: '#3B9FE0' }}>a Valuable Resource.</span>
             </h1>
@@ -71,10 +74,7 @@ export default function H2ORecoverPage() {
             </div>
           </div>
 
-          {/* Subsidiary logo — right side, left-aligned */}
-          <div className="hidden md:flex items-center justify-start relative z-10 w-[40%]">
-            <img src="/images/logos/ECO-Water-Recovery-Systems-Logo.jpg" alt="ECO Water Recovery Systems™" className="h-28 w-auto object-contain" style={{ filter: 'drop-shadow(0 4px 24px rgba(0,0,0,0.3))' }} />
-          </div>
+
       </section>
 
       {/* ── Feature Bar ── */}
