@@ -56,7 +56,7 @@ export default function H2ORecoverPage() {
       >
         <div className="hero-overlay relative z-10 md:max-w-[42%] text-center md:text-left">
             <div className="flex justify-center md:justify-start mb-5">
-              <img src="/images/logos/ECO-Water-Recovery-Systems-Logo.jpg" alt="ECO Water Recovery Systems™" className="h-16 w-auto object-contain" style={{ filter: 'drop-shadow(0 2px 12px rgba(0,0,0,0.4))' }} />
+              <img src="/images/logos/ECO-Water-Recovery-Systems-Logo.jpg" alt="ECO Water Recovery Systems™" className="h-24 w-auto object-contain" style={{ filter: 'drop-shadow(0 2px 12px rgba(0,0,0,0.4))' }} />
             </div>
             <h1 data-reveal="fade" className="text-xl sm:text-3xl md:text-5xl font-bold text-white mb-3 md:mb-4 leading-snug">
               Contaminated Water into <span style={{ color: '#3B9FE0' }}>a Valuable Resource.</span>
