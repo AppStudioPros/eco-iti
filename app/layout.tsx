@@ -6,6 +6,7 @@ import Footer from '@/components/Footer'
 import AnimationProvider from '@/components/AnimationProvider'
 import CookieBanner from '@/components/CookieBanner'
 import AccessibilityWidget from '@/components/AccessibilityWidget'
+import ChatWidget from '@/components/ChatWidget'
 
 const sora = Sora({
   subsets: ['latin'],
@@ -64,6 +65,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Footer />
         <CookieBanner />
         <AccessibilityWidget />
+        <ChatWidget />
       </body>
     </html>
   )

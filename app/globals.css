@@ -1,5 +1,10 @@
 @import "tailwindcss";
 
+@keyframes eco-glow {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(11, 34, 64, 0); }
+  50% { box-shadow: 0 0 14px 6px rgba(26, 131, 90, 0.3); }
+}
+
 @theme {
   /* Dark sections: navy (nav, footer, CTA) */
   --color-eco-dark:    #0B2240;
