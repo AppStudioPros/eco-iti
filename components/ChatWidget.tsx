@@ -5,7 +5,7 @@ import { usePathname } from 'next/navigation'
 import { X, Send, ChevronDown } from 'lucide-react'
 import ReactMarkdown from 'react-markdown'
 
-// ── 4-Node Orb (ECO ITI colors: dark blue + green alternating nodes) ─────────
+// ── 4-Node Orb (ECO Integrated Technologies colors: dark blue + green alternating nodes) ─────────
 
 type Node = { x: number; y: number; vx: number; vy: number; baseR: number; pulsePhase: number; color: string }
 
@@ -89,7 +89,7 @@ function NodeOrb({ className }: { className?: string }) {
 type Message = { role: 'user' | 'assistant'; content: string }
 
 const STARTERS = [
-  "What does ECO ITI do?",
+  "What does ECO Integrated Technologies do?",
   "Tell me about CLAW™ Technology",
   "What is ECO Regenion™?",
   "How do I get in touch with the team?",
@@ -185,7 +185,7 @@ export default function ChatWidget() {
                   <NodeOrb className="w-6 h-6" />
                 </div>
                 <div>
-                  <p className="text-white text-sm font-semibold leading-none">ECO ITI Assistant</p>
+                  <p className="text-white text-sm font-semibold leading-none">ECO Integrated Technologies Assistant</p>
                   <p className="text-xs mt-0.5" style={{ color: 'rgba(255,255,255,0.5)' }}>Ask us anything</p>
                 </div>
               </div>
@@ -311,8 +311,8 @@ export default function ChatWidget() {
       {/* Floating orb button — white with dark blue ring */}
       <button onClick={() => setOpen(o => !o)}
         className="relative w-14 h-14 rounded-full flex items-center justify-center shadow-lg transition-transform hover:scale-105 active:scale-95"
-        style={{ backgroundColor: '#fff', border: '1px solid #0B2240' }}
-        aria-label="Chat with ECO ITI">
+        style={{ background: 'radial-gradient(circle at 35% 30%, #1a4070, #0B2240 55%, #050f1e)', border: '1px solid rgba(255,255,255,0.12)', boxShadow: 'inset 0 1px 3px rgba(255,255,255,0.18), inset 0 -2px 4px rgba(0,0,0,0.3)' }}
+        aria-label="Chat with ECO Integrated Technologies">
         {open ? (
           <X size={22} color="#0B2240" />
         ) : (
