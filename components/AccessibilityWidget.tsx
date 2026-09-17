@@ -78,10 +78,10 @@ export default function AccessibilityWidget() {
         onClick={() => setOpen(!open)}
         aria-label={open ? 'Close accessibility options' : 'Open accessibility options'}
         aria-expanded={open}
-        className="fixed bottom-24 right-6 z-50 w-12 h-12 rounded-full flex items-center justify-center shadow-lg transition-transform hover:scale-105 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white"
+        className="fixed bottom-24 right-6 z-50 w-11 h-11 rounded-full flex items-center justify-center shadow-lg transition-transform hover:scale-105 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white"
         style={{ backgroundColor: '#0B2240', color: '#fff' }}
       >
-        <Accessibility size={22} aria-hidden="true" />
+        <Accessibility size={20} aria-hidden="true" />
       </button>
 
       {/* Panel */}

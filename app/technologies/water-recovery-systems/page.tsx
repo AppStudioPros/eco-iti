@@ -68,6 +68,9 @@ export default function H2ORecoverPage() {
               <Link href="/contact" className="btn-eco inline-flex items-center gap-2 uppercase tracking-widest text-xs font-semibold px-7 py-3 rounded" style={{ backgroundColor: '#1663AF', color: '#fff' }}>
                 Request Information <ArrowRight size={13} />
               </Link>
+              <a href="/claw-technology-pitch-deck.pdf" download className="btn-eco inline-flex items-center gap-2 uppercase tracking-widest text-xs font-semibold px-7 py-3 rounded" style={{ backgroundColor: 'transparent', color: '#fff', border: '2px solid rgba(255,255,255,0.3)' }}>
+                Download Pitch Deck <ArrowRight size={13} />
+              </a>
               <Link href="/technologies/regenion" className="btn-eco inline-flex items-center gap-2 uppercase tracking-widest text-xs font-semibold px-7 py-3 rounded" style={{ backgroundColor: 'transparent', color: '#fff', border: '2px solid rgba(255,255,255,0.3)' }}>
                 View Regenion
               </Link>
@@ -197,7 +200,7 @@ export default function H2ORecoverPage() {
           <a
             data-reveal="fade"
             data-delay="200"
-            href="/claw-technology-overview.pdf"
+            href="/claw-technology-pitch-deck.pdf"
             download
             className="inline-flex items-center gap-2 uppercase tracking-widest text-sm font-semibold px-10 py-4 rounded"
             style={{ backgroundColor: '#1663AF', color: '#fff' }}
