@@ -137,7 +137,8 @@ export default function ChatWidget() {
 
       if (!res.ok || !res.body) {
         setMessages(prev => { const u = [...prev]; u[u.length-1] = { role: 'assistant', content: 'Something went wrong. Please [email us](mailto:info@ecoiti.com) or [call us](tel:18774770021).' }; return u })
-        setLoading(false); return
+        setLoading(false)
+    setTimeout(() => inputRef.current?.focus(), 10); return
       }
 
       const reader = res.body.getReader()
@@ -167,6 +168,7 @@ export default function ChatWidget() {
       setMessages(prev => { const u = [...prev]; u[u.length-1] = { role: 'assistant', content: 'Something went wrong. Please [email us](mailto:info@ecoiti.com) or [call us](tel:18774770021).' }; return u })
     }
     setLoading(false)
+    setTimeout(() => inputRef.current?.focus(), 10)
   }
 
   return (
