@@ -4,7 +4,7 @@ import { ArrowRight } from 'lucide-react'
 
 export const metadata: Metadata = {
   title: 'Our Technologies',
-  description: 'ECO Integrated Technologies operates two proprietary cleantech platforms, ECO Regenion™ for waste-to-energy and ECO Water Recovery Systems™ CLAW technology for oilfield water recovery.',
+  description: 'ECO Integrated Technologies operates two proprietary cleantech platforms, ECO Regenion™ for waste-to-energy and ECO Water Recovery Systems™ CLAW™ technology for oilfield water recovery.',
 }
 
 export default function TechnologiesPage() {
@@ -74,15 +74,15 @@ export default function TechnologiesPage() {
       <section style={{ backgroundColor: '#F4F8FC' }} className="py-20 md:py-28 px-6">
         <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 items-start md:items-center">
           <div className="md:order-2">
-            <p data-reveal="fade" className="text-xs font-bold uppercase tracking-widest mb-3" style={{ color: '#1663AF' }}>CLAW Technology™</p>
+            <p data-reveal="fade" className="text-xs font-bold uppercase tracking-widest mb-3" style={{ color: '#1663AF' }}>CLAW™ Technology™</p>
             <h2 data-reveal="fade" data-delay="80" className="text-3xl md:text-4xl font-bold mb-6" style={{ color: '#0B2240' }}>
               Converting Contaminated Water into Valuable Resources
             </h2>
             <p data-reveal="fade" data-delay="160" className="leading-relaxed mb-4" style={{ color: '#4A5E72' }}>
-              CLAW Technology™ is a proprietary water-recovery platform designed to transform contaminated oilfield produced water and wellhead CO₂ into reusable water, critical mineral carbonates, and commercially valuable industrial products.
+              CLAW™ Technology™ is a proprietary water-recovery platform designed to transform contaminated oilfield produced water and wellhead CO₂ into reusable water, critical mineral carbonates, and commercially valuable industrial products.
             </p>
             <p data-reveal="fade" data-delay="220" className="leading-relaxed mb-8" style={{ color: '#4A5E72' }}>
-              Targeting true zero-liquid-discharge performance, CLAW represents a breakthrough for oil and gas operators facing increasing regulatory pressure on produced water management.
+              Targeting true zero-liquid-discharge performance, CLAW™ represents a breakthrough for oil and gas operators facing increasing regulatory pressure on produced water management.
             </p>
             <Link data-reveal="fade" data-delay="300" href="/technologies/water-recovery-systems" className="btn-eco inline-flex items-center gap-2 uppercase tracking-widest text-sm font-semibold px-8 py-3 rounded" style={{ backgroundColor: '#1663AF', color: '#fff' }}>
               Explore ECO Water Recovery Systems™ <ArrowRight size={15} />

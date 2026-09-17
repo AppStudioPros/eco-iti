@@ -26,7 +26,7 @@ export default function DisclaimerPage() {
           <section className="mb-10">
             <h2 className="text-xl font-bold mb-3" style={{ color: '#0B2240' }}>Technology Performance Claims</h2>
             <p className="leading-relaxed mb-4" style={{ color: '#4A5E72' }}>
-              Descriptions of ECO Integrated Technologies' proprietary platforms, including ECO Regenion™ and the CLAW Water Recovery Technology (ECO Water Recovery Systems™), represent design targets, engineering goals, and intended capabilities based on current development and testing. Actual performance in commercial or field deployment may vary based on input conditions, operational parameters, site-specific factors, and regulatory requirements.
+              Descriptions of ECO Integrated Technologies' proprietary platforms, including ECO Regenion™ and the CLAW™ Water Recovery Technology (ECO Water Recovery Systems™), represent design targets, engineering goals, and intended capabilities based on current development and testing. Actual performance in commercial or field deployment may vary based on input conditions, operational parameters, site-specific factors, and regulatory requirements.
             </p>
             <p className="leading-relaxed" style={{ color: '#4A5E72' }}>
               References to performance targets such as "zero liquid discharge" (ZLD) represent engineering objectives and not guaranteed outcomes. No information on this Site should be interpreted as a warranty, guarantee, or representation of specific performance results for any particular application or deployment.
