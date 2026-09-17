@@ -4,7 +4,7 @@ import { ArrowRight, ArrowLeft, Check } from 'lucide-react'
 import FaqAccordion from '@/components/FaqAccordion'
 
 export const metadata: Metadata = {
-  title: 'ECO Water Recovery Systems™, CLAW™ Water Recovery Technology',
+  title: 'ECO Water Recovery Systems™, CLAW Water Recovery™ Technology',
   description: 'CLAW™ Technology™ transforms contaminated oilfield produced water and wellhead CO₂ into reusable water, critical mineral carbonates, and industrial products. Zero-liquid-discharge performance.',
 }
 
@@ -68,9 +68,6 @@ export default function H2ORecoverPage() {
               <Link href="/contact" className="btn-eco inline-flex items-center gap-2 uppercase tracking-widest text-xs font-semibold px-7 py-3 rounded" style={{ backgroundColor: '#1663AF', color: '#fff' }}>
                 Request Information <ArrowRight size={13} />
               </Link>
-              <a href="/claw-technology-pitch-deck.pdf" download className="btn-eco inline-flex items-center gap-2 uppercase tracking-widest text-xs font-semibold px-7 py-3 rounded" style={{ backgroundColor: 'transparent', color: '#fff', border: '2px solid rgba(255,255,255,0.3)' }}>
-                Download Pitch Deck <ArrowRight size={13} />
-              </a>
               <Link href="/technologies/regenion" className="btn-eco inline-flex items-center gap-2 uppercase tracking-widest text-xs font-semibold px-7 py-3 rounded" style={{ backgroundColor: 'transparent', color: '#fff', border: '2px solid rgba(255,255,255,0.3)' }}>
                 View Regenion
               </Link>

@@ -53,6 +53,14 @@ export default function Navbar() {
               {l.label}
             </Link>
           ))}
+          <a
+            href="/claw-technology-pitch-deck.pdf"
+            download
+            className="btn-eco text-sm font-semibold uppercase tracking-widest px-5 py-2.5 rounded border"
+            style={{ color: '#1663AF', borderColor: '#1663AF', backgroundColor: 'transparent' }}
+          >
+            Pitch Deck
+          </a>
           <Link
             href="/contact"
             className="btn-eco text-sm font-semibold uppercase tracking-widest px-6 py-2.5 rounded"
