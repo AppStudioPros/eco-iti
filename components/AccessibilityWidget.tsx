@@ -78,7 +78,7 @@ export default function AccessibilityWidget() {
         onClick={() => setOpen(!open)}
         aria-label={open ? 'Close accessibility options' : 'Open accessibility options'}
         aria-expanded={open}
-        className="fixed bottom-6 right-6 z-50 w-12 h-12 rounded-full flex items-center justify-center shadow-lg transition-transform hover:scale-105 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white"
+        className="fixed bottom-24 right-6 z-50 w-12 h-12 rounded-full flex items-center justify-center shadow-lg transition-transform hover:scale-105 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white"
         style={{ backgroundColor: '#0B2240', color: '#fff' }}
       >
         <Accessibility size={22} aria-hidden="true" />
@@ -90,7 +90,7 @@ export default function AccessibilityWidget() {
           role="dialog"
           aria-label="Accessibility options"
           aria-modal="false"
-          className="fixed bottom-20 right-6 z-50 w-72 rounded-2xl shadow-2xl overflow-hidden"
+          className="fixed bottom-40 right-6 z-50 w-72 rounded-2xl shadow-2xl overflow-hidden"
           style={{ backgroundColor: '#fff', border: '1px solid #D0E4F4' }}
         >
           {/* Header */}

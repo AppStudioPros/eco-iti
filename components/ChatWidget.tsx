@@ -308,7 +308,7 @@ export default function ChatWidget() {
       {/* Floating orb button — white with dark blue ring */}
       <button onClick={() => setOpen(o => !o)}
         className="relative w-14 h-14 rounded-full flex items-center justify-center shadow-lg transition-transform hover:scale-105 active:scale-95"
-        style={{ backgroundColor: '#fff', border: '2px solid #0B2240' }}
+        style={{ backgroundColor: '#fff', border: '1px solid #0B2240' }}
         aria-label="Chat with ECO ITI">
         {open ? (
           <X size={22} color="#0B2240" />

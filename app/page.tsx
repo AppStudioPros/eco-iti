@@ -109,7 +109,7 @@ export default function HomePage() {
             <Link href="/technologies/water-recovery-systems" data-reveal data-delay="100" className="group card-hover block rounded-2xl overflow-hidden bg-white" style={{ boxShadow: '0 2px 16px rgba(11,34,64,0.08)', border: '1px solid #E0EBF5' }}>
               <div className="gradient-bar-blue h-1.5 w-full" />
               <div className="p-8">
-                <div className="mb-6 flex justify-center"><img src="/images/logos/ECO-Water-Recovery-Systems-Logo.jpg" alt="ECO Water Recovery Systems™" className="h-[60px] w-auto object-contain" /></div>
+                <div className="mb-6 flex justify-center"><img src="/images/logos/ECO-Water-Recovery-Systems-Logo.jpg" alt="ECO Water Recovery Systems™" className="h-[78px] w-auto object-contain" /></div>
                 <h3 className="text-2xl font-bold mb-3" style={{ color: '#1A2535' }}>CLAW™ Water Recovery</h3>
                 <p className="text-sm leading-relaxed mb-6" style={{ color: '#4A5E72' }}>
                   A proprietary water-recovery platform converting contaminated oilfield produced water and wellhead CO₂ into reusable water, critical mineral carbonates, and industrial products.
