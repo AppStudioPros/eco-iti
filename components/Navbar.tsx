@@ -34,10 +34,10 @@ export default function Navbar() {
           <Image
             src={logoSrc}
             alt={logoAlt}
-            width={216}
-            height={47}
+            width={259}
+            height={56}
             priority
-            className="object-contain h-10 md:h-12 w-auto"
+            className="object-contain h-12 md:h-14 w-auto"
           />
         </Link>
 
