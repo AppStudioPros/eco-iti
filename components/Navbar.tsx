@@ -61,13 +61,13 @@ export default function Navbar() {
           >
             Pitch Deck
           </a>
-          <Link
-            href="/contact"
+          <a
+            href="tel:18774770021"
             className="btn-eco text-sm font-semibold uppercase tracking-widest px-6 py-2.5 rounded"
             style={{ backgroundColor: '#1A835A', color: '#fff' }}
           >
-            Get In Touch
-          </Link>
+            Call Us
+          </a>
         </div>
 
         {/* Mobile hamburger */}
