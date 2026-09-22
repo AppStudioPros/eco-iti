@@ -4,18 +4,38 @@ import { useState } from 'react'
 
 export default function ContactForm() {
   const [formData, setFormData] = useState({ firstName: '', lastName: '', email: '', phone: '', interest: '', message: '' })
-  const [submitted, setSubmitted] = useState(false)
+  const [status, setStatus] = useState<'idle' | 'sending' | 'success' | 'error'>('idle')
 
   function handleChange(e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) {
     setFormData(prev => ({ ...prev, [e.target.name]: e.target.value }))
   }
 
-  function handleSubmit(e: React.FormEvent) {
+  async function handleSubmit(e: React.FormEvent) {
     e.preventDefault()
-    setSubmitted(true)
+    setStatus('sending')
+    try {
+      const res = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          name: `${formData.firstName} ${formData.lastName}`.trim(),
+          email: formData.email,
+          company: formData.phone ? `Phone: ${formData.phone}` : undefined,
+          interest: formData.interest,
+          message: formData.message,
+        }),
+      })
+      if (res.ok) {
+        setStatus('success')
+      } else {
+        setStatus('error')
+      }
+    } catch {
+      setStatus('error')
+    }
   }
 
-  if (submitted) {
+  if (status === 'success') {
     return (
       <div className="text-center py-16">
         <div className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4" style={{ backgroundColor: 'rgba(26,131,90,0.12)' }}>
@@ -65,12 +85,20 @@ export default function ContactForm() {
         <label className="block text-xs font-semibold uppercase tracking-widest mb-1.5" style={{ color: '#5A8070' }}>Message *</label>
         <textarea required name="message" value={formData.message} onChange={handleChange} rows={5} className={inputClass} style={inputStyle} placeholder="Tell us about your project or question..." />
       </div>
+
+      {status === 'error' && (
+        <p className="text-sm text-center" style={{ color: '#c0392b' }}>
+          Something went wrong — please try again or email us at info@ecoiti.com
+        </p>
+      )}
+
       <button
         type="submit"
+        disabled={status === 'sending'}
         className="btn-eco w-full uppercase tracking-widest text-sm font-semibold py-4 rounded-lg"
-        style={{ backgroundColor: '#1A835A', color: '#fff' }}
+        style={{ backgroundColor: '#1A835A', color: '#fff', opacity: status === 'sending' ? 0.7 : 1 }}
       >
-        Send Message
+        {status === 'sending' ? 'Sending...' : 'Send Message'}
       </button>
     </form>
   )
