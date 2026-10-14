@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import { Analytics } from '@vercel/analytics/react'
 import { Sora, Inter } from 'next/font/google'
 import './globals.css'
 import Navbar from '@/components/Navbar'
@@ -66,6 +67,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <CookieBanner />
         <AccessibilityWidget />
         <ChatWidget />
+        <Analytics />
       </body>
     </html>
   )
